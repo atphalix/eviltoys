@@ -1,0 +1,83 @@
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86
+END
+libpng.lib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libpng.lib
+END
+dsound.lib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/dsound.lib
+END
+libjpeg.lib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libjpeg.lib
+END
+mgllt.lib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/mgllt.lib
+END
+minizip.lib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/minizip.lib
+END
+libz.lib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libz.lib
+END
+libpcre.lib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libpcre.lib
+END
+dinput.lib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/dinput.lib
+END
+asmlibm.lib
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/asmlibm.lib
+END
+dxguid.lib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/dxguid.lib
+END
+download.bat
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/download.bat
+END
+libexpat.lib
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libexpat.lib
+END
+libtcl.lib
+K 25
+svn:wc:ra_dav:version-url
+V 87
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/windows-x86/libtcl.lib
+END

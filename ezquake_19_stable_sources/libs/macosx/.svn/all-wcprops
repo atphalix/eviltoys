@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 71
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx
+END
+download.sh
+K 25
+svn:wc:ra_dav:version-url
+V 83
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/download.sh
+END
+libpng12.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/libpng12.dylib
+END
+libpcre.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/libpcre.dylib
+END
+libz.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 82
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/libz.dylib
+END
+libexpat.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 86
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/libexpat.dylib
+END
+libjpeg.dylib
+K 25
+svn:wc:ra_dav:version-url
+V 85
+/svn/!svn/ver/31/branches/testing/ezquake_19_stable_sources/libs/macosx/libjpeg.dylib
+END

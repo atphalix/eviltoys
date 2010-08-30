@@ -1,0 +1,2 @@
+cp sdlquake-1.0.9/sdlquake Quake.activity/bin 
+zip -r quake.xo Quake.activity -x /*.svn*

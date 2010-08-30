@@ -1,0 +1,88 @@
+Compiling ezQuake sources on Windows: (updated Jan 12, 2007)
+---------------------------------------------------------------------------------------------------------
+
+*** Sources are compilable with Microsoft Visual Studio 8 (2005). Older versions (6, 7, 7.1) may have problems in project files ***
+
+
+
+Instructions:
+--------------------
+1) Grab source from ezquake CVS:
+ - cvs -d:pserver:anonymous@ezquake.cvs.sourceforge.net:/cvsroot/ezquake
+ - checkout module ezquake:
+ - cvs -z3 -d:pserver:anonymous@ezquake.cvs.sourceforge.net:/cvsroot/ezquake co -P ezquake
+
+2) Get Microsoft Visual Studio 8 and install it. Insteand of expensive MSVS8 you can install Visual C++ 2005 Express Edition which is free.
+ - http://msdn.microsoft.com/vstudio/express/downloads/default.aspx
+ - just follow instructions
+
+3) Get platfrom SDK and set it up
+ - http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/default.aspx
+ - just follow instructions
+
+4) Download all required libraries, there are two ways to do it:
+ A) Go to http://ezquake.cvs.sourceforge.net/ezquake/libs/windows-x86/
+    and manually download all *.lib files from there, save them into libs\windows-x86 directory
+ B) Go to libs/windows-x86 dir and launch download.bat
+    *** This requires you to have wget.exe present in your system. if you don't have it, download it from: ***
+    http://www.christopherlewis.com/WGet/wget-1.10.2b.zip
+    and place wget.exe either in the same dir as download.bat or in your system dir
+
+5) Download x86 assembler tools, there are two ways to do it:
+ A) Go to http://ezquake.cvs.sourceforge.net/ezquake/libs/windows-x86/
+    and manually download gas2masm.exe and ML.EXE files from there, save them into masm32 directory
+ B) Go to masm32 dir and launch download.bat
+    *** This requires you to have wget.exe present in your system. if you don't have it, download it from: ***
+    http://www.christopherlewis.com/WGet/wget-1.10.2b.zip
+    and place wget.exe either in the same dir as download.bat or in your system dir
+
+6) Open open ezquake_msvs_80.sln located in ezquake/make/msvs2005
+
+7) Select GLDebug configuration and press "Build".
+
+
+
+
+Microsoft Visual Studio 8 and .s (asm) files:
+---------------------------------------------------------------------
+ - Requirements:
+   There are no special requirements, we include everything in CVS, you just need cl.exe
+   which is a part of MS VS 8 package
+ - We use Custom Build Tool to compile asm .s files in MS VS 8.
+ - Visual Studio reads all instructions from qasm.rules
+ - That file is included in the project file (ezquake_msvs_80.vcproj)
+ - Instructions are named 'qasm' and are applied on *.s files
+ - Visual Studio 8 doesn't have ml.exe (known as masm32) so we have ml.exe in masm32 dir (binary in CVS)
+ - We dont include gas2masm in ezquake solution
+ - gas2masm.exe is stored in our CVS
+ - How custom build works:
+   1) cl (optimizer), input is .s file, output is .spp (optimized) file
+   2) gas2masm, input is .spp file, output is .asm file
+   3) ml, input .asm file, output is .obj file
+   4) intermediate .spp and .asm files are deleted
+   5) .obj file is then used by the linker
+
+
+
+
+Troubleshooting:
+---------------------------
+- If you get "unresolved external symbol __imp__" linker errors, you need to edit the corewin_express.vsprops file (found in C:\Program Files\Microsoft Visual Studio 8\VC\VCProjectDefaults) and change the string that reads: AdditionalDependencies="kernel32.lib" to AdditionalDependencies="kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib"
+  It's also good to read this: http://msdn.microsoft.com/vstudio/express/visualc/usingpsdk/default.aspx
+
+
+
+
+Developer notes:
+---------------------------
+Detailed changelog:
+"C:\Program Files\TortoiseCVS\cvs" -d:ext:USERNAME@ezquake.cvs.sourceforge.net:/cvsroot/ezquake log -d "2006-06-01<" -b -N > log.log < empty.txt
+- this will dump all the changes from cvs logs from 2006-06-01 to now on into log.log
+- requires CVS_RSH environmental variable set to putty's plink.exe path (control panel -> system -> ...)
+- this log should be uploaded into /test/changelogs/ dir on the shell (web)
+- in http://ezquake.sf.net/test/changelogs/ there is an php file which parses such changelogs into an overall
+  detailed changelog page and extract usefull info from all those logs
+- naming convention for .log files is "Until_yyyy-mm-dd.log", yyyy = year, mm = month, dd = day
+
+Debugger detected:
+- Error warning that MS VS gives you when you try to run debug build in your quake dir. Solution: move ezquake-security.dll out of your quake dir
