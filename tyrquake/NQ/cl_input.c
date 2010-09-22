@@ -294,13 +294,13 @@ IN_StrafeUp(void)
 void
 IN_AttackDown(void)
 {
-    KeyDown(&in_attack);
+  //  KeyDown(&in_attack);
 }
 
 void
 IN_AttackUp(void)
 {
-    KeyUp(&in_attack);
+//    KeyUp(&in_attack);
 }
 
 void
