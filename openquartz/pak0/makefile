@@ -8,7 +8,7 @@ GAMEDIR   = ../openquartz/id1
 
 QBSP     = $(QUTILSDIR)/qbsp
 VIS      = $(QUTILSDIR)/vis
-LIGHT    = $(QUTILSDIR)/light
+LIGHT    = $(QUTILSDIR)/tyrlight
 QCC      = $(QUTILSDIR)/qcc
 MODELGEN = $(QUTILSDIR)/modelgen
 SPRGEN   = $(QUTILSDIR)/sprgen
@@ -425,6 +425,7 @@ PAK3_CONTENTS += maps/house.bsp
 PAK3_CONTENTS += maps/nsa.bsp
 PAK3_CONTENTS += maps/office.bsp
 PAK3_CONTENTS += maps/start.bsp
+PAK3_CONTENTS += maps/void0.bsp
 PAK3_CONTENTS += maps/void1.bsp
 PAK3_CONTENTS += maps/void1.way
 PAK3_CONTENTS += maps/void2.bsp
@@ -554,7 +555,7 @@ maps/rpgdm1.bsp : maps/rpgdm1.map
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	$(LIGHT) $@
+	$(LIGHT) -lit $@
 
 # 
 # Not all .mdl files can be built from source by our tools.
