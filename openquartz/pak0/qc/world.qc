@@ -122,6 +122,12 @@ void() main =
 
 	precache_sound ("ambience/water1.wav");
 	precache_sound ("ambience/wind2.wav");
+// letters and numbers sounds (from gcompris)
+	precache_sound ("gcompris/alphabet/U0030.wav");
+	precache_sound ("gcompris/alphabet/U0031.wav");
+	precache_sound ("gcompris/alphabet/U0032.wav");
+	precache_sound ("gcompris/alphabet/U0033.wav");
+	
 
 // shareware
 	precache_file ("maps/start.bsp");

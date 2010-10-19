@@ -211,7 +211,6 @@ sounds
 3)
 4)
 set "message" to text string
-*/
 void() trigger_secret =
 {
 	total_secrets = total_secrets + 1;
@@ -233,6 +232,37 @@ void() trigger_secret =
 	}
 
 	trigger_multiple ();
+};
+
+*/
+//=============================================================================
+
+//=============================================================================
+
+/*QUAKED trigger_sound (.5 .5 .5) ?
+*/
+void() trigger_secret =
+{
+	self.wait = -1;
+	
+	if (self.sounds == 1)
+	{
+		self.noise = "gcompris/alphabet/U0031.wav";
+sound (self, CHAN_AUTO, "gcompris/alphabet/U0031.wav", 1, ATTN_NORM);
+
+	}
+	else if (self.sounds == 2)
+	{
+		self.noise = "gcompris/alphabet/U0032.wav";
+sound (self, CHAN_AUTO, "gcompris/alphabet/U0032.wav", 1, ATTN_NORM);
+	}
+	InitTrigger ();
+
+		if ( !(self.spawnflags & SPAWNFLAG_NOTOUCH) )
+		{
+			self.touch = multi_touch;
+		}
+
 };
 
 //=============================================================================
