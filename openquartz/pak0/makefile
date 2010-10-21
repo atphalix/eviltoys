@@ -8,7 +8,7 @@ GAMEDIR   = ../openquartz/id1
 
 QBSP     = $(QUTILSDIR)/qbsp
 VIS      = $(QUTILSDIR)/vis
-LIGHT    = $(QUTILSDIR)/tyrlight
+LIGHT    = $(QUTILSDIR)/light
 QCC      = $(QUTILSDIR)/qcc
 MODELGEN = $(QUTILSDIR)/modelgen
 SPRGEN   = $(QUTILSDIR)/sprgen
@@ -28,13 +28,9 @@ install : all
 	mkdir --parents $(GAMEDIR)
 	cp $(ALLPAKS) $(GAMEDIR)
 	cp default.cfg $(GAMEDIR)
-	mkdir --parents $(GAMEDIR)/gfx
-	cp gfx/*.tga $(GAMEDIR)/gfx
-	mkdir --parents $(GAMEDIR)/gfx/env
-	cp gfx/env/*.tga $(GAMEDIR)/gfx/env
-	mkdir --parents $(GAMEDIR)/maps
-	cp maps/*.rtlights $(GAMEDIR)/maps
 
+#bundle	: all
+#	cp ../openquartz/openquartz/
 
 extra-maps : \
     maps/dm2ish.bsp maps/dm3ish.bsp maps/dm4ish.bsp     \
@@ -409,86 +405,65 @@ PAK2_CONTENTS += sound/zombie/z_miss.wav
 PAK2_CONTENTS += sound/zombie/z_pain.wav
 PAK2_CONTENTS += sound/zombie/z_pain1.wav
 PAK2_CONTENTS += sound/zombie/z_shot1.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0030.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0031.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0032.wav
+PAK2_CONTENTS += sound/gcompris/misc/about.wav
+PAK2_CONTENTS += sound/gcompris/misc/fantastic.wav
+PAK2_CONTENTS += sound/gcompris/misc/perfect.wav
+PAK2_CONTENTS += sound/gcompris/misc/awesome.wav 
+PAK2_CONTENTS += sound/gcompris/misc/good.wav
+PAK2_CONTENTS += sound/gcompris/misc/plus.wav
+PAK2_CONTENTS += sound/gcompris/misc/back.wav
+PAK2_CONTENTS += sound/gcompris/misc/great.wav
+PAK2_CONTENTS += sound/gcompris/misc/quit.wav
+PAK2_CONTENTS += sound/gcompris/misc/by.wav
+PAK2_CONTENTS += sound/gcompris/misc/help.wav
+PAK2_CONTENTS += sound/gcompris/misc/super.wav
+PAK2_CONTENTS += sound/gcompris/misc/check_answer.wav
+PAK2_CONTENTS += sound/gcompris/misc/level.wav
+PAK2_CONTENTS += sound/gcompris/misc/waytogo.wav
+PAK2_CONTENTS += sound/gcompris/misc/click_on_letter.wav
+PAK2_CONTENTS += sound/gcompris/misc/minus.wav
+PAK2_CONTENTS += sound/gcompris/misc/welcome.wav
+PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav 
+PAK2_CONTENTS += sound/gcompris/misc/ok.wav
+PAK2_CONTENTS += sound/gcompris/misc/equal.wav
+PAK2_CONTENTS += sound/gcompris/misc/outof.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/10.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/11.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/12.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/13.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/14.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/15.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/16.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/17.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/18.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/19.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/20.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0030.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0031.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0032.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0033.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0034.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0035.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0036.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0037.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0038.wav
+PAK2_CONTENTS += sound/gcompris/alphabet/U0039.wav
 
-
+#PAK4_CONTENTS += sound/gcompris/alphabet/U0030.wav
 #
 # PAK3_CONTENTS is what goes into pak3.pak
 #
 # It contains multiplayer maps.
 #
-PAK3_CONTENTS += maps/elbow.bsp
-PAK3_CONTENTS += maps/rpgdm1.bsp
-PAK3_CONTENTS += maps/am1.bsp
-PAK3_CONTENTS += maps/box.bsp
-PAK3_CONTENTS += maps/bunkers.bsp
-PAK3_CONTENTS += maps/house.bsp
-PAK3_CONTENTS += maps/nsa.bsp
-PAK3_CONTENTS += maps/office.bsp
-PAK3_CONTENTS += maps/start.bsp
+#
+#
 PAK3_CONTENTS += maps/void0.bsp
-PAK3_CONTENTS += maps/void1.bsp
-PAK3_CONTENTS += maps/void1.way
-PAK3_CONTENTS += maps/void2.bsp
-PAK3_CONTENTS += maps/void3.bsp
-PAK3_CONTENTS += maps/void3.way
-PAK3_CONTENTS += maps/void4.bsp
-PAK3_CONTENTS += maps/void4.way
-PAK3_CONTENTS += maps/void5.bsp
-PAK3_CONTENTS += maps/void6.bsp
-PAK3_CONTENTS += maps/vtest.bsp
-PAK3_CONTENTS += maps/q3dm6ish.bsp
-PAK3_CONTENTS += maps/devourer.bsp
-PAK3_CONTENTS += maps/dm1.bsp
-PAK3_CONTENTS += maps/dm2.bsp
-PAK3_CONTENTS += maps/dm3.bsp
-PAK3_CONTENTS += maps/dm4.bsp
-PAK3_CONTENTS += maps/dm5.bsp
-PAK3_CONTENTS += maps/dm6.bsp
-PAK3_CONTENTS += maps/dm7.bsp
-PAK3_CONTENTS += maps/dm8.bsp
-
-
-#
-# PAK4_CONTENTS is what goes into pak4.pak
-#
-# It contains single-player maps, most of which are
-# the original Quake maps written by John Romero.
-#
-PAK4_CONTENTS += maps/q1start.bsp
-PAK4_CONTENTS += maps/e1m1.bsp
-PAK4_CONTENTS += maps/e1m2.bsp
-PAK4_CONTENTS += maps/e1m3.bsp
-PAK4_CONTENTS += maps/e1m4.bsp
-PAK4_CONTENTS += maps/e1m5.bsp
-PAK4_CONTENTS += maps/e1m6.bsp
-PAK4_CONTENTS += maps/e1m7.bsp
-PAK4_CONTENTS += maps/e1m8.bsp
-PAK4_CONTENTS += maps/e2m1.bsp
-PAK4_CONTENTS += maps/e2m2.bsp
-PAK4_CONTENTS += maps/e2m3.bsp
-PAK4_CONTENTS += maps/e2m4.bsp
-PAK4_CONTENTS += maps/e2m5.bsp
-PAK4_CONTENTS += maps/e2m6.bsp
-PAK4_CONTENTS += maps/e2m7.bsp
-PAK4_CONTENTS += maps/e3m1.bsp
-PAK4_CONTENTS += maps/e3m2.bsp
-PAK4_CONTENTS += maps/e3m3.bsp
-PAK4_CONTENTS += maps/e3m4.bsp
-PAK4_CONTENTS += maps/e3m5.bsp
-PAK4_CONTENTS += maps/e3m6.bsp
-PAK4_CONTENTS += maps/e3m7.bsp
-PAK4_CONTENTS += maps/e4m1.bsp
-PAK4_CONTENTS += maps/e4m2.bsp
-PAK4_CONTENTS += maps/e4m3.bsp
-PAK4_CONTENTS += maps/e4m4.bsp
-PAK4_CONTENTS += maps/e4m5.bsp
-PAK4_CONTENTS += maps/e4m6.bsp
-PAK4_CONTENTS += maps/e4m7.bsp
-PAK4_CONTENTS += maps/e4m8.bsp
-PAK4_CONTENTS += maps/end.bsp
-PAK4_CONTENTS += maps/e2m10.bsp
-
-
+PAK3_CONTENTS += maps/level1.bsp
+PAK3_CONTENTS += maps/start.bsp
+#PAK3_CONTENTS += maps/vtest.bsp
 #
 # make targets
 #
@@ -539,28 +514,9 @@ maps/b_%.bsp : maps/b_%.map
 	$(QBSP) $<
 	$(LIGHT) $@
 
-# some maps need special programs and switches - these maps need to be
-# built before the others...
-maps/elbow.bsp : maps/elbow.map
-	$(QBSP) $<
-	$(VIS) $@
-	$(TYRLITE) -extra $@
-
-maps/rpgdm1.bsp : maps/rpgdm1.map
-	$(QBSP) $<
-	$(VIS) $@
-	$(TYRLITE) -extra $@
-
-
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	$(LIGHT) -lit $@
-
-# 
-# Not all .mdl files can be built from source by our tools.
-# For each file that we cannot generate, we add a special case that 
-# tells make to skip the file.
-#
+	$(LIGHT) $@
 
 progs/s_light.mdl : ;
