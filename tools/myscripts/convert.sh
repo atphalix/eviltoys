@@ -1,4 +1,4 @@
-# convert * images imagemagick
-# usage: ./convert.sh [source format destination format]
-# ex: ./convert gif png
-mogrify -format $2 *$1
+# decode ogg sounds into wav
+# oggdec is part of vorbis-tools package
+# usage: ./decode.sh *.ogg
+oggdec *.wav

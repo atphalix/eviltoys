@@ -131,6 +131,10 @@ void() trigger_multiple =
 {
 	if (self.sounds == 1)
 	{
+		found_secrets = found_secrets + 1;
+		correct_answers = correct_answers + 1;
+		centerprint(activator, "Sequence completed!");
+		WriteByte (MSG_ALL, SVC_FOUNDSECRET);
 		precache_sound ("misc/secret.wav");
 		self.noise = "misc/secret.wav";
 	}
@@ -186,6 +190,7 @@ set "message" to text string
 */
 void() trigger_once =
 {
+	centerprint(activator, "Sequence completed!");
 	self.wait = -1;
 	trigger_multiple();
 };

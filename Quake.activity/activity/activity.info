@@ -1,6 +1,6 @@
 [Activity]
-name = Quake
+name = xoworld
 activity_version = 1
-service_name = org.laptop.quake
-icon = quake
-exec = quake-activity
+service_name = org.laptop.xoworld
+icon = xoworld
+exec = xoworld-activity
