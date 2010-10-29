@@ -14,7 +14,7 @@ MODELGEN = $(QUTILSDIR)/modelgen
 SPRGEN   = $(QUTILSDIR)/sprgen
 QLUMPY   = $(QUTILSDIR)/qlumpy
 QFILES   = $(QUTILSDIR)/qfiles
-
+QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
 TYRLITE  = $(UTILSDIR)/tyrlite
 
@@ -491,6 +491,9 @@ progs.dat:
 
 gfx.wad :
 	$(QLUMPY) gfx_wad.ls
+
+gfx :
+	$(QPAKMAN) gfx/*.png -g quake1 -o gfx.wad
 
 %.lmp : gfx_lmp.ls
 	$(QLUMPY) gfx_lmp.ls
