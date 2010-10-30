@@ -4,8 +4,6 @@ tyrquake/build
 tyrquake/tyr-quake
 openquartz/pak0/*.pak
 openquartz/utils/bin
-openquartz/pak0/*.ls
-openquartz/pak0/*.wad
 *.o
 *.bsp
 *.pts

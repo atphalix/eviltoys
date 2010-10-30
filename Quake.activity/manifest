@@ -1,8 +1,0 @@
-MANIFEST
-README
-NEWS
-activity/quake.svg
-activity/activity.info
-bin/quake-activity
-bin/xrandr.sh
-lib/libsugarize.so

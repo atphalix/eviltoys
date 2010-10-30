@@ -1,6 +1,0 @@
-[Activity]
-name = xoworld
-activity_version = 1
-service_name = org.laptop.xoworld
-icon = xoworld
-exec = xoworld-activity
