@@ -1,0 +1,203 @@
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx
+END
+main.m
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/main.m
+END
+FDScreenshot.m
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDScreenshot.m
+END
+NSToolbarPrivate.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/NSToolbarPrivate.h
+END
+in_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/in_osx.h
+END
+QuakeView.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/QuakeView.h
+END
+readme.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/readme.m
+END
+gl_vidosx.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/gl_vidosx.m
+END
+in_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/in_osx.m
+END
+QuakeView.m
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/QuakeView.m
+END
+Quake.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/Quake.h
+END
+vid_shared_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/vid_shared_osx.m
+END
+sys_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/sys_osx.h
+END
+Quake.icns
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/Quake.icns
+END
+Quake.m
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/Quake.m
+END
+sys_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/sys_osx.m
+END
+snd_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/snd_osx.h
+END
+snd_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/snd_osx.m
+END
+GrowBox.tiff
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/GrowBox.tiff
+END
+QuakeApplication.h
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/QuakeApplication.h
+END
+QuakeApplication.m
+K 25
+svn:wc:ra_dav:version-url
+V 76
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/QuakeApplication.m
+END
+ReadMe.icns
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/ReadMe.icns
+END
+FDLinkView.h
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDLinkView.h
+END
+FDModifierCheck.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDModifierCheck.h
+END
+FDLinkView.m
+K 25
+svn:wc:ra_dav:version-url
+V 70
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDLinkView.m
+END
+HandCursor.tiff
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/HandCursor.tiff
+END
+FDGLScreenshot.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDGLScreenshot.h
+END
+vid_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/vid_osx.h
+END
+FDModifierCheck.m
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDModifierCheck.m
+END
+FDGLScreenshot.m
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDGLScreenshot.m
+END
+cd_osx.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/cd_osx.h
+END
+vid_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/vid_osx.m
+END
+cd_osx.m
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/cd_osx.m
+END
+FDScreenshot.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/osx/FDScreenshot.h
+END

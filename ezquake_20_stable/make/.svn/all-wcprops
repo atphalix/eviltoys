@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make
+END
+download_dependencies_x64.bat
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/download_dependencies_x64.bat
+END
+wget.exe
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/wget.exe
+END
+download_dependencies_x32.bat
+K 25
+svn:wc:ra_dav:version-url
+V 88
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/download_dependencies_x32.bat
+END

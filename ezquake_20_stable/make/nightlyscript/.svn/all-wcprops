@@ -1,0 +1,23 @@
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/nightlyscript
+END
+nightlybuild.cmd
+K 25
+svn:wc:ra_dav:version-url
+V 89
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/nightlyscript/nightlybuild.cmd
+END
+ezquake_nightly_win.py
+K 25
+svn:wc:ra_dav:version-url
+V 95
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/nightlyscript/ezquake_nightly_win.py
+END
+ezquake_nightly_linux.sh
+K 25
+svn:wc:ra_dav:version-url
+V 97
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/make/nightlyscript/ezquake_nightly_linux.sh
+END

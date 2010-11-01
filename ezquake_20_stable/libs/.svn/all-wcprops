@@ -1,0 +1,167 @@
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs
+END
+pcre.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/pcre.h
+END
+pngconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/pngconf.h
+END
+jmorecfg.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jmorecfg.h
+END
+dsound.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/dsound.h
+END
+tclDecls.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/tclDecls.h
+END
+glew.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/glew.h
+END
+zlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/zlib.h
+END
+ioapi.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/ioapi.h
+END
+ddraw.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/ddraw.h
+END
+zip.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/zip.h
+END
+jerror.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jerror.h
+END
+dinput.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/dinput.h
+END
+unzip.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/unzip.h
+END
+asmlib.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/asmlib.h
+END
+jconfig.win.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jconfig.win.h
+END
+jpeglib.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jpeglib.h
+END
+jconfig.linux.h
+K 25
+svn:wc:ra_dav:version-url
+V 74
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jconfig.linux.h
+END
+jconfig.mac.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jconfig.mac.h
+END
+tclPlatDecls.h
+K 25
+svn:wc:ra_dav:version-url
+V 73
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/tclPlatDecls.h
+END
+zconf.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/zconf.h
+END
+jconfig.h
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jconfig.h
+END
+expat.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/expat.h
+END
+tcl.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/tcl.h
+END
+expat_external.h
+K 25
+svn:wc:ra_dav:version-url
+V 75
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/expat_external.h
+END
+png.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/png.h
+END
+wglew.h
+K 25
+svn:wc:ra_dav:version-url
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/wglew.h
+END
+jconfig.bsd.h
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/libs/jconfig.bsd.h
+END
