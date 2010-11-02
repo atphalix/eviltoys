@@ -5,10 +5,14 @@
 QUTILSDIR = ../utils/qutils/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../openquartz/id1
+QBSP     = ../../tools/tyrutils/qbsp/qbsp
+#VIS      = ../../tools/tyrutils/vis/vis
+#LIGHT    = ../../tools/tyrutils/light/light
 
-QBSP     = $(QUTILSDIR)/qbsp
 VIS      = $(QUTILSDIR)/vis
 LIGHT    = $(QUTILSDIR)/light
+#QBSP     = $(QUTILSDIR)/qbsp
+
 QCC      = $(QUTILSDIR)/qcc
 MODELGEN = $(QUTILSDIR)/modelgen
 SPRGEN   = $(QUTILSDIR)/sprgen
