@@ -6,10 +6,10 @@ QUTILSDIR = ../utils/qutils/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../openquartz/id1
 QBSP     = ../../tools/tyrutils/qbsp/qbsp
-#VIS      = ../../tools/tyrutils/vis/vis
+VIS      = ../../tools/tyrutils/vis/vis
 #LIGHT    = ../../tools/tyrutils/light/light
 
-VIS      = $(QUTILSDIR)/vis
+#VIS      = $(QUTILSDIR)/vis
 LIGHT    = $(QUTILSDIR)/light
 #QBSP     = $(QUTILSDIR)/qbsp
 
@@ -169,6 +169,7 @@ PAK0_CONTENTS += maps/b_rock0.bsp
 PAK0_CONTENTS += maps/b_rock1.bsp
 PAK0_CONTENTS += maps/b_shell0.bsp
 PAK0_CONTENTS += maps/b_shell1.bsp
+PAK0_CONTENTS += maps/b_shell2.bsp
 PAK0_CONTENTS += progs.dat
 PAK0_CONTENTS += progs/armor.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
@@ -226,7 +227,7 @@ PAK0_CONTENTS += progs/w_s_key.mdl
 PAK0_CONTENTS += progs/zom_gib.mdl
 PAK0_CONTENTS += progs/zombie.mdl
 PAK0_CONTENTS += quake.rc
-PAK0_CONTENTS += qwprogs.dat
+#PAK0_CONTENTS += qwprogs.dat
 
 
 #
@@ -235,6 +236,7 @@ PAK0_CONTENTS += qwprogs.dat
 # It contains models for the multiplayer game.
 #
 PAK1_CONTENTS += progs/demon.mdl
+PAK1_CONTENTS += progs/5x3.mdl
 PAK1_CONTENTS += progs/dog.mdl
 PAK1_CONTENTS += progs/enforcer.mdl
 PAK1_CONTENTS += progs/fish.mdl
@@ -466,7 +468,7 @@ PAK2_CONTENTS += sound/gcompris/alphabet/U0039.wav
 #
 PAK3_CONTENTS += maps/void0.bsp
 PAK3_CONTENTS += maps/level1.bsp
-PAK3_CONTENTS += maps/start.bsp
+#PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/vtest.bsp
 #
 # make targets
@@ -487,11 +489,11 @@ pak3.pak: $(PAK3_CONTENTS) makefile
 pak4.pak: $(PAK4_CONTENTS) makefile
 	$(PAR) -c $@ $(PAK4_CONTENTS)
 
-qwprogs.dat:
-	$(QCC) -o qwprogs.dat -p qwdefs.h qc_merge/qw.qc
+#qwprogs.dat:
+#	$(QCC) -o qwprogs.dat -p qwdefs.h qc_merge/qw.qc
 
 progs.dat:
-	$(QCC) -o progs.dat -p progdefs.h qc_merge/quake.qc
+	$(QCC) -o progs.dat -p progdefs.h qc/progs.c
 
 gfx.wad :
 	$(QLUMPY) gfx_wad.ls
@@ -509,7 +511,6 @@ gfx :
 	$(SPRGEN) $<
 
 #
-# The next target builds static models (not maps).  
 # Static models are models that don't move during the game, so the 
 # can be represented by a .bsp instead of a .mdl (which is easier to render).
 # Unlike regular .map files, $(VIS) cannot be run on them
@@ -524,6 +525,6 @@ maps/b_%.bsp : maps/b_%.map
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	$(LIGHT) $@
+	#$(LIGHT) $@
 
 progs/s_light.mdl : ;

@@ -1,7 +1,7 @@
 10
 
 dir
-4630
+4637
 https://ezquake.svn.sourceforge.net/svnroot/ezquake/tags/ezquake_20_stable
 https://ezquake.svn.sourceforge.net/svnroot/ezquake
 
@@ -25,40 +25,6 @@ has-props
 
 
 87ec266e-aa3d-0410-8d26-ce66c692284f
-
-r_drawa.s
-file
-
-
-
-
-2010-10-06T18:05:34.270491Z
-ce509a2618fb6b863adaa5f0f31d9975
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-19007
 
 gl_bloom.h
 file
@@ -94,6 +60,40 @@ has-props
 
 187
 
+r_drawa.s
+file
+
+
+
+
+2010-10-06T18:05:34.270491Z
+ce509a2618fb6b863adaa5f0f31d9975
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+19007
+
 asm_draw.h
 file
 
@@ -127,74 +127,6 @@ has-props
 
 
 4240
-
-sys_x86.s
-file
-
-
-
-
-2010-10-06T18:05:34.276492Z
-86b8d27bcd3097d9f7941690aa80062d
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1938
-
-sv_sys_win.c
-file
-
-
-
-
-2010-10-06T18:05:34.278496Z
-eff3375084567cc41ba15a4e80358295
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4436
 
 sv_master.c
 file
@@ -230,17 +162,17 @@ has-props
 
 3197
 
-pr2_edict.c
+sv_sys_win.c
 file
 
 
 
 
-2010-10-06T18:05:34.281492Z
-5bf7ece56924c758647fe5ff1572af51
-2009-06-06T19:54:54.826858Z
-4066
-qqshka
+2010-10-06T18:05:34.278496Z
+eff3375084567cc41ba15a4e80358295
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
 has-props
 
 
@@ -262,7 +194,41 @@ has-props
 
 
 
-3572
+4436
+
+sys_x86.s
+file
+
+
+
+
+2010-10-06T18:05:34.276492Z
+86b8d27bcd3097d9f7941690aa80062d
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1938
 
 document_rendering.c
 file
@@ -297,6 +263,40 @@ has-props
 
 
 25528
+
+pr2_edict.c
+file
+
+
+
+
+2010-10-06T18:05:34.281492Z
+5bf7ece56924c758647fe5ff1572af51
+2009-06-06T19:54:54.826858Z
+4066
+qqshka
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3572
 
 security.h
 file
@@ -434,40 +434,6 @@ has-props
 
 949
 
-in_mac.c
-file
-
-
-
-
-2010-10-06T18:05:34.299489Z
-b0713e6f034f9aa5ec581db838bfc314
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-12591
-
 d_zpoint.c
 file
 
@@ -501,6 +467,40 @@ has-props
 
 
 1219
+
+in_mac.c
+file
+
+
+
+
+2010-10-06T18:05:34.299489Z
+b0713e6f034f9aa5ec581db838bfc314
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+12591
 
 r_part.c
 file
@@ -1185,16 +1185,16 @@ has-props
 
 11616
 
-win_glimp.c
+EX_browser_net.c
 file
 
 
 
 
-2010-10-06T18:05:34.444489Z
-03d0f6375c0ea0a5bc513c0368766759
-2009-09-06T17:31:10.573262Z
-4228
+2010-10-06T18:05:34.449491Z
+b669c0666ffc00d23ff52d47929ebd87
+2009-09-23T22:23:22.083265Z
+4273
 bioentropy
 has-props
 
@@ -1217,7 +1217,7 @@ has-props
 
 
 
-52600
+17204
 
 ez_slider.h
 file
@@ -1253,16 +1253,16 @@ has-props
 
 6274
 
-EX_browser_net.c
+win_glimp.c
 file
 
 
 
 
-2010-10-06T18:05:34.449491Z
-b669c0666ffc00d23ff52d47929ebd87
-2009-09-23T22:23:22.083265Z
-4273
+2010-10-06T18:05:34.444489Z
+03d0f6375c0ea0a5bc513c0368766759
+2009-09-06T17:31:10.573262Z
+4228
 bioentropy
 has-props
 
@@ -1285,7 +1285,7 @@ has-props
 
 
 
-17204
+52600
 
 ignore.h
 file
@@ -1355,40 +1355,6 @@ has-props
 
 5623
 
-sys_win.c
-file
-
-
-
-
-2010-10-06T18:05:34.457490Z
-fe6e5b79eb5f5c5f93614ee4f1a0fe9f
-2009-07-09T15:40:06.286776Z
-4095
-aas_at_sf_net
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-35693
-
 r_aliasa.s
 file
 
@@ -1423,16 +1389,16 @@ has-props
 
 8187
 
-sv_main.c
+sys_win.c
 file
 
 
 
 
-2010-10-06T18:05:34.466493Z
-82e3ec35f120774b46f8283f52ab8723
-2009-06-19T11:11:30.644478Z
-4076
+2010-10-06T18:05:34.457490Z
+fe6e5b79eb5f5c5f93614ee4f1a0fe9f
+2009-07-09T15:40:06.286776Z
+4095
 aas_at_sf_net
 has-props
 
@@ -1455,7 +1421,7 @@ has-props
 
 
 
-95403
+35693
 
 sha1.c
 file
@@ -1490,6 +1456,40 @@ has-props
 
 
 5674
+
+sv_main.c
+file
+
+
+
+
+2010-10-06T18:05:34.466493Z
+82e3ec35f120774b46f8283f52ab8723
+2009-06-19T11:11:30.644478Z
+4076
+aas_at_sf_net
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+95403
 
 cl_screen.c
 file
@@ -1627,17 +1627,17 @@ has-props
 
 2517
 
-skin.c
+mac_prefs.h
 file
 
 
 
 
-2010-10-06T18:05:34.485242Z
-7ce7eee6cfbdd3aa65a89645cd3a99fe
-2009-04-14T11:26:41.392513Z
-3982
-tonik
+2010-10-06T18:05:34.487241Z
+6520fb852604715038633c28b181d071
+2007-11-02T15:26:24.792446Z
+3224
+dkure
 has-props
 
 
@@ -1659,7 +1659,7 @@ has-props
 
 
 
-12396
+1667
 
 anorms.h
 file
@@ -1695,17 +1695,17 @@ has-props
 
 6295
 
-mac_prefs.h
+skin.c
 file
 
 
 
 
-2010-10-06T18:05:34.487241Z
-6520fb852604715038633c28b181d071
-2007-11-02T15:26:24.792446Z
-3224
-dkure
+2010-10-06T18:05:34.485242Z
+7ce7eee6cfbdd3aa65a89645cd3a99fe
+2009-04-14T11:26:41.392513Z
+3982
+tonik
 has-props
 
 
@@ -1727,7 +1727,7 @@ has-props
 
 
 
-1667
+12396
 
 mvd_utils.c
 file
@@ -1831,40 +1831,6 @@ has-props
 
 5147
 
-r_aclip.c
-file
-
-
-
-
-2010-10-06T18:05:34.496249Z
-e90cdb865830434517c8604106a57e40
-2009-07-23T07:18:54.272409Z
-4114
-aas_at_sf_net
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8520
-
 d_sprite.c
 file
 
@@ -1899,16 +1865,16 @@ has-props
 
 10225
 
-mvd_utils.h
+r_aclip.c
 file
 
 
 
 
-2010-10-06T18:05:34.504241Z
-f980cfe15704c98933e9ea88e7a77571
-2009-06-14T22:16:42.005752Z
-4073
+2010-10-06T18:05:34.496249Z
+e90cdb865830434517c8604106a57e40
+2009-07-23T07:18:54.272409Z
+4114
 aas_at_sf_net
 has-props
 
@@ -1931,7 +1897,7 @@ has-props
 
 
 
-1412
+8520
 
 zone.c
 file
@@ -1966,6 +1932,40 @@ has-props
 
 
 12220
+
+mvd_utils.h
+file
+
+
+
+
+2010-10-06T18:05:34.504241Z
+f980cfe15704c98933e9ea88e7a77571
+2009-06-14T22:16:42.005752Z
+4073
+aas_at_sf_net
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1412
 
 r_misc.c
 file
@@ -4415,40 +4415,6 @@ has-props
 
 8054
 
-progs.h
-file
-
-
-
-
-2010-10-06T18:05:34.800238Z
-a6dc282b00538106b46c1b39ad87e1e5
-2009-09-04T13:14:25.020814Z
-4218
-johnnycz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5920
-
 gl_rmisc.c
 file
 
@@ -4483,17 +4449,17 @@ has-props
 
 10888
 
-ez_controls.c
+progs.h
 file
 
 
 
 
-2010-10-06T18:05:34.813242Z
-abaf8cc94ca7a61d697e7f82de53fa8d
-2009-05-05T23:23:46.244598Z
-4039
-cokeman1982
+2010-10-06T18:05:34.800238Z
+a6dc282b00538106b46c1b39ad87e1e5
+2009-09-04T13:14:25.020814Z
+4218
+johnnycz
 has-props
 
 
@@ -4515,7 +4481,7 @@ has-props
 
 
 
-92785
+5920
 
 auth.c
 file
@@ -4550,6 +4516,40 @@ has-props
 
 
 7244
+
+ez_controls.c
+file
+
+
+
+
+2010-10-06T18:05:34.813242Z
+abaf8cc94ca7a61d697e7f82de53fa8d
+2009-05-05T23:23:46.244598Z
+4039
+cokeman1982
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+92785
 
 xsd_variable.c
 file
@@ -4619,40 +4619,6 @@ has-props
 
 17521
 
-settings.h
-file
-
-
-
-
-2010-10-06T18:05:34.826249Z
-a60d7bc224a2e64bfaaf601f1b3710a7
-2009-07-19T17:16:42.319217Z
-4107
-aas_at_sf_net
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-5546
-
 menu_proxy.c
 file
 
@@ -4687,17 +4653,17 @@ has-props
 
 1675
 
-sv_save.c
+settings.h
 file
 
 
 
 
-2010-10-06T18:05:34.829241Z
-21705447b7a34ca3c8035fae2ca7160d
-2009-06-06T19:54:54.826858Z
-4066
-qqshka
+2010-10-06T18:05:34.826249Z
+a60d7bc224a2e64bfaaf601f1b3710a7
+2009-07-19T17:16:42.319217Z
+4107
+aas_at_sf_net
 has-props
 
 
@@ -4719,41 +4685,7 @@ has-props
 
 
 
-6445
-
-ez_controls.h
-file
-
-
-
-
-2010-10-06T18:05:34.834239Z
-de2e8a7c9611e35a45f8c5de239627a7
-2009-05-07T17:10:33.984101Z
-4043
-zwoch
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-49378
+5546
 
 auth.h
 file
@@ -4789,20 +4721,17 @@ has-props
 
 968
 
-libs
-dir
-
-xsd_variable.h
+ez_controls.h
 file
 
 
 
 
-2010-10-06T18:05:34.837243Z
-fd1df095ec1d35f124c56c01cb48efe2
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
+2010-10-06T18:05:34.834239Z
+de2e8a7c9611e35a45f8c5de239627a7
+2009-05-07T17:10:33.984101Z
+4043
+zwoch
 has-props
 
 
@@ -4824,7 +4753,41 @@ has-props
 
 
 
-1433
+49378
+
+sv_save.c
+file
+
+
+
+
+2010-10-06T18:05:34.829241Z
+21705447b7a34ca3c8035fae2ca7160d
+2009-06-06T19:54:54.826858Z
+4066
+qqshka
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6445
 
 pr2.h
 file
@@ -4860,17 +4823,17 @@ has-props
 
 2141
 
-vx_stuff.h
+xsd_variable.h
 file
 
 
 
 
-2010-10-06T18:05:34.840240Z
-50a2dba51d0a2536e64807ccfbb3cbd5
-2009-08-14T15:46:04.342798Z
-4132
-aas_at_sf_net
+2010-10-06T18:05:34.837243Z
+fd1df095ec1d35f124c56c01cb48efe2
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
 has-props
 
 
@@ -4892,7 +4855,10 @@ has-props
 
 
 
-5390
+1433
+
+libs
+dir
 
 d_sky.c
 file
@@ -4928,6 +4894,40 @@ has-props
 
 2744
 
+vx_stuff.h
+file
+
+
+
+
+2010-10-06T18:05:34.840240Z
+50a2dba51d0a2536e64807ccfbb3cbd5
+2009-08-14T15:46:04.342798Z
+4132
+aas_at_sf_net
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5390
+
 menu_proxy.h
 file
 
@@ -4962,40 +4962,6 @@ has-props
 
 296
 
-cdaudio.h
-file
-
-
-
-
-2010-10-06T18:05:34.843241Z
-1212d054bb27cacfbb585a3c307d71e1
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-935
-
 host.c
 file
 
@@ -5029,6 +4995,40 @@ has-props
 
 
 21007
+
+cdaudio.h
+file
+
+
+
+
+2010-10-06T18:05:34.843241Z
+1212d054bb27cacfbb585a3c307d71e1
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+935
 
 tr_types.h
 file
@@ -5098,40 +5098,6 @@ has-props
 
 4376
 
-version.c
-file
-
-
-
-
-2010-10-06T18:05:34.848240Z
-2abed9f390364d38dd858d1171539208
-2009-04-22T19:14:49.728278Z
-4007
-johnnycz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4616
-
 r_edge.c
 file
 
@@ -5165,6 +5131,40 @@ has-props
 
 
 14922
+
+version.c
+file
+
+
+
+
+2010-10-06T18:05:34.848240Z
+2abed9f390364d38dd858d1171539208
+2009-04-22T19:14:49.728278Z
+4007
+johnnycz
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4616
 
 keymap.c
 file
@@ -5438,40 +5438,6 @@ has-props
 
 2809
 
-snd_mix.c
-file
-
-
-
-
-2010-10-06T18:05:34.861240Z
-68045df01e583ad9c5325004ce44f203
-2009-01-20T12:57:01.702772Z
-3883
-johnnycz
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-8220
-
 parser.h
 file
 
@@ -5506,16 +5472,16 @@ has-props
 
 2546
 
-d_polyse.c
+snd_mix.c
 file
 
 
 
 
-2010-10-06T18:05:34.866261Z
-1e1cd527666497c87e92d682e48bcdab
-2008-12-05T11:57:18.380838Z
-3821
+2010-10-06T18:05:34.861240Z
+68045df01e583ad9c5325004ce44f203
+2009-01-20T12:57:01.702772Z
+3883
 johnnycz
 has-props
 
@@ -5538,7 +5504,7 @@ has-props
 
 
 
-23022
+8220
 
 cl_cam.c
 file
@@ -5574,17 +5540,17 @@ has-props
 
 25707
 
-linux_signals.c
+d_polyse.c
 file
 
 
 
 
-2010-10-06T18:05:34.871243Z
-2c1cadeea5614b8f4f6439790c81fe39
-2007-11-02T15:26:24.792446Z
-3224
-dkure
+2010-10-06T18:05:34.866261Z
+1e1cd527666497c87e92d682e48bcdab
+2008-12-05T11:57:18.380838Z
+3821
+johnnycz
 has-props
 
 
@@ -5606,7 +5572,7 @@ has-props
 
 
 
-1997
+23022
 
 net_chan.c
 file
@@ -5642,17 +5608,17 @@ has-props
 
 10830
 
-vx_coronas.c
+linux_signals.c
 file
 
 
 
 
-2010-10-06T18:05:34.873487Z
-bb7415bb8e5d951a013bfe074cd27b78
-2009-08-09T22:00:39.528776Z
-4127
-aas_at_sf_net
+2010-10-06T18:05:34.871243Z
+2c1cadeea5614b8f4f6439790c81fe39
+2007-11-02T15:26:24.792446Z
+3224
+dkure
 has-props
 
 
@@ -5674,7 +5640,7 @@ has-props
 
 
 
-12108
+1997
 
 mumble.c
 file
@@ -5710,17 +5676,17 @@ bioentropy
 
 5251
 
-EX_browser_sources.c
+vx_coronas.c
 file
 
 
 
 
-2010-10-06T18:05:34.875489Z
-fe95491e9c23558e90c09243d32f2051
-2009-09-23T22:23:22.083265Z
-4273
-bioentropy
+2010-10-06T18:05:34.873487Z
+bb7415bb8e5d951a013bfe074cd27b78
+2009-08-09T22:00:39.528776Z
+4127
+aas_at_sf_net
 has-props
 
 
@@ -5742,7 +5708,7 @@ has-props
 
 
 
-21667
+12108
 
 Ctrl_EditBox.c
 file
@@ -5778,17 +5744,17 @@ has-props
 
 2115
 
-client.h
+EX_browser_sources.c
 file
 
 
 
 
-2010-10-06T18:05:34.880489Z
-e7b27bbe4a207598d9a30230c0c8695a
-2009-05-03T14:02:42.389045Z
-4029
-tonik
+2010-10-06T18:05:34.875489Z
+fe95491e9c23558e90c09243d32f2051
+2009-09-23T22:23:22.083265Z
+4273
+bioentropy
 has-props
 
 
@@ -5810,7 +5776,7 @@ has-props
 
 
 
-26548
+21667
 
 gl_rsurf.c
 file
@@ -5845,6 +5811,40 @@ has-props
 
 
 41554
+
+client.h
+file
+
+
+
+
+2010-10-06T18:05:34.880489Z
+e7b27bbe4a207598d9a30230c0c8695a
+2009-05-03T14:02:42.389045Z
+4029
+tonik
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+26548
 
 screen.h
 file
@@ -5914,40 +5914,6 @@ has-props
 
 32128
 
-q_shared.c
-file
-
-
-
-
-2010-10-06T18:05:34.891489Z
-c359707239e36260a907faa5a7878bb9
-2009-04-08T00:54:05.407979Z
-3975
-hexum
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-16571
-
 mumble.h
 file
 
@@ -5982,17 +5948,17 @@ bioentropy
 
 1082
 
-pr_cmds.c
+q_shared.c
 file
 
 
 
 
-2010-10-06T18:05:34.897489Z
-dc1a504b312af4c5eaeb5efeebd3cda8
-2009-06-06T19:54:54.826858Z
-4066
-qqshka
+2010-10-06T18:05:34.891489Z
+c359707239e36260a907faa5a7878bb9
+2009-04-08T00:54:05.407979Z
+3975
+hexum
 has-props
 
 
@@ -6014,7 +5980,7 @@ has-props
 
 
 
-71281
+16571
 
 Ctrl_EditBox.h
 file
@@ -6050,17 +6016,18 @@ has-props
 
 530
 
-gl_shader.c
+pr_cmds.c
 file
 
 
 
 
-2010-10-06T18:05:34.901492Z
-dfe459633bb779b35aa328171f30bb0d
-2009-01-20T12:57:01.702772Z
-3883
-johnnycz
+2010-10-06T18:05:34.897489Z
+dc1a504b312af4c5eaeb5efeebd3cda8
+2009-06-06T19:54:54.826858Z
+4066
+qqshka
+has-props
 
 
 
@@ -6081,8 +6048,7 @@ johnnycz
 
 
 
-
-11677
+71281
 
 hud_common.c
 file
@@ -6118,6 +6084,40 @@ has-props
 
 208710
 
+gl_shader.c
+file
+
+
+
+
+2010-10-06T18:05:34.901492Z
+dfe459633bb779b35aa328171f30bb0d
+2009-01-20T12:57:01.702772Z
+3883
+johnnycz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11677
+
 fmod.h
 file
 
@@ -6151,40 +6151,6 @@ has-props
 
 
 1026
-
-textencoding.c
-file
-
-
-
-
-2010-10-06T18:05:34.924497Z
-647dfb52c2ade9319ae3831fcd860bb8
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-6912
 
 q_shared.h
 file
@@ -6220,6 +6186,40 @@ has-props
 
 9924
 
+textencoding.c
+file
+
+
+
+
+2010-10-06T18:05:34.924497Z
+647dfb52c2ade9319ae3831fcd860bb8
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+6912
+
 settings_page.c
 file
 
@@ -6253,40 +6253,6 @@ has-props
 
 
 27573
-
-gl_shader.h
-file
-
-
-
-
-2010-10-06T18:05:34.930488Z
-49cfe2a8756c6ef2b5b4ae26005d1267
-2009-01-12T01:15:51.653605Z
-3869
-bioentropy
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1955
 
 hud_common.h
 file
@@ -6322,6 +6288,40 @@ has-props
 
 871
 
+gl_shader.h
+file
+
+
+
+
+2010-10-06T18:05:34.930488Z
+49cfe2a8756c6ef2b5b4ae26005d1267
+2009-01-12T01:15:51.653605Z
+3869
+bioentropy
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1955
+
 modelgen.h
 file
 
@@ -6355,40 +6355,6 @@ has-props
 
 
 3012
-
-textencoding.h
-file
-
-
-
-
-2010-10-06T18:05:34.932489Z
-f34c97ad5b52e300353e5d114fc7dbae
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-256
 
 ez_scrollpane.c
 file
@@ -6424,17 +6390,17 @@ has-props
 
 13685
 
-settings_page.h
+textencoding.h
 file
 
 
 
 
-2010-10-06T18:05:34.934487Z
-7c0bee0c3cf430b99e53c3692d677bab
-2009-02-02T14:32:42.549922Z
-3912
-bioentropy
+2010-10-06T18:05:34.932489Z
+f34c97ad5b52e300353e5d114fc7dbae
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
 has-props
 
 
@@ -6456,7 +6422,7 @@ has-props
 
 
 
-1266
+256
 
 cl_nqdemo.c
 file
@@ -6491,6 +6457,40 @@ has-props
 
 
 28646
+
+settings_page.h
+file
+
+
+
+
+2010-10-06T18:05:34.934487Z
+7c0bee0c3cf430b99e53c3692d677bab
+2009-02-02T14:32:42.549922Z
+3912
+bioentropy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1266
 
 cmd.c
 file
@@ -6560,40 +6560,6 @@ has-props
 
 2448
 
-r_efrag.c
-file
-
-
-
-
-2010-10-06T18:05:34.940488Z
-1ef31e51bbeb4254fcbb93fc9ce63b20
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-4072
-
 ez_scrollpane.h
 file
 
@@ -6627,6 +6593,40 @@ has-props
 
 
 4389
+
+r_efrag.c
+file
+
+
+
+
+2010-10-06T18:05:34.940488Z
+1ef31e51bbeb4254fcbb93fc9ce63b20
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4072
 
 Ctrl_ScrollBar.c
 file
@@ -6730,40 +6730,6 @@ has-props
 
 6522
 
-sv_login.c
-file
-
-
-
-
-2010-10-06T18:05:34.945487Z
-acf32c915975c3a4152d2990d907e81c
-2008-07-21T23:40:50.382908Z
-3685
-qqshka
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-14081
-
 mathlib.c
 file
 
@@ -6797,6 +6763,40 @@ has-props
 
 
 12125
+
+sv_login.c
+file
+
+
+
+
+2010-10-06T18:05:34.945487Z
+acf32c915975c3a4152d2990d907e81c
+2008-07-21T23:40:50.382908Z
+3685
+qqshka
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+14081
 
 sv_math.s
 file
@@ -6900,40 +6900,6 @@ has-props
 
 8177
 
-vid.h
-file
-
-
-
-
-2010-10-06T18:05:34.952488Z
-ed70d1690a4ab72210a5bc691c0a5451
-2009-04-22T19:13:22.658412Z
-4006
-hexum
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3167
-
 surf8.s
 file
 
@@ -6967,6 +6933,40 @@ has-props
 
 
 14004
+
+vid.h
+file
+
+
+
+
+2010-10-06T18:05:34.952488Z
+ed70d1690a4ab72210a5bc691c0a5451
+2009-04-22T19:13:22.658412Z
+4006
+hexum
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3167
 
 sv_phys.c
 file
@@ -7036,40 +7036,6 @@ has-props
 
 42327
 
-vid_mac.c
-file
-
-
-
-
-2010-10-06T18:05:34.963497Z
-e0d0abc05e5e7c290283cbd49bc8e5e7
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-47766
-
 console.c
 file
 
@@ -7104,14 +7070,14 @@ has-props
 
 32981
 
-vfs_tar.c
+vid_mac.c
 file
 
 
 
 
-2010-10-06T18:05:34.970490Z
-b89f16921e90a5a171f0948481e44c47
+2010-10-06T18:05:34.963497Z
+e0d0abc05e5e7c290283cbd49bc8e5e7
 2007-11-17T18:35:15.440265Z
 3308
 disconn3ct
@@ -7136,7 +7102,7 @@ has-props
 
 
 
-11324
+47766
 
 ez_listview.c
 file
@@ -7171,6 +7137,40 @@ cokeman1982
 
 
 13736
+
+vfs_tar.c
+file
+
+
+
+
+2010-10-06T18:05:34.970490Z
+b89f16921e90a5a171f0948481e44c47
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+11324
 
 common_draw.c
 file
@@ -7274,17 +7274,17 @@ has-props
 
 2515
 
-vfs_tar.h
+pr2_cmds.c
 file
 
 
 
 
-2010-10-06T18:05:34.984489Z
-9f2ac7b55f215be1337de724a8014485
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
+2010-10-06T18:05:34.994489Z
+933dab58bc7ccb89d59bd61ef0afe8f6
+2009-06-06T19:54:54.826858Z
+4066
+qqshka
 has-props
 
 
@@ -7306,41 +7306,7 @@ has-props
 
 
 
-3104
-
-ez_listview.h
-file
-
-
-
-
-2010-10-06T18:05:34.986492Z
-e352d1155b5f80b41ccc346b720488d8
-2009-05-07T23:17:22.678232Z
-4045
-cokeman1982
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-7377
+71456
 
 gl_warp_sin.h
 file
@@ -7376,18 +7342,17 @@ has-props
 
 6168
 
-pr2_cmds.c
+ez_listview.h
 file
 
 
 
 
-2010-10-06T18:05:34.994489Z
-933dab58bc7ccb89d59bd61ef0afe8f6
-2009-06-06T19:54:54.826858Z
-4066
-qqshka
-has-props
+2010-10-06T18:05:34.986492Z
+e352d1155b5f80b41ccc346b720488d8
+2009-05-07T23:17:22.678232Z
+4045
+cokeman1982
 
 
 
@@ -7408,19 +7373,20 @@ has-props
 
 
 
-71456
+
+7377
 
-common_draw.h
+vfs_tar.h
 file
 
 
 
 
-2010-10-06T18:05:34.995490Z
-2bcf67bda7a961c6ef9cd90cfd6a803c
-2009-01-19T01:08:54.149319Z
-3876
-bioentropy
+2010-10-06T18:05:34.984489Z
+9f2ac7b55f215be1337de724a8014485
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
 has-props
 
 
@@ -7442,7 +7408,7 @@ has-props
 
 
 
-1994
+3104
 
 help_files.c
 file
@@ -7477,6 +7443,40 @@ has-props
 
 
 8635
+
+common_draw.h
+file
+
+
+
+
+2010-10-06T18:05:34.995490Z
+2bcf67bda7a961c6ef9cd90cfd6a803c
+2009-01-19T01:08:54.149319Z
+3876
+bioentropy
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1994
 
 mp3_player.c
 file
@@ -7716,9 +7716,6 @@ has-props
 
 7091
 
-doxygen
-dir
-
 mp3_audacious.c
 file
 
@@ -7752,6 +7749,9 @@ has-props
 
 
 15019
+
+doxygen
+dir
 
 mp3_mpd.c
 file
@@ -7957,8 +7957,39 @@ has-props
 
 2171
 
-misc
-dir
+anorm_dots.h
+file
+
+
+
+
+2010-10-06T18:05:35.036487Z
+cf65b6b85093b0136ee1d38842bb4f9c
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+37857
 
 qtv.c
 file
@@ -7994,39 +8025,8 @@ has-props
 
 10886
 
-anorm_dots.h
-file
-
-
-
-
-2010-10-06T18:05:35.036487Z
-cf65b6b85093b0136ee1d38842bb4f9c
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-37857
+misc
+dir
 
 gl_rlight.c
 file
@@ -8130,40 +8130,6 @@ has-props
 
 14407
 
-qtv.h
-file
-
-
-
-
-2010-10-06T18:05:35.041487Z
-44874237e287c104e3c1e57d44f8cc0e
-2009-02-01T22:31:43.456444Z
-3908
-qqshka
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-2880
-
 movie.c
 file
 
@@ -8197,6 +8163,40 @@ has-props
 
 
 9429
+
+qtv.h
+file
+
+
+
+
+2010-10-06T18:05:35.041487Z
+44874237e287c104e3c1e57d44f8cc0e
+2009-02-01T22:31:43.456444Z
+3908
+qqshka
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2880
 
 d_draw.s
 file
@@ -8266,40 +8266,6 @@ has-props
 
 17425
 
-mgraph.h
-file
-
-
-
-
-2010-10-06T18:05:35.050490Z
-a3cb57c4a6e8fc8eebc1e829dd0784b4
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-74972
-
 movie_avi.h
 file
 
@@ -8333,6 +8299,40 @@ has-props
 
 
 1019
+
+mgraph.h
+file
+
+
+
+
+2010-10-06T18:05:35.050490Z
+a3cb57c4a6e8fc8eebc1e829dd0784b4
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+74972
 
 movie.h
 file
@@ -8470,40 +8470,6 @@ has-props
 
 20498
 
-d_fill.c
-file
-
-
-
-
-2010-10-06T18:05:35.065491Z
-3997148acd094cb5459d23d45b809046
-2007-11-02T15:26:24.792446Z
-3224
-dkure
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1900
-
 vfs_pak.c
 file
 
@@ -8537,6 +8503,40 @@ has-props
 
 
 11039
+
+d_fill.c
+file
+
+
+
+
+2010-10-06T18:05:35.065491Z
+3997148acd094cb5459d23d45b809046
+2007-11-02T15:26:24.792446Z
+3224
+dkure
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1900
 
 ezquake.ico
 file

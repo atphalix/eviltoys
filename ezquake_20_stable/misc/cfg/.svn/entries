@@ -1,7 +1,7 @@
 10
 
 dir
-4630
+4637
 https://ezquake.svn.sourceforge.net/svnroot/ezquake/tags/ezquake_20_stable/misc/cfg
 https://ezquake.svn.sourceforge.net/svnroot/ezquake
 
@@ -502,40 +502,6 @@ has-props
 
 5279
 
-hud_berzerk.cfg
-file
-
-
-
-
-2010-10-06T18:05:12.242487Z
-9cc8c63532b5425246e173fc92f7962a
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-20091
-
 hud_aas.cfg
 file
 
@@ -569,6 +535,40 @@ aas_at_sf_net
 
 
 37096
+
+hud_berzerk.cfg
+file
+
+
+
+
+2010-10-06T18:05:12.242487Z
+9cc8c63532b5425246e173fc92f7962a
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+20091
 
 mvdhud_base_del.cfg
 file
@@ -672,40 +672,6 @@ has-props
 
 11407
 
-pingdump.cfg
-file
-
-
-
-
-2010-10-06T18:05:12.246491Z
-c6941d0b94a2142b6094e53e63dc137f
-2008-08-09T10:02:17.394662Z
-3720
-johnnycz
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-417
-
 gfx_gl_fast.cfg
 file
 
@@ -739,6 +705,40 @@ has-props
 
 
 5870
+
+pingdump.cfg
+file
+
+
+
+
+2010-10-06T18:05:12.246491Z
+c6941d0b94a2142b6094e53e63dc137f
+2008-08-09T10:02:17.394662Z
+3720
+johnnycz
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+417
 
 mvdhud_1on1.cfg
 file
@@ -1012,40 +1012,6 @@ has-props
 
 1093
 
-how_to_use_these_files.txt
-file
-
-
-
-
-2010-10-06T18:05:12.256488Z
-81dd1cde2663e5845d9adce075ed374e
-2007-11-17T18:35:15.440265Z
-3308
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1163
-
 teamtime.cfg
 file
 
@@ -1079,6 +1045,40 @@ has-props
 
 
 8446
+
+how_to_use_these_files.txt
+file
+
+
+
+
+2010-10-06T18:05:12.256488Z
+81dd1cde2663e5845d9adce075ed374e
+2007-11-17T18:35:15.440265Z
+3308
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1163
 
 cams.tcl
 file

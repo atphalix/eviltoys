@@ -1,7 +1,7 @@
 10
 
 dir
-4630
+4637
 https://ezquake.svn.sourceforge.net/svnroot/ezquake/tags/ezquake_20_stable/libs
 https://ezquake.svn.sourceforge.net/svnroot/ezquake
 
@@ -545,6 +545,9 @@ has-props
 
 45539
 
+linux-x86
+dir
+
 jmorecfg.h
 file
 
@@ -578,9 +581,6 @@ has-props
 
 
 12653
-
-linux-x86
-dir
 
 tclDecls.h
 file
@@ -758,40 +758,6 @@ has-props
 libircclient
 dir
 
-tclPlatDecls.h
-file
-
-
-
-
-2010-10-06T18:04:59.808240Z
-b03ea0923db842eb8a4d59e2e893e3d3
-2008-02-07T18:12:46.518502Z
-3463
-disconn3ct
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-3831
-
 jconfig.mac.h
 file
 
@@ -825,6 +791,40 @@ zwoch
 
 
 1352
+
+tclPlatDecls.h
+file
+
+
+
+
+2010-10-06T18:04:59.808240Z
+b03ea0923db842eb8a4d59e2e893e3d3
+2008-02-07T18:12:46.518502Z
+3463
+disconn3ct
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3831
 
 jconfig.h
 file

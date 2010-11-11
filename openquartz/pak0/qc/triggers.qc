@@ -127,6 +127,8 @@ sounds
 4)
 set "message" to text string
 */
+float correct_answers;
+
 void() trigger_multiple =
 {
 	if (self.sounds == 1)

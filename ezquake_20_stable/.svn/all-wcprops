@@ -3,17 +3,17 @@ svn:wc:ra_dav:version-url
 V 53
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable
 END
-r_drawa.s
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_drawa.s
-END
 gl_bloom.h
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_bloom.h
+END
+r_drawa.s
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_drawa.s
 END
 asm_draw.h
 K 25
@@ -21,11 +21,11 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/asm_draw.h
 END
-sys_x86.s
+sv_master.c
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sys_x86.s
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_master.c
 END
 sv_sys_win.c
 K 25
@@ -33,23 +33,23 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_sys_win.c
 END
-sv_master.c
+sys_x86.s
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_master.c
-END
-pr2_edict.c
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr2_edict.c
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sys_x86.s
 END
 document_rendering.c
 K 25
 svn:wc:ra_dav:version-url
 V 74
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/document_rendering.c
+END
+pr2_edict.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr2_edict.c
 END
 security.h
 K 25
@@ -75,17 +75,17 @@ svn:wc:ra_dav:version-url
 V 74
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/document_rendering.h
 END
-d_zpoint.c
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_zpoint.c
-END
 in_mac.c
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/in_mac.c
+END
+d_zpoint.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_zpoint.c
 END
 cl_math.s
 K 25
@@ -207,11 +207,11 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ignore.c
 END
-win_glimp.c
+EX_browser_net.c
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/win_glimp.c
+V 70
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/EX_browser_net.c
 END
 ez_slider.h
 K 25
@@ -219,11 +219,11 @@ svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_slider.h
 END
-EX_browser_net.c
+win_glimp.c
 K 25
 svn:wc:ra_dav:version-url
-V 70
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/EX_browser_net.c
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/win_glimp.c
 END
 ignore.h
 K 25
@@ -237,29 +237,29 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_aclipa.s
 END
-sys_win.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sys_win.c
-END
 r_aliasa.s
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_aliasa.s
 END
-sv_main.c
+sys_win.c
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_main.c
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sys_win.c
 END
 sha1.c
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sha1.c
+END
+sv_main.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_main.c
 END
 cl_screen.c
 K 25
@@ -285,11 +285,11 @@ svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/snd_linux.c
 END
-skin.c
+mac_prefs.h
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/skin.c
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mac_prefs.h
 END
 anorms.h
 K 25
@@ -297,11 +297,11 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/anorms.h
 END
-mac_prefs.h
+skin.c
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mac_prefs.h
+V 60
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/skin.c
 END
 mvd_utils.c
 K 25
@@ -321,29 +321,29 @@ svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/snd_oss.c
 END
-r_aclip.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_aclip.c
-END
 d_sprite.c
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_sprite.c
 END
-zone.c
+r_aclip.c
 K 25
 svn:wc:ra_dav:version-url
-V 60
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/zone.c
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_aclip.c
 END
 mvd_utils.h
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mvd_utils.h
+END
+zone.c
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/zone.c
 END
 r_misc.c
 K 25
@@ -777,29 +777,29 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/Makefile
 END
-progs.h
-K 25
-svn:wc:ra_dav:version-url
-V 61
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/progs.h
-END
 gl_rmisc.c
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_rmisc.c
 END
-ez_controls.c
+progs.h
 K 25
 svn:wc:ra_dav:version-url
-V 67
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_controls.c
+V 61
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/progs.h
 END
 auth.c
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/auth.c
+END
+ez_controls.c
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_controls.c
 END
 xsd_variable.c
 K 25
@@ -813,29 +813,17 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vx_stuff.c
 END
-settings.h
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/settings.h
-END
 menu_proxy.c
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/menu_proxy.c
 END
-sv_save.c
+settings.h
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_save.c
-END
-ez_controls.h
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_controls.h
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/settings.h
 END
 auth.h
 K 25
@@ -843,11 +831,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/auth.h
 END
-xsd_variable.h
+ez_controls.h
 K 25
 svn:wc:ra_dav:version-url
-V 68
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/xsd_variable.h
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_controls.h
+END
+sv_save.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_save.c
 END
 pr2.h
 K 25
@@ -855,11 +849,11 @@ svn:wc:ra_dav:version-url
 V 59
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr2.h
 END
-vx_stuff.h
+xsd_variable.h
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vx_stuff.h
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/xsd_variable.h
 END
 d_sky.c
 K 25
@@ -867,23 +861,29 @@ svn:wc:ra_dav:version-url
 V 61
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_sky.c
 END
+vx_stuff.h
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vx_stuff.h
+END
 menu_proxy.h
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/menu_proxy.h
 END
-cdaudio.h
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/cdaudio.h
-END
 host.c
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/host.c
+END
+cdaudio.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/cdaudio.h
 END
 tr_types.h
 K 25
@@ -897,17 +897,17 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/menu_ingame.c
 END
-version.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/version.c
-END
 r_edge.c
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_edge.c
+END
+version.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/version.c
 END
 keymap.c
 K 25
@@ -957,23 +957,17 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/spritegn.h
 END
-snd_mix.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/snd_mix.c
-END
 parser.h
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/parser.h
 END
-d_polyse.c
+snd_mix.c
 K 25
 svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_polyse.c
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/snd_mix.c
 END
 cl_cam.c
 K 25
@@ -981,11 +975,11 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/cl_cam.c
 END
-linux_signals.c
+d_polyse.c
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/linux_signals.c
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_polyse.c
 END
 net_chan.c
 K 25
@@ -993,11 +987,11 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/net_chan.c
 END
-vx_coronas.c
+linux_signals.c
 K 25
 svn:wc:ra_dav:version-url
-V 66
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vx_coronas.c
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/linux_signals.c
 END
 mumble.c
 K 25
@@ -1005,11 +999,11 @@ svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mumble.c
 END
-EX_browser_sources.c
+vx_coronas.c
 K 25
 svn:wc:ra_dav:version-url
-V 74
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/EX_browser_sources.c
+V 66
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vx_coronas.c
 END
 Ctrl_EditBox.c
 K 25
@@ -1017,17 +1011,23 @@ svn:wc:ra_dav:version-url
 V 68
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/Ctrl_EditBox.c
 END
-client.h
+EX_browser_sources.c
 K 25
 svn:wc:ra_dav:version-url
-V 62
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/client.h
+V 74
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/EX_browser_sources.c
 END
 gl_rsurf.c
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_rsurf.c
+END
+client.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/client.h
 END
 screen.h
 K 25
@@ -1041,23 +1041,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/fmod.c
 END
-q_shared.c
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/q_shared.c
-END
 mumble.h
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mumble.h
 END
-pr_cmds.c
+q_shared.c
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr_cmds.c
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/q_shared.c
 END
 Ctrl_EditBox.h
 K 25
@@ -1065,11 +1059,11 @@ svn:wc:ra_dav:version-url
 V 68
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/Ctrl_EditBox.h
 END
-gl_shader.c
+pr_cmds.c
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_shader.c
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr_cmds.c
 END
 hud_common.c
 K 25
@@ -1077,17 +1071,17 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/hud_common.c
 END
+gl_shader.c
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_shader.c
+END
 fmod.h
 K 25
 svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/fmod.h
-END
-textencoding.c
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/textencoding.c
 END
 q_shared.h
 K 25
@@ -1095,17 +1089,17 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/q_shared.h
 END
+textencoding.c
+K 25
+svn:wc:ra_dav:version-url
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/textencoding.c
+END
 settings_page.c
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/settings_page.c
-END
-gl_shader.h
-K 25
-svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_shader.h
 END
 hud_common.h
 K 25
@@ -1113,17 +1107,17 @@ svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/hud_common.h
 END
+gl_shader.h
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_shader.h
+END
 modelgen.h
 K 25
 svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/modelgen.h
-END
-textencoding.h
-K 25
-svn:wc:ra_dav:version-url
-V 68
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/textencoding.h
 END
 ez_scrollpane.c
 K 25
@@ -1131,17 +1125,23 @@ svn:wc:ra_dav:version-url
 V 69
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_scrollpane.c
 END
-settings_page.h
+textencoding.h
 K 25
 svn:wc:ra_dav:version-url
-V 69
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/settings_page.h
+V 68
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/textencoding.h
 END
 cl_nqdemo.c
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/cl_nqdemo.c
+END
+settings_page.h
+K 25
+svn:wc:ra_dav:version-url
+V 69
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/settings_page.h
 END
 cmd.c
 K 25
@@ -1155,17 +1155,17 @@ svn:wc:ra_dav:version-url
 V 61
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/input.h
 END
-r_efrag.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_efrag.c
-END
 ez_scrollpane.h
 K 25
 svn:wc:ra_dav:version-url
 V 69
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_scrollpane.h
+END
+r_efrag.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/r_efrag.c
 END
 Ctrl_ScrollBar.c
 K 25
@@ -1185,17 +1185,17 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/quakeasm.h
 END
-sv_login.c
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_login.c
-END
 mathlib.c
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mathlib.c
+END
+sv_login.c
+K 25
+svn:wc:ra_dav:version-url
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_login.c
 END
 sv_math.s
 K 25
@@ -1215,17 +1215,17 @@ svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mathlib.h
 END
-vid.h
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vid.h
-END
 surf8.s
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/surf8.s
+END
+vid.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vid.h
 END
 sv_phys.c
 K 25
@@ -1239,29 +1239,29 @@ svn:wc:ra_dav:version-url
 V 64
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_ccmds.c
 END
-vid_mac.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vid_mac.c
-END
 console.c
 K 25
 svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/console.c
 END
-vfs_tar.c
+vid_mac.c
 K 25
 svn:wc:ra_dav:version-url
 V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_tar.c
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vid_mac.c
 END
 ez_listview.c
 K 25
 svn:wc:ra_dav:version-url
 V 67
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_listview.c
+END
+vfs_tar.c
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_tar.c
 END
 common_draw.c
 K 25
@@ -1281,17 +1281,11 @@ svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/console.h
 END
-vfs_tar.h
+pr2_cmds.c
 K 25
 svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_tar.h
-END
-ez_listview.h
-K 25
-svn:wc:ra_dav:version-url
-V 67
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_listview.h
+V 64
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr2_cmds.c
 END
 gl_warp_sin.h
 K 25
@@ -1299,23 +1293,29 @@ svn:wc:ra_dav:version-url
 V 67
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/gl_warp_sin.h
 END
-pr2_cmds.c
-K 25
-svn:wc:ra_dav:version-url
-V 64
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/pr2_cmds.c
-END
-common_draw.h
+ez_listview.h
 K 25
 svn:wc:ra_dav:version-url
 V 67
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/common_draw.h
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ez_listview.h
+END
+vfs_tar.h
+K 25
+svn:wc:ra_dav:version-url
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_tar.h
 END
 help_files.c
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/help_files.c
+END
+common_draw.h
+K 25
+svn:wc:ra_dav:version-url
+V 67
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/common_draw.h
 END
 mp3_player.c
 K 25
@@ -1401,17 +1401,17 @@ svn:wc:ra_dav:version-url
 V 60
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/menu.h
 END
-qtv.c
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/qtv.c
-END
 anorm_dots.h
 K 25
 svn:wc:ra_dav:version-url
 V 66
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/anorm_dots.h
+END
+qtv.c
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/qtv.c
 END
 gl_rlight.c
 K 25
@@ -1431,17 +1431,17 @@ svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/movie_avi.c
 END
-qtv.h
-K 25
-svn:wc:ra_dav:version-url
-V 59
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/qtv.h
-END
 movie.c
 K 25
 svn:wc:ra_dav:version-url
 V 61
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/movie.c
+END
+qtv.h
+K 25
+svn:wc:ra_dav:version-url
+V 59
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/qtv.h
 END
 d_draw.s
 K 25
@@ -1455,17 +1455,17 @@ svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/sv_ents.c
 END
-mgraph.h
-K 25
-svn:wc:ra_dav:version-url
-V 62
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mgraph.h
-END
 movie_avi.h
 K 25
 svn:wc:ra_dav:version-url
 V 65
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/movie_avi.h
+END
+mgraph.h
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/mgraph.h
 END
 movie.h
 K 25
@@ -1491,29 +1491,29 @@ svn:wc:ra_dav:version-url
 V 63
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/cl_tent.c
 END
-vfs_pak.c
-K 25
-svn:wc:ra_dav:version-url
-V 63
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_pak.c
-END
 d_fill.c
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_fill.c
 END
-ezquake.ico
+vfs_pak.c
 K 25
 svn:wc:ra_dav:version-url
-V 65
-/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ezquake.ico
+V 63
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/vfs_pak.c
 END
 d_copy.s
 K 25
 svn:wc:ra_dav:version-url
 V 62
 /svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/d_copy.s
+END
+ezquake.ico
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svnroot/ezquake/!svn/ver/4275/tags/ezquake_20_stable/ezquake.ico
 END
 snd_win.c
 K 25

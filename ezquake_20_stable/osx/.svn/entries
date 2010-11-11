@@ -1,7 +1,7 @@
 10
 
 dir
-4630
+4637
 https://ezquake.svn.sourceforge.net/svnroot/ezquake/tags/ezquake_20_stable/osx
 https://ezquake.svn.sourceforge.net/svnroot/ezquake
 
@@ -443,40 +443,6 @@ has-props
 Read Me
 dir
 
-Quake.m
-file
-
-
-
-
-2010-10-06T18:05:19.374491Z
-dfae025b1221840909c4619091067e19
-2007-11-01T14:33:11.137044Z
-3221
-oldmanuk
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-59761
-
 Quake.icns
 file
 
@@ -511,6 +477,43 @@ has-props
 
 30360
 
+Quake.m
+file
+
+
+
+
+2010-10-06T18:05:19.374491Z
+dfae025b1221840909c4619091067e19
+2007-11-01T14:33:11.137044Z
+3221
+oldmanuk
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+59761
+
+Toolbar
+dir
+
 sys_osx.m
 file
 
@@ -544,9 +547,6 @@ has-props
 
 
 43886
-
-Toolbar
-dir
 
 snd_osx.h
 file
@@ -616,6 +616,9 @@ has-props
 
 8618
 
+English.lproj
+dir
+
 GrowBox.tiff
 file
 
@@ -649,9 +652,6 @@ has-props
 
 
 555
-
-English.lproj
-dir
 
 QuakeApplication.h
 file
@@ -721,40 +721,6 @@ has-props
 
 3592
 
-FDLinkView.h
-file
-
-
-
-
-2010-10-06T18:05:19.390243Z
-4b6184424dfbc9be9a301ab7adcb178b
-2006-04-06T17:44:20.000000Z
-751
-oldmanuk
-has-props
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-1031
-
 ReadMe.icns
 file
 
@@ -788,6 +754,40 @@ has-props
 
 
 56679
+
+FDLinkView.h
+file
+
+
+
+
+2010-10-06T18:05:19.390243Z
+4b6184424dfbc9be9a301ab7adcb178b
+2006-04-06T17:44:20.000000Z
+751
+oldmanuk
+has-props
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+1031
 
 FDModifierCheck.h
 file
