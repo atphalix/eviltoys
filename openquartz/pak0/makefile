@@ -6,10 +6,11 @@ QUTILSDIR = ../utils/qutils/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../openquartz/id1
 QBSP     = ../../tools/tyrutils/qbsp/qbsp
-VIS      = ../../tools/tyrutils/vis/vis
+#VIS      = ../../tools/tyrutils/vis/vis
 #LIGHT    = ../../tools/tyrutils/light/light
 
-#VIS      = $(QUTILSDIR)/vis
+QBSP     = $(QUTILSDIR)/qbsp
+VIS      = $(QUTILSDIR)/vis
 LIGHT    = $(QUTILSDIR)/light
 #QBSP     = $(QUTILSDIR)/qbsp
 
@@ -411,33 +412,6 @@ PAK2_CONTENTS += sound/zombie/z_miss.wav
 PAK2_CONTENTS += sound/zombie/z_pain.wav
 PAK2_CONTENTS += sound/zombie/z_pain1.wav
 PAK2_CONTENTS += sound/zombie/z_shot1.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0030.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0031.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0032.wav
-PAK2_CONTENTS += sound/gcompris/misc/about.wav
-PAK2_CONTENTS += sound/gcompris/misc/fantastic.wav
-PAK2_CONTENTS += sound/gcompris/misc/perfect.wav
-PAK2_CONTENTS += sound/gcompris/misc/awesome.wav 
-PAK2_CONTENTS += sound/gcompris/misc/good.wav
-PAK2_CONTENTS += sound/gcompris/misc/plus.wav
-PAK2_CONTENTS += sound/gcompris/misc/back.wav
-PAK2_CONTENTS += sound/gcompris/misc/great.wav
-PAK2_CONTENTS += sound/gcompris/misc/quit.wav
-PAK2_CONTENTS += sound/gcompris/misc/by.wav
-PAK2_CONTENTS += sound/gcompris/misc/help.wav
-PAK2_CONTENTS += sound/gcompris/misc/super.wav
-PAK2_CONTENTS += sound/gcompris/misc/check_answer.wav
-PAK2_CONTENTS += sound/gcompris/misc/level.wav
-PAK2_CONTENTS += sound/gcompris/misc/waytogo.wav
-PAK2_CONTENTS += sound/gcompris/misc/click_on_letter.wav
-PAK2_CONTENTS += sound/gcompris/misc/minus.wav
-PAK2_CONTENTS += sound/gcompris/misc/welcome.wav
-PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav 
-PAK2_CONTENTS += sound/gcompris/misc/ok.wav
-PAK2_CONTENTS += sound/gcompris/misc/equal.wav
-PAK2_CONTENTS += sound/gcompris/misc/outof.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/10.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/11.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/12.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/13.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/14.wav
@@ -457,6 +431,10 @@ PAK2_CONTENTS += sound/gcompris/alphabet/U0036.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/U0037.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/U0038.wav
 PAK2_CONTENTS += sound/gcompris/alphabet/U0039.wav
+PAK2_CONTENTS += sound/gcompris/misc/check_answer.wav
+PAK2_CONTENTS += sound/gcompris/misc/good.wav
+PAK2_CONTENTS += sound/gcompris/misc/super.wav
+PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav
 
 #PAK4_CONTENTS += sound/gcompris/alphabet/U0030.wav
 #
@@ -468,6 +446,7 @@ PAK2_CONTENTS += sound/gcompris/alphabet/U0039.wav
 #
 PAK3_CONTENTS += maps/void0.bsp
 PAK3_CONTENTS += maps/level1.bsp
+PAK3_CONTENTS += maps/level0.bsp
 #PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/vtest.bsp
 #
@@ -488,9 +467,6 @@ pak3.pak: $(PAK3_CONTENTS) makefile
 
 pak4.pak: $(PAK4_CONTENTS) makefile
 	$(PAR) -c $@ $(PAK4_CONTENTS)
-
-#qwprogs.dat:
-#	$(QCC) -o qwprogs.dat -p qwdefs.h qc_merge/qw.qc
 
 progs.dat:
 	$(QCC) -o progs.dat -p progdefs.h qc/progs.c
@@ -514,6 +490,9 @@ gfx :
 # Static models are models that don't move during the game, so the 
 # can be represented by a .bsp instead of a .mdl (which is easier to render).
 # Unlike regular .map files, $(VIS) cannot be run on them
+# Static models are models that don't move during the game, so the 
+# can be represented by a .bsp instead of a .mdl (which is easier to render).
+# Unlike regular .map files, $(VIS) cannot be run on them
 # because they are inherently leaky.  Therefore, we have to add
 # a target to that matches them specially.  This MUST come before the
 # normal rules for building maps so that it will match first.
@@ -526,5 +505,28 @@ maps/b_%.bsp : maps/b_%.map
 	$(QBSP) $<
 	$(VIS) $@
 	#$(LIGHT) $@
+
+progs/s_light.mdl : ;
+#
+# Change QUTILSDIR and UTILSDIR to match your setup
+#
+
+QUTILSDIR = ../utils/qutils/bin
+UTILSDIR  = ../utils/bin
+# Static models are models that don't move during the game, so the 
+# can be represented by a .bsp instead of a .mdl (which is easier to render).
+# Unlike regular .map files, $(VIS) cannot be run on them
+# because they are inherently leaky.  Therefore, we have to add
+# a target to that matches them specially.  This MUST come before the
+# normal rules for building maps so that it will match first.
+#
+maps/b_%.bsp : maps/b_%.map
+	$(QBSP) $<
+	$(LIGHT) $@
+
+%.bsp : %.map
+	$(QBSP) $<
+	$(VIS) $@
+	$(LIGHT) $@
 
 progs/s_light.mdl : ;
