@@ -962,3 +962,7 @@ clean:
 # Install into openquartz directory
 install:
 	cp tyr-quake ../openquartz/openquartz/
+xo:
+	cp tyr-quake ../Abcube.activity/bin
+	cp -Rf ../openquartz/openquartz/id1 ../Abcube.activity/bin/
+	zip -r ../abcube.xo ../Abcube.activity 	
