@@ -47,8 +47,9 @@ typedef struct
 static rectdesc_t	r_rectdesc;
 
 #define		MAX_CHARSETS 16
+#define		CHARSIZE 16
 int			char_range[MAX_CHARSETS];		// 0x0400, etc; slot 0 is always 0x00
-byte		*draw_chars[MAX_CHARSETS];		// 8*8 graphic characters
+byte		*draw_chars[MAX_CHARSETS];		// 16*16 graphic characters
 											// slot 0 is static, the rest are Q_malloc'd
 mpic_t		*draw_disc;
 mpic_t		*draw_backtile;
@@ -251,7 +252,7 @@ static byte *LoadAlternateCharset (const char *name)
 	int filesize;
 
 	p = (qpic_t *)FS_LoadTempFile (va("gfx/%s.lmp", name), &filesize);
-	if (!p || filesize != 128*128+8)
+	if (!p || filesize != 128*128+CHARSIZE)
 		return NULL;
 	SwapPic (p);
 	if (p->width != 128 || p->height != 128)
@@ -516,12 +517,12 @@ void Draw_RectStretch(mpic_t *pic, int x, int y, int width, int height)
 
 void Draw_ScaledCharacterW (int x, int y, wchar num, float scale)
 {
-	#define CHAR_SIZE			8					// The length of the side of a character in pixels.
+	#define CHAR_SIZE			16					// The length of the side of a character in pixels.
 	#define CHARSET_ROW_LENGTH	(16 * CHAR_SIZE)	// The number of pixels per row.
 
 	int row, col;									// Row and column for the character in the charset texture.
 	int slot = 0;									// The slot for the charset the character was located in.
-	int char_size = Q_rint(8 * scale);				// Size the character should be drawn at.
+	int char_size = Q_rint(CHAR_SIZE * scale);				// Size the character should be drawn at.
 	int i = 0;
 
 	// Don't draw if we're outside the scissor bounds.
@@ -590,8 +591,8 @@ void Draw_BigCharacter(int x, int y, char c, color_t color, float scale, float a
 	{
 		int sx = 0;
 		int sy = 0;
-		int char_width = (p->width / 8);
-		int char_height = (p->height / 8);
+		int char_width = (p->width / CHARSIZE);
+		int char_height = (p->height / CHARSIZE);
 
 		Draw_GetBigfontSourceCoords(c, char_width, char_height, &sx, &sy);
 
@@ -623,7 +624,7 @@ void Draw_String (int x, int y, const char *str)
 	{
 		Draw_Character (x, y, *str);
 		str++;
-		x += 8;
+		x += CHARSIZE;
 	}
 }
 
@@ -633,7 +634,7 @@ void Draw_StringW (int x, int y, const wchar *str)
 	{
 		Draw_CharacterW (x, y, *str);
 		str++;
-		x += 8;
+		x += CHARSIZE;
 	}
 }
 
@@ -643,7 +644,7 @@ void Draw_Alt_String (int x, int y, const char *str)
 	{
 		Draw_Character (x, y, (*str) | 0x80);
 		str++;
-		x += 8;
+		x += CHARSIZE;
 	}
 }
 
@@ -671,7 +672,7 @@ void Draw_SColoredString (int x, int y, const wchar *text, clrinfo_t *clr, int c
 
 		Draw_ScaledCharacterW(x, y, (*text) | (red ? 0x80 : 0), scale);
 
-		x += 8 * scale;
+		x += CHARSIZE * scale;
 	}
 }
 
@@ -1127,11 +1128,11 @@ void Draw_CharToConback (int num, byte *dest)
 	// col * (8 pixels for char height)
 	source = draw_chars[0] + (row << 10) + (col << 3);
 
-	drawline = 8;
+	drawline = CHARSIZE;
 
 	while (drawline--)
 	{
-		for (x = 0; x < 8; x++)
+		for (x = 0; x < CHARSIZE; x++)
 		{
 			if (source[x])
 				dest[x] = source[x];
@@ -1147,7 +1148,7 @@ void Draw_ConsoleBackground (int lines)
 	int x, y, v, f, fstep;
 	byte *src, *dest;
 	mpic_t *conback;
-	static char saveback[320 * 8];
+	static char saveback[320 * CHARSIZE];
 
 	if (!scr_conalpha.value && !SCR_NEED_CONSOLE_BACKGROUND)
 		return;
@@ -1156,7 +1157,7 @@ void Draw_ConsoleBackground (int lines)
 
 	// Hack the version number directly into the pic.
 
-	memcpy (saveback, conback->data + 320 * 186, 320 * 8);
+	memcpy (saveback, conback->data + 320 * 186, 320 * CHARSIZE);
 
 	// Draw the pic.
 	dest = vid.buffer;
@@ -1189,7 +1190,7 @@ void Draw_ConsoleBackground (int lines)
 	}
 
 	// Put it back
-	memcpy(conback->data + 320 * 186, saveback, 320 * 8);
+	memcpy(conback->data + 320 * 186, saveback, 320 * CHARSIZE);
 }
 
 void R_DrawRect8 (vrect_t *prect, int rowbytes, byte *psrc, int transparent)

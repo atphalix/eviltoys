@@ -444,9 +444,9 @@ PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav
 #
 #
 #
-PAK3_CONTENTS += maps/void0.bsp
+#PAK3_CONTENTS += maps/void0.bsp
 PAK3_CONTENTS += maps/level1.bsp
-PAK3_CONTENTS += maps/level0.bsp
+#PAK3_CONTENTS += maps/level0.bsp
 #PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/vtest.bsp
 #

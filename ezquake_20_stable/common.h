@@ -57,7 +57,8 @@ Foundation, Inc., 59 Temple Place - Suite 330, Boston, MA  02111-1307, USA.
 // stats are integers communicated to the client by the server
 #define	MAX_CL_STATS		32
 #define	STAT_HEALTH			0
-//define STAT_FRAGS			1
+#define STAT_CORRECT			1
+#define STAT_WRONG			1
 #define	STAT_WEAPON			2
 #define	STAT_AMMO			3
 #define	STAT_ARMOR			4

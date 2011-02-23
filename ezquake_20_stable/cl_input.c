@@ -239,8 +239,8 @@ void IN_AttackDown(void)
 	int best;
 	if (cl_weaponpreselect.value && (best = IN_BestWeapon()))
 			in_impulse = best;
-	
-	KeyDown(&in_attack);
+// remove attack	
+//	KeyDown(&in_attack);
 }
 
 void IN_AttackUp(void)

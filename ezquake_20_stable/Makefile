@@ -179,7 +179,7 @@ $(GLX_S_OBJS): $(GLX_DIR)/%.o: %.s
 X11_C_OBJS = $(addprefix $(X11_DIR)/, $(addsuffix .o, $(X11_C_FILES)))
 X11_S_OBJS = $(addprefix $(X11_DIR)/, $(addsuffix .o, $(X11_S_FILES)))
 X11_CFLAGS = $(CFLAGS) -D_Soft_X11
-X11_LDFLAGS = $(LDFLAGS) -lX11 -lXext
+X11_LDFLAGS = $(LDFLAGS) -lX11 -lXext -ldl
 
 x11: _DIR = $(X11_DIR)
 x11: _OBJS = $(X11_C_OBJS) $(X11_S_OBJS) 
@@ -285,8 +285,8 @@ help:
 install:
 	@echo [CP] $(GLX_TARGET) 	$(QUAKE_DIR)
 	@cp $(GLX_TARGET) 			$(QUAKE_DIR)
-#	@echo [CP] $(X11_TARGET) 	$(QUAKE_DIR)
-#	@cp $(X11_TARGET)			$(QUAKE_DIR)
+	@echo [CP] $(X11_TARGET) 	$(QUAKE_DIR)
+	@cp $(X11_TARGET)			$(QUAKE_DIR)
 #	@echo [CP] $(SVGA_TARGET) 	$(QUAKE_DIR)
 #	@cp $(SVGA_TARGET)			$(QUAKE_DIR)
 #	@echo [CP] $(MAC_TARGET) 	$(QUAKE_DIR)

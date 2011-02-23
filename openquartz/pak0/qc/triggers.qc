@@ -127,31 +127,29 @@ sounds
 4)
 set "message" to text string
 */
-float correct_answers;
-
 void() trigger_multiple =
 {
-	if (self.sounds == 1)
+	if (self.sounds == 0)
 	{
-		found_secrets = found_secrets + 1;
-		correct_answers = correct_answers + 1;
-		centerprint(activator, "Sequence completed!");
-		WriteByte (MSG_ALL, SVC_FOUNDSECRET);
-		precache_sound ("misc/secret.wav");
-		self.noise = "misc/secret.wav";
+		precache_sound ("gcompris/alphabet/U0030.wav");
+		self.noise = "gcompris/alphabet/U0030.wav";
+	}
+	else if (self.sounds == 1)
+	{
+		precache_sound ("gcompris/alphabet/U0031.wav");
+		self.noise = "gcompris/alphabet/U0031.wav";
 	}
 	else if (self.sounds == 2)
 	{
-		precache_sound ("misc/talk.wav");
-		self.noise = "misc/talk.wav";
+		precache_sound ("gcompris/alphabet/U0032.wav");
+		self.noise = "gcompris/alphabet/U0032.wav";
 	}
 	else if (self.sounds == 3)
 	{
-		precache_sound ("misc/trigger1.wav");
-		self.noise = "misc/trigger1.wav";
+		precache_sound ("gcompris/alphabet/U0033.wav");
+		self.noise = "gcompris/alphabet/U0033.wav";
 	}
-	
-	if (!self.wait)
+		if (!self.wait)
 		self.wait = 0.2;
 	self.use = multi_use;
 

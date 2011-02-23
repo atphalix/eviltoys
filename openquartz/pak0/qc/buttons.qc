@@ -102,29 +102,112 @@ When a button is touched, it moves some distance in the direction of it's angle,
 2) metallic click
 3) in-out
 */
+
+float		correct=9999, wrong=8888;
 void() func_button =
 {
 local float		gtemp, ftemp;
+	if (self.sounds == correct)
+	{
+		precache_sound ("gcompris/misc/good.wav");
+		self.noise = "gcompris/misc/good.wav";
+	}
+	if (self.sounds == wrong)
+	{
+		precache_sound ("gcompris/misc/check_answer.wav");
+		self.noise = "gcompris/misc/check_answer.wav";
+	}
 
 	if (self.sounds == 0)
 	{
-		precache_sound ("buttons/airbut1.wav");
-		self.noise = "buttons/airbut1.wav";
+		precache_sound ("gcompris/alphabet/U0030.wav");
+		self.noise = "gcompris/alphabet/U0030.wav";
 	}
 	if (self.sounds == 1)
 	{
-		precache_sound ("buttons/switch21.wav");
-		self.noise = "buttons/switch21.wav";
+		precache_sound ("gcompris/alphabet/U0031.wav");
+		self.noise = "gcompris/alphabet/U0031.wav";
 	}
 	if (self.sounds == 2)
 	{
-		precache_sound ("buttons/switch02.wav");
-		self.noise = "buttons/switch02.wav";
+		precache_sound ("gcompris/alphabet/U0032.wav");
+		self.noise = "gcompris/alphabet/U0032.wav";
 	}
 	if (self.sounds == 3)
 	{
-		precache_sound ("buttons/switch04.wav");
-		self.noise = "buttons/switch04.wav";
+		precache_sound ("gcompris/alphabet/U0033.wav");
+		self.noise = "gcompris/alphabet/U0033.wav";
+	}
+	else if (self.sounds == 4)
+	{
+		precache_sound ("gcompris/alphabet/U0034.wav");
+		self.noise = "gcompris/alphabet/U0034.wav";
+	}
+	else if (self.sounds == 5)
+	{
+		precache_sound ("gcompris/alphabet/U0035.wav");
+		self.noise = "gcompris/alphabet/U0035.wav";
+	}
+	else if (self.sounds == 6)
+	{
+		precache_sound ("gcompris/alphabet/U0036.wav");
+		self.noise = "gcompris/alphabet/U0036.wav";
+	}
+	
+	else if (self.sounds == 7)
+	{
+		precache_sound ("gcompris/alphabet/U0037.wav");
+		self.noise = "gcompris/alphabet/U0037.wav";
+	}
+	else if (self.sounds == 8)
+	{
+		precache_sound ("gcompris/alphabet/U0038.wav");
+		self.noise = "gcompris/alphabet/U0038.wav";
+	}
+	else if (self.sounds == 9)
+	{
+		precache_sound ("gcompris/alphabet/U0039.wav");
+		self.noise = "gcompris/alphabet/U0039.wav";
+	}
+	else if (self.sounds == 10)
+	{
+		precache_sound ("gcompris/alphabet/U0061.wav");
+		self.noise = "gcompris/alphabet/U0061.wav";
+	}
+	else if (self.sounds == 11)
+	{
+		precache_sound ("gcompris/alphabet/U0062.wav");
+		self.noise = "gcompris/alphabet/U0062.wav";
+	}
+	else if (self.sounds == 12)
+	{
+		precache_sound ("gcompris/alphabet/U0063.wav");
+		self.noise = "gcompris/alphabet/U0063.wav";
+	}
+	else if (self.sounds == 13)
+	{
+		precache_sound ("gcompris/alphabet/U0063.wav");
+		self.noise = "gcompris/alphabet/U0064.wav";
+	}
+	else if (self.sounds == 12)
+	{
+		precache_sound ("gcompris/alphabet/U0063.wav");
+		self.noise = "gcompris/alphabet/U0063.wav";
+	}
+	else if (self.sounds == 13)
+	{
+		precache_sound ("gcompris/alphabet/U0063.wav");
+		self.noise = "gcompris/alphabet/U0063.wav";
+	}
+	else if (self.sounds == 14)
+	{
+		precache_sound ("gcompris/alphabet/U0064.wav");
+		self.noise = "gcompris/alphabet/U0064.wav";
+	}
+	else if (self.sounds == 15)
+	{
+		precache_sound ("gcompris/alphabet/U0065.wav");
+		self.noise = "gcompris/alphabet/U0065.wav";
 	}
 	
 	SetMovedir ();
