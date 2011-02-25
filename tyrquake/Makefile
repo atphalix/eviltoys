@@ -963,6 +963,6 @@ clean:
 install:
 	cp tyr-quake ../openquartz/openquartz/
 xo:
-	cp tyr-quake ../Abcube.activity/bin
-	cp -Rf ../openquartz/openquartz/id1 ../Abcube.activity/bin/
-	zip -r ../abcube.xo ../Abcube.activity 	
+	cp tyr-quake ../Quake.activity/bin
+	cp -Rf ../openquartz/openquartz/id1 ../Quake.activity/bin/
+	zip -r ../abcube.xo ../Quake.activity 	
