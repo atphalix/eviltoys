@@ -6,8 +6,6 @@ QUTILSDIR = ../utils/qutils/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../openquartz/id1
 QBSP     = ../../tools/tyrutils/qbsp/qbsp
-#VIS      = ../../tools/tyrutils/vis/vis
-#LIGHT    = ../../tools/tyrutils/light/light
 
 QBSP     = $(QUTILSDIR)/qbsp
 VIS      = $(QUTILSDIR)/vis
@@ -44,7 +42,7 @@ extra-maps : \
 
 
 # be careful, don't erase anything we can't generate
-clean:
+#clean:
 	$(RM) $(ALLPAKS)
 	$(RM) progs.dat qwprogs.dat qwdefs.h progdefs.h
 	$(RM) tyrlite.log
@@ -173,6 +171,7 @@ PAK0_CONTENTS += maps/b_shell1.bsp
 PAK0_CONTENTS += maps/b_shell2.bsp
 PAK0_CONTENTS += progs.dat
 PAK0_CONTENTS += progs/armor.mdl
+PAK0_CONTENTS += progs/misc/mine.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
 PAK0_CONTENTS += progs/b_s_key.mdl
 PAK0_CONTENTS += progs/backpack.mdl
@@ -412,31 +411,6 @@ PAK2_CONTENTS += sound/zombie/z_miss.wav
 PAK2_CONTENTS += sound/zombie/z_pain.wav
 PAK2_CONTENTS += sound/zombie/z_pain1.wav
 PAK2_CONTENTS += sound/zombie/z_shot1.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/12.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/13.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/14.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/15.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/16.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/17.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/18.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/19.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/20.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0030.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0031.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0032.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0033.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0034.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0035.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0036.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0037.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0038.wav
-PAK2_CONTENTS += sound/gcompris/alphabet/U0039.wav
-PAK2_CONTENTS += sound/gcompris/misc/check_answer.wav
-PAK2_CONTENTS += sound/gcompris/misc/good.wav
-PAK2_CONTENTS += sound/gcompris/misc/super.wav
-PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav
-
-#PAK4_CONTENTS += sound/gcompris/alphabet/U0030.wav
 #
 # PAK3_CONTENTS is what goes into pak3.pak
 #
@@ -444,9 +418,9 @@ PAK2_CONTENTS += sound/gcompris/misc/congratulation.wav
 #
 #
 #
-#PAK3_CONTENTS += maps/void0.bsp
+PAK3_CONTENTS += maps/office.bsp
 PAK3_CONTENTS += maps/level1.bsp
-#PAK3_CONTENTS += maps/level0.bsp
+PAK3_CONTENTS += maps/level2.bsp
 #PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/vtest.bsp
 #
@@ -476,6 +450,10 @@ gfx.wad :
 
 gfx :
 	$(QPAKMAN) gfx/*.png -g quake1 -o gfx.wad
+
+textures :
+	$(QPAKMAN) maps/textures/*.png -g quake1 -o freetex.wad
+
 
 %.lmp : gfx_lmp.ls
 	$(QLUMPY) gfx_lmp.ls
@@ -527,6 +505,6 @@ maps/b_%.bsp : maps/b_%.map
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	$(LIGHT) $@
+	#$(LIGHT) $@
 
-progs/s_light.mdl : ;
+#progs/s_light.mdl : ;
