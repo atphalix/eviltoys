@@ -250,18 +250,38 @@ void() barrel_explode =
 TESTING THING
 */
 
+void() misc_explobox_touch;
 void() misc_explobox =
 {
 	local float	oldz;
+	local float	r;
 	
 	self.solid = SOLID_BBOX;
 	self.movetype = MOVETYPE_NONE;
-	precache_model ("maps/b_explob.bsp");
-	setmodel (self, "maps/b_explob.bsp");
+	// load random mine model
+	r = random();
+	if (r < 0.25){
+	precache_model ("progs/misc/mine1.mdl");
+	setmodel (self, "progs/misc/mine1.mdl");
+	}
+	else if (r <  0.5){
+	precache_model ("progs/misc/mine2.mdl");
+	setmodel (self, "progs/misc/mine2.mdl");
+	}
+	else if (r <  0.75){
+	precache_model ("progs/misc/mine3.mdl");
+	setmodel (self, "progs/misc/mine3.mdl");
+	}
+	else{
+	precache_model ("progs/misc/mine4.mdl");
+	setmodel (self, "progs/misc/mine4.mdl");
+	}
+
 	precache_sound ("weapons/r_exp3.wav");
 	self.health = 20;
 	self.th_die = barrel_explode;
 	self.takedamage = DAMAGE_AIM;
+	self.touch = misc_explobox_touch;
 
 	self.origin_z = self.origin_z + 2;
 	oldz = self.origin_z;
@@ -276,6 +296,24 @@ void() misc_explobox =
 };
 
 
+void() misc_explobox_touch =
+{
+	// throws explosion debris
+	ThrowGib ("progs/gib1.mdl", self.health);
+	ThrowGib ("progs/gib2.mdl", self.health);
+	ThrowGib ("progs/gib3.mdl", self.health);
+
+	T_Damage (other, self, self, 20);
+	remove(self);
+	dprint ("BOOM!!");
+	sound (self, CHAN_VOICE, "weapons/r_exp3.wav", 1, ATTN_NORM);
+
+	particle (self.origin, '0 0 0', 75, 255);
+
+	self.origin_z = self.origin_z + 32;
+	BecomeExplosion ();
+
+};
 
 
 /*QUAKED misc_explobox2 (0 .5 .8) (0 0 0) (32 32 64)

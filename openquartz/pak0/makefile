@@ -171,7 +171,10 @@ PAK0_CONTENTS += maps/b_shell1.bsp
 PAK0_CONTENTS += maps/b_shell2.bsp
 PAK0_CONTENTS += progs.dat
 PAK0_CONTENTS += progs/armor.mdl
-PAK0_CONTENTS += progs/misc/mine.mdl
+PAK0_CONTENTS += progs/misc/mine1.mdl
+PAK0_CONTENTS += progs/misc/mine2.mdl
+PAK0_CONTENTS += progs/misc/mine3.mdl
+PAK0_CONTENTS += progs/misc/mine4.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
 PAK0_CONTENTS += progs/b_s_key.mdl
 PAK0_CONTENTS += progs/backpack.mdl
@@ -236,7 +239,6 @@ PAK0_CONTENTS += quake.rc
 # It contains models for the multiplayer game.
 #
 PAK1_CONTENTS += progs/demon.mdl
-PAK1_CONTENTS += progs/5x3.mdl
 PAK1_CONTENTS += progs/dog.mdl
 PAK1_CONTENTS += progs/enforcer.mdl
 PAK1_CONTENTS += progs/fish.mdl
@@ -452,7 +454,8 @@ gfx :
 	$(QPAKMAN) gfx/*.png -g quake1 -o gfx.wad
 
 textures :
-	$(QPAKMAN) maps/textures/*.png -g quake1 -o freetex.wad
+	$(QPAKMAN) maps/textures/*.png -g quake1 -o maps/textures/free_wad.wad
+	cp maps/textures/free_wad.wad ../openquartz/id1/free_wad.wad
 
 
 %.lmp : gfx_lmp.ls

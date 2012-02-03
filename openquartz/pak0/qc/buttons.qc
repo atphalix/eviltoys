@@ -209,6 +209,61 @@ local float		gtemp, ftemp;
 		precache_sound ("gcompris/alphabet/U0065.wav");
 		self.noise = "gcompris/alphabet/U0065.wav";
 	}
+	else if (self.sounds == 1001)
+	{
+		precache_sound ("voices/default/colors/black.wav");
+		self.noise = "voices/default/colors/black.wav";
+	}
+	else if (self.sounds == 1002)
+	{
+		precache_sound ("voices/default/colors/blue.wav");
+		self.noise = "voices/default/colors/blue.wav";
+	}
+	else if (self.sounds == 1003)
+	{
+		precache_sound ("voices/default/colors/brown.wav");
+		self.noise = "voices/default/colors/brown.wav";
+	}
+	else if (self.sounds == 1004)
+	{
+		precache_sound ("voices/default/colors/green.wav");
+		self.noise = "voices/default/colors/green.wav";
+	}
+	else if (self.sounds == 1005)
+	{
+		precache_sound ("voices/default/colors/grey.wav");
+		self.noise = "voices/default/colors/grey.wav";
+	}
+	else if (self.sounds == 1006)
+	{
+		precache_sound ("voices/default/colors/orange.wav");
+		self.noise = "voices/default/colors/orange.wav";
+	}
+	else if (self.sounds == 1007)
+	{
+		precache_sound ("voices/default/colors/pink.wav");
+		self.noise = "voices/default/colors/pink.wav";
+	}
+	else if (self.sounds == 1008)
+	{
+		precache_sound ("voices/default/colors/red.wav");
+		self.noise = "voices/default/colors/red.wav";
+	}
+	else if (self.sounds == 1009)
+	{
+		precache_sound ("voices/default/colors/purple.wav");
+		self.noise = "voices/default/colors/purple.wav";
+	}
+	else if (self.sounds == 1010)
+	{
+		precache_sound ("voices/default/colors/white.wav");
+		self.noise = "voices/default/colors/white.wav";
+	}
+	else if (self.sounds == 1011)
+	{
+		precache_sound ("voices/default/colors/yellow.wav");
+		self.noise = "voices/default/colors/yellow.wav";
+	}
 	
 	SetMovedir ();
 

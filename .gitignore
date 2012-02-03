@@ -15,7 +15,9 @@ openquartz/utils/bin
 *.log
 *.png
 *#
+*~
+*.xo
+*.tar.gz
 *.bak
 openquartz/utils/qutils/bin
-openquartz/pak0/progs
 *.dat

@@ -15,12 +15,12 @@
 }
 // brush 1
 {
-( 496 -8 64 ) ( 496 -776 64 ) ( 496 -776 -80 ) novent 62 320 0 1 1
-( 512 -8 -80 ) ( 512 -776 -80 ) ( 512 -776 64 ) novent 0 320 0 1 1
-( 512 -776 -80 ) ( 496 -776 -80 ) ( 496 -776 64 ) novent -224 320 0 1 1
-( 512 -8 64 ) ( 496 -8 64 ) ( 496 -8 -80 ) novent -224 320 0 1 1
-( 512 -8 -80 ) ( 496 -8 -80 ) ( 496 -776 -80 ) novent -224 0 0 1 1
-( 512 -776 64 ) ( 496 -776 64 ) ( 496 -8 64 ) novent -224 0 0 1 1
+( 496 -8 64 ) ( 496 -776 64 ) ( 496 -776 -80 ) aardmbr16_1 62 320 0 1 1
+( 512 -8 -80 ) ( 512 -776 -80 ) ( 512 -776 64 ) aardmbr16_1 0 320 0 1 1
+( 512 -776 -80 ) ( 496 -776 -80 ) ( 496 -776 64 ) aardmbr16_1 -224 320 0 1 1
+( 512 -8 64 ) ( 496 -8 64 ) ( 496 -8 -80 ) aardmbr16_1 -224 320 0 1 1
+( 512 -8 -80 ) ( 496 -8 -80 ) ( 496 -776 -80 ) aardmbr16_1 -224 0 0 1 1
+( 512 -776 64 ) ( 496 -776 64 ) ( 496 -8 64 ) aardmbr16_1 -224 0 0 1 1
 }
 // brush 2
 {
@@ -42,7 +42,7 @@
 }
 // brush 4
 {
-( -544 256 64 ) ( -544 768 64 ) ( -544 768 -64 ) novent -64 320 0 1 1
+( -544 256 64 ) ( -544 768 64 ) ( -544 768 -64 ) aardmbr16_1 -64 320 0 1 1
 ( -560 768 -64 ) ( -544 768 -64 ) ( -544 768 64 ) novent -224 320 0 1 1
 ( -560 256 -64 ) ( -544 256 -64 ) ( -544 768 -64 ) novent -224 0 0 1 1
 ( -560 768 64 ) ( -544 768 64 ) ( -544 256 64 ) novent -224 0 0 1 1
@@ -222,12 +222,12 @@
 }
 // brush 24
 {
-( -112 528 -40 ) ( -112 512 -40 ) ( -112 512 -64 ) tsl_top2 0 320 0 1 1
-( -96 528 -64 ) ( -96 512 -64 ) ( -96 512 -40 ) tsl_top2 0 320 0 1 1
-( -96 512 -64 ) ( -112 512 -64 ) ( -112 512 -40 ) tsl_top2 -224 320 0 1 1
-( -96 528 -40 ) ( -112 528 -40 ) ( -112 528 -64 ) tsl_top2 -224 320 0 1 1
-( -96 528 -64 ) ( -112 528 -64 ) ( -112 512 -64 ) tsl_top2 -224 0 0 1 1
-( -96 512 -40 ) ( -112 512 -40 ) ( -112 528 -40 ) tsl_top2 -224 0 0 1 1
+( -112 528 -40 ) ( -112 512 -40 ) ( -112 512 -64 ) aardmbr16_1 0 320 0 1 1
+( -96 528 -64 ) ( -96 512 -64 ) ( -96 512 -40 ) aardmbr16_1 0 320 0 1 1
+( -96 512 -64 ) ( -112 512 -64 ) ( -112 512 -40 ) aardmbr16_1 -224 320 0 1 1
+( -96 528 -40 ) ( -112 528 -40 ) ( -112 528 -64 ) aardmbr16_1 -224 320 0 1 1
+( -96 528 -64 ) ( -112 528 -64 ) ( -112 512 -64 ) aardmbr16_1 -224 0 0 1 1
+( -96 512 -40 ) ( -112 512 -40 ) ( -112 528 -40 ) aardmbr16_1 -224 0 0 1 1
 }
 // brush 25
 {
@@ -258,12 +258,12 @@
 }
 // brush 28
 {
-( -128 544 -32 ) ( -128 336 -32 ) ( -128 336 -48 ) tsl_side2 0 320 0 1 1
-( 16 544 -48 ) ( 16 336 -48 ) ( 16 336 -32 ) tsl_top2 0 320 0 1 1
-( 16 336 -48 ) ( -128 336 -48 ) ( -128 336 -32 ) tsl_top2 -224 320 0 1 1
-( 16 544 -32 ) ( -128 544 -32 ) ( -128 544 -48 ) tsl_side2 -224 320 0 1 1
-( 16 544 -48 ) ( -128 544 -48 ) ( -128 336 -48 ) tsl_top2 -224 0 0 1 1
-( 16 336 -32 ) ( -128 336 -32 ) ( -128 544 -32 ) tsl_top2 -224 0 0 1 1
+( -128 544 -32 ) ( -128 336 -32 ) ( -128 336 -48 ) aardmbr16_1 0 320 0 1 1
+( 16 544 -48 ) ( 16 336 -48 ) ( 16 336 -32 ) aardmbr16_1 0 320 0 1 1
+( 16 336 -48 ) ( -128 336 -48 ) ( -128 336 -32 ) aardmbr16_1 -224 320 0 1 1
+( 16 544 -32 ) ( -128 544 -32 ) ( -128 544 -48 ) aardmbr16_1 -224 320 0 1 1
+( 16 544 -48 ) ( -128 544 -48 ) ( -128 336 -48 ) aardmbr16_1 -224 0 0 1 1
+( 16 336 -32 ) ( -128 336 -32 ) ( -128 544 -32 ) aardmbr16_1 -224 0 0 1 1
 }
 // brush 29
 {
@@ -456,12 +456,12 @@
 }
 // brush 50
 {
-( -288 96 -32 ) ( -480 96 -32 ) ( -480 96 -48 ) tsl_side2 -224 320 0 1 1
-( -288 -48 -48 ) ( -480 -48 -48 ) ( -480 -48 -32 ) tsl_side2 -224 320 0 1 1
-( -480 -48 -48 ) ( -480 96 -48 ) ( -480 96 -32 ) tsl_side2 0 320 0 1 1
-( -288 -48 -32 ) ( -288 96 -32 ) ( -288 96 -48 ) tsl_side2 0 320 0 1 1
-( -288 -48 -48 ) ( -288 96 -48 ) ( -480 96 -48 ) tsl_bottom1 -224 0 0 1 1
-( -480 -48 -32 ) ( -480 96 -32 ) ( -288 96 -32 ) tsl_bottom1 -224 0 0 1 1
+( -288 96 -32 ) ( -480 96 -32 ) ( -480 96 -48 ) aardmbr16_1 -224 320 0 1 1
+( -288 -48 -48 ) ( -480 -48 -48 ) ( -480 -48 -32 ) aardmbr16_1 -224 320 0 1 1
+( -480 -48 -48 ) ( -480 96 -48 ) ( -480 96 -32 ) aardmbr16_1 0 320 0 1 1
+( -288 -48 -32 ) ( -288 96 -32 ) ( -288 96 -48 ) aardmbr16_1 0 320 0 1 1
+( -288 -48 -48 ) ( -288 96 -48 ) ( -480 96 -48 ) aardmbr16_1 -224 0 0 1 1
+( -480 -48 -32 ) ( -480 96 -32 ) ( -288 96 -32 ) aardmbr16_1 -224 0 0 1 1
 }
 // brush 51
 {
@@ -543,12 +543,12 @@
 }
 // brush 60
 {
-( 16 190 -64 ) ( 16 578 -64 ) ( 16 578 64 ) novent 0 320 0 1 1
-( 32 190 64 ) ( 32 578 64 ) ( 32 578 -64 ) novent 0 320 0 1 1
-( 32 578 64 ) ( 16 578 64 ) ( 16 578 -64 ) novent -224 320 0 1 1
-( 32 578 -64 ) ( 16 578 -64 ) ( 16 190 -64 ) novent -224 0 0 1 1
-( 32 190 64 ) ( 16 190 64 ) ( 16 578 64 ) novent -224 0 0 1 1
-( 32 190 -64 ) ( 16 190 -64 ) ( 16 190 64 ) novent -224 320 0 1 1
+( 16 190 -64 ) ( 16 578 -64 ) ( 16 578 64 ) aardmbr16_1 0 320 0 1 1
+( 32 190 64 ) ( 32 578 64 ) ( 32 578 -64 ) aardmbr16_1 0 320 0 1 1
+( 32 578 64 ) ( 16 578 64 ) ( 16 578 -64 ) aardmbr16_1 -224 320 0 1 1
+( 32 578 -64 ) ( 16 578 -64 ) ( 16 190 -64 ) aardmbr16_1 -224 0 0 1 1
+( 32 190 64 ) ( 16 190 64 ) ( 16 578 64 ) aardmbr16_1 -224 0 0 1 1
+( 32 190 -64 ) ( 16 190 -64 ) ( 16 190 64 ) aardmbr16_1 -224 320 0 1 1
 }
 // brush 61
 {
@@ -579,12 +579,12 @@
 }
 // brush 64
 {
-( -256 328 16 ) ( -256 312 16 ) ( -256 312 -64 ) ceil3_3 8 320 0 1 1
-( 16 328 -64 ) ( 16 312 -64 ) ( 16 312 16 ) ceil3_3 8 320 0 1 1
-( 16 312 -64 ) ( -256 312 -64 ) ( -256 312 16 ) ceil3_3 -224 320 0 1 1
-( 16 328 16 ) ( -256 328 16 ) ( -256 328 -64 ) ceil3_3 -224 320 0 1 1
-( 16 312 16 ) ( -256 312 16 ) ( -256 328 16 ) ceil3_3 -224 -8 0 1 1
-( 16 328 -64 ) ( -256 328 -64 ) ( -256 312 -64 ) ceil3_3 -224 -8 0 1 1
+( -256 328 16 ) ( -256 312 16 ) ( -256 312 -64 ) aardmbr16_1 8 320 0 1 1
+( 16 328 -64 ) ( 16 312 -64 ) ( 16 312 16 ) aardmbr16_1 8 320 0 1 1
+( 16 312 -64 ) ( -256 312 -64 ) ( -256 312 16 ) aardmbr16_1 -224 320 0 1 1
+( 16 328 16 ) ( -256 328 16 ) ( -256 328 -64 ) aardmbr16_1 -224 320 0 1 1
+( 16 312 16 ) ( -256 312 16 ) ( -256 328 16 ) aardmbr16_1 -224 -8 0 1 1
+( 16 328 -64 ) ( -256 328 -64 ) ( -256 312 -64 ) aardmbr16_1 -224 -8 0 1 1
 }
 // brush 65
 {
@@ -600,7 +600,7 @@
 ( -544 -776 64 ) ( -544 768 64 ) ( -544 768 80 ) tsl_top2 0 208 0 1 1
 ( 496 -776 80 ) ( 496 768 80 ) ( 496 768 64 ) tsl_top2 0 208 0 1 1
 ( 496 768 80 ) ( -544 768 80 ) ( -544 768 64 ) tsl_top2 -224 208 0 1 1
-( 496 768 64 ) ( -544 768 64 ) ( -544 -776 64 ) tsl_top2 -224 0 0 1 1
+( 496 768 64 ) ( -544 768 64 ) ( -544 -776 64 ) shex2 -224 0 0 1 1
 ( 496 -776 80 ) ( -544 -776 80 ) ( -544 768 80 ) tsl_top2 -224 0 0 1 1
 ( 496 -776 64 ) ( -544 -776 64 ) ( -544 -776 80 ) tsl_top2 -224 208 0 1 1
 }
@@ -1039,7 +1039,7 @@
 {
 ( -544 776 64 ) ( -544 768 64 ) ( -544 768 -64 ) novent 0 320 0 1 1
 ( -32 776 -64 ) ( -32 768 -64 ) ( -32 768 64 ) novent 0 320 0 1 1
-( -32 768 -64 ) ( -544 768 -64 ) ( -544 768 64 ) novent -288 320 0 1 1
+( -32 768 -64 ) ( -544 768 -64 ) ( -544 768 64 ) aardmbr16_1 -288 320 0 1 1
 ( -32 776 64 ) ( -544 776 64 ) ( -544 776 -64 ) novent -224 320 0 1 1
 ( -32 776 -64 ) ( -544 776 -64 ) ( -544 768 -64 ) novent -224 0 0 1 1
 ( -32 768 64 ) ( -544 768 64 ) ( -544 776 64 ) novent -224 0 0 1 1
@@ -1109,7 +1109,7 @@
 }
 // brush 123
 {
-( -544 64 -64 ) ( -544 -64 -64 ) ( -544 -64 64 ) novent 0 320 0 1 1
+( -544 64 -64 ) ( -544 -64 -64 ) ( -544 -64 64 ) aardmbr16_1 0 320 0 1 1
 ( -560 -64 64 ) ( -544 -64 64 ) ( -544 -64 -64 ) novent -224 320 0 1 1
 ( -560 -64 -64 ) ( -544 -64 -64 ) ( -544 64 -64 ) novent -224 16 0 1 1
 ( -560 64 64 ) ( -544 64 64 ) ( -544 -64 64 ) novent -224 16 0 1 1
@@ -1118,12 +1118,12 @@
 }
 // brush 124
 {
-( -544 64 64 ) ( -544 96 64 ) ( -544 96 -64 ) lightwall 128 320 0 1 1
-( -560 96 -64 ) ( -544 96 -64 ) ( -544 96 64 ) lightwall -224 320 0 1 1
-( -560 64 -64 ) ( -544 64 -64 ) ( -544 96 -64 ) lightwall -224 -192 0 1 1
-( -560 96 64 ) ( -544 96 64 ) ( -544 64 64 ) lightwall -224 -192 0 1 1
-( -560 64 -64 ) ( -560 96 -64 ) ( -560 96 64 ) lightwall 192 320 0 1 1
-( -560 64 64 ) ( -544 64 64 ) ( -544 64 -64 ) lightwall -224 320 0 1 1
+( -544 64 64 ) ( -544 96 64 ) ( -544 96 -64 ) aardmbr16_1 128 320 0 1 1
+( -560 96 -64 ) ( -544 96 -64 ) ( -544 96 64 ) aardmbr16_1 -224 320 0 1 1
+( -560 64 -64 ) ( -544 64 -64 ) ( -544 96 -64 ) aardmbr16_1 -224 -192 0 1 1
+( -560 96 64 ) ( -544 96 64 ) ( -544 64 64 ) aardmbr16_1 -224 -192 0 1 1
+( -560 64 -64 ) ( -560 96 -64 ) ( -560 96 64 ) aardmbr16_1 192 320 0 1 1
+( -560 64 64 ) ( -544 64 64 ) ( -544 64 -64 ) aardmbr16_1 -224 320 0 1 1
 }
 // brush 125
 {
@@ -1435,332 +1435,315 @@
 }
 // entity 35
 {
-"classname" "item_spikes"
-"origin" "-480 32 -16"
-"spawnflags" "1"
-}
-// entity 36
-{
-"classname" "item_spikes"
-"origin" "-480 64 -16"
-"spawnflags" "1"
-}
-// entity 37
-{
-"classname" "item_rockets"
-"origin" "-384 64 -32"
-}
-// entity 38
-{
 "classname" "weapon_grenadelauncher"
 "origin" "-304 -736 -32"
 }
-// entity 39
+// entity 36
 {
 "classname" "weapon_lightning"
 "origin" "-520 -328 -8"
 }
-// entity 40
+// entity 37
 {
 "classname" "info_player_deathmatch"
 "origin" "-96 -592 -32"
 "angle" "90"
 }
-// entity 41
+// entity 38
 {
 "classname" "info_player_deathmatch"
 "origin" "416 -704 -32"
 "angle" "90"
 }
-// entity 42
+// entity 39
 {
 "classname" "info_player_deathmatch"
 "origin" "64 208 -32"
 "angle" "270"
 }
-// entity 43
+// entity 40
 {
 "classname" "info_player_deathmatch"
 "origin" "-160 368 -32"
 "angle" "135"
 }
-// entity 44
+// entity 41
 {
 "classname" "info_player_deathmatch"
 "origin" "448 736 -32"
 "angle" "180"
 }
-// entity 45
+// entity 42
 {
 "classname" "info_player_deathmatch"
 "origin" "432 -48 -32"
 "angle" "180"
 }
-// entity 46
+// entity 43
 {
 "classname" "info_player_deathmatch"
 "origin" "-512 736 -40"
 "angle" "315"
 }
-// entity 47
+// entity 44
 {
 "classname" "info_player_deathmatch"
 "origin" "-32 272 -32"
 "angle" "238"
 }
-// entity 48
+// entity 45
 {
 "classname" "light"
 "origin" "-448 80 0"
 "light" "200"
 "style" "0"
 }
-// entity 49
+// entity 46
 {
 "classname" "light"
-"origin" "-208 64 0"
+"origin" "-280.000000 72.000000 0.000000"
 "light" "200"
 "style" "0"
 }
-// entity 50
+// entity 47
 {
 "classname" "light"
 "origin" "-144 -80 0"
 "light" "200"
 "style" "0"
 }
-// entity 51
+// entity 48
 {
 "classname" "light"
 "origin" "128 -144 0"
 "light" "200"
 "style" "0"
 }
-// entity 52
+// entity 49
 {
 "classname" "light"
 "origin" "-160 -288 0"
 "light" "200"
 "style" "0"
 }
-// entity 53
+// entity 50
 {
 "classname" "light"
 "origin" "-416 -688 0"
 "light" "200"
 "style" "0"
 }
-// entity 54
+// entity 51
 {
 "classname" "light"
 "origin" "-48 -528 0"
 "light" "200"
 "style" "0"
 }
-// entity 55
+// entity 52
 {
 "classname" "light"
 "origin" "-320 -480 0"
 "light" "200"
 "style" "0"
 }
-// entity 56
+// entity 53
 {
 "classname" "light"
 "origin" "144 -560 0"
 "light" "200"
 "style" "0"
 }
-// entity 57
+// entity 54
 {
 "classname" "light"
 "origin" "448 -672 0"
 "light" "200"
 "style" "0"
 }
-// entity 58
+// entity 55
 {
 "classname" "light"
 "origin" "448 -672 0"
 "light" "200"
 "style" "0"
 }
-// entity 59
+// entity 56
 {
 "classname" "light"
 "origin" "416 -512 0"
 "light" "200"
 "style" "0"
 }
-// entity 60
+// entity 57
 {
 "classname" "light"
 "origin" "48 -464 0"
 "light" "200"
 "style" "0"
 }
-// entity 61
+// entity 58
 {
 "classname" "light"
 "origin" "272 -256 0"
 "light" "200"
 "style" "0"
 }
-// entity 62
+// entity 59
 {
 "classname" "light"
 "origin" "320 -32 0"
 "light" "200"
 "style" "0"
 }
-// entity 63
+// entity 60
 {
 "classname" "light"
 "origin" "144 192 32"
 "light" "200"
 "style" "0"
 }
-// entity 64
+// entity 61
 {
 "classname" "light"
 "origin" "320 64 0"
 "light" "200"
 "style" "0"
 }
-// entity 65
+// entity 62
 {
 "classname" "light"
 "origin" "416 208 0"
 "light" "200"
 "style" "0"
 }
-// entity 66
+// entity 63
 {
 "classname" "light"
 "origin" "80 400 0"
 "light" "200"
 "style" "0"
 }
-// entity 67
+// entity 64
 {
 "classname" "light"
 "origin" "320 528 0"
 "light" "200"
 "style" "0"
 }
-// entity 68
+// entity 65
 {
 "classname" "light"
 "origin" "176 672 0"
 "light" "200"
 "style" "0"
 }
-// entity 69
+// entity 66
 {
 "classname" "light"
 "origin" "-144 688 0"
 "light" "200"
 "style" "0"
 }
-// entity 70
+// entity 67
 {
 "classname" "light"
 "origin" "-208 528 0"
 "light" "200"
 "style" "0"
 }
-// entity 71
+// entity 68
 {
 "classname" "light"
 "origin" "-304 432 0"
 "light" "200"
 "style" "0"
 }
-// entity 72
+// entity 69
 {
 "classname" "light"
 "origin" "-368 720 0"
 "light" "200"
 "style" "0"
 }
-// entity 73
+// entity 70
 {
 "classname" "light"
 "origin" "-528 576 0"
 "light" "200"
 "style" "0"
 }
-// entity 74
+// entity 71
 {
 "classname" "light"
 "origin" "-512 320 0"
 "light" "200"
 "style" "0"
 }
-// entity 75
+// entity 72
 {
 "classname" "light"
 "origin" "-384 -328 0"
 "light" "150"
 "style" "0"
 }
-// entity 76
+// entity 73
 {
 "classname" "light"
 "origin" "-336 -752 0"
 "light" "200"
 "style" "0"
 }
-// entity 77
+// entity 74
 {
 "classname" "light"
 "origin" "304 -592 0"
 "light" "200"
 "style" "0"
 }
-// entity 78
+// entity 75
 {
 "classname" "light"
 "origin" "224 -64 0"
 "light" "200"
 "style" "0"
 }
-// entity 79
+// entity 76
 {
 "classname" "light"
 "origin" "16 -48 0"
 "light" "200"
 "style" "0"
 }
-// entity 80
+// entity 77
 {
 "classname" "light"
-"origin" "-320 208 0"
+"origin" "-392.000000 152.000000 0.000000"
 "light" "200"
 "style" "0"
 }
-// entity 81
+// entity 78
 {
 "classname" "light"
 "origin" "448 368 0"
 "light" "200"
 "style" "0"
 }
-// entity 82
+// entity 79
 {
 "classname" "light"
 "origin" "432 -176 0"
 "light" "200"
 "style" "0"
 }
-// entity 83
+// entity 80
 {
 "classname" "light"
 "origin" "432 -344 4"
 "light" "100"
 "style" "0"
 }
-// entity 84
+// entity 81
 {
 "classname" "func_button"
 "angle" "240"
@@ -1778,7 +1761,7 @@
 ( 0 0 0 ) ( 0 -512 0 ) ( -512 0 0 ) monitor_top 137 -839 90 1 1
 }
 }
-// entity 85
+// entity 82
 {
 "classname" "func_button"
 "angle" "180"
@@ -1796,7 +1779,7 @@
 ( -461 -558 0 ) ( -461 -526 0 ) ( -453 -526 0 ) monitor_top -18 -251 90 1 1
 }
 }
-// entity 86
+// entity 83
 {
 "classname" "func_button"
 "angle" "240"
@@ -1814,7 +1797,7 @@
 ( 0 0 0 ) ( 0 -512 0 ) ( -512 0 0 ) monitor_top -186 118 330 1 1.0499999523
 }
 }
-// entity 87
+// entity 84
 {
 "classname" "func_button"
 "angle" "300"
@@ -1832,7 +1815,7 @@
 ( 0 0 0 ) ( 0 -512 0 ) ( -512 0 0 ) monitor_top -73 -470 390 1 1.0499999523
 }
 }
-// entity 88
+// entity 85
 {
 "classname" "func_button"
 "angle" "180"
@@ -1850,7 +1833,7 @@
 ( 55 -617 0 ) ( 55 -585 0 ) ( 63 -585 0 ) monitor_top 41 -767 90 1 1
 }
 }
-// entity 89
+// entity 86
 {
 "classname" "func_button"
 "angle" "360"
@@ -1868,7 +1851,7 @@
 ( 446 115 0 ) ( 446 83 0 ) ( 438 83 0 ) monitor_top -659 -1150 90 1 1
 }
 }
-// entity 90
+// entity 87
 {
 "classname" "func_button"
 "angle" "360"
@@ -1886,7 +1869,7 @@
 ( 401 513 0 ) ( 401 481 0 ) ( 393 481 0 ) monitor_top -1057 -1105 90 1 1
 }
 }
-// entity 91
+// entity 88
 {
 "classname" "func_button"
 "angle" "360"
@@ -1904,7 +1887,7 @@
 ( -68 496 0 ) ( -68 464 0 ) ( -76 464 0 ) monitor_top -1040 -636 90 1 1
 }
 }
-// entity 92
+// entity 89
 {
 "classname" "func_button"
 "angle" "360"
@@ -1922,7 +1905,7 @@
 ( 441 585 0 ) ( 441 553 0 ) ( 433 553 0 ) monitor_top -1129 -1145 90 1 1
 }
 }
-// entity 93
+// entity 90
 {
 "classname" "func_button"
 "angle" "343"
@@ -1940,7 +1923,7 @@
 ( 0 0 0 ) ( 0 -512 0 ) ( -512 0 0 ) monitor_top -979 -635 90 1 1
 }
 }
-// entity 94
+// entity 91
 {
 "classname" "trigger_multiple"
 "message" "Door's are locked\nfor security reasons..."
@@ -1955,46 +1938,63 @@
 ( -536 96 64 ) ( -544 96 64 ) ( -544 224 64 ) trigger 480 176 0 1 1
 }
 }
-// entity 95
+// entity 92
 {
 "classname" "light"
 "origin" "-26 220 14"
 "light" "200"
 "style" "0"
 }
-// entity 96
+// entity 93
 {
 "classname" "item_cells"
 "origin" "304 272 -48"
 }
-// entity 97
+// entity 94
 {
 "classname" "light"
 "origin" "-26 516 30"
 "light" "125"
 "style" "0"
 }
-// entity 98
+// entity 95
 {
 "classname" "info_intermission"
 "origin" "416 64 20"
 "mangle" "0 140 0"
 }
-// entity 99
+// entity 96
 {
 "classname" "info_intermission"
 "origin" "-328 -328 20"
 "mangle" "0 180 0"
 }
-// entity 100
+// entity 97
 {
 "classname" "info_intermission"
 "origin" "-44 -412 48"
 "mangle" "17 222 0"
 }
-// entity 101
+// entity 98
 {
 "classname" "info_intermission"
 "origin" "-160 232 20"
 "mangle" "6 223 0"
+}
+// entity 99
+{
+"classname" "misc_explobox"
+"origin" "-368.000000 40.000000 -16.000000"
+}
+// entity 100
+{
+"classname" "misc_explobox2"
+"origin" "-440.000000 16.000000 -16.000000"
+}
+// entity 101
+{
+"classname" "light"
+"origin" "-320 208 0"
+"light" "200"
+"style" "0"
 }

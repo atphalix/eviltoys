@@ -128,6 +128,17 @@ void() main =
 	precache_sound ("gcompris/alphabet/U0032.wav");
 	precache_sound ("gcompris/alphabet/U0033.wav");
 	
+precache_sound ("voices/default/colors/black.wav");
+precache_sound ("voices/default/colors/blue.wav");
+precache_sound ("voices/default/colors/brown.wav");
+precache_sound ("voices/default/colors/green.wav");
+precache_sound ("voices/default/colors/grey.wav");
+precache_sound ("voices/default/colors/orange.wav");
+precache_sound ("voices/default/colors/pink.wav");
+precache_sound ("voices/default/colors/purple.wav");
+precache_sound ("voices/default/colors/red.wav");
+precache_sound ("voices/default/colors/white.wav");
+precache_sound ("voices/default/colors/yellow.wav");
 
 // shareware
 	precache_file ("maps/start.bsp");

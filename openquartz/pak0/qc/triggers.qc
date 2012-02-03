@@ -617,6 +617,9 @@ void() trigger_hurt =
 {
 	InitTrigger ();
 	self.touch = hurt_touch;
+	//play wrong answer sound
+	precache_sound ("gcompris/misc/check_answer.wav");
+	self.noise = "gcompris/misc/check_answer.wav";
 	if (!self.dmg)
 		self.dmg = 5;
 };
