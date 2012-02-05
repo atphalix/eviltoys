@@ -178,6 +178,7 @@ PAK0_CONTENTS += progs/misc/mine4.mdl
 PAK0_CONTENTS += progs/misc/mine5.mdl
 PAK0_CONTENTS += progs/misc/mine6.mdl
 PAK0_CONTENTS += progs/misc/mine7.mdl
+PAK0_CONTENTS += progs/misc/diamond.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
 PAK0_CONTENTS += progs/b_s_key.mdl
 PAK0_CONTENTS += progs/backpack.mdl

@@ -127,6 +127,39 @@ float	H_MEGA = 2;
 void() health_touch;
 void() item_megahealth_rot;
 
+
+void() item_diamond =
+{	
+	self.touch = health_touch;
+	precache_model("progs/misc/diamond.mdl");
+	precache_sound("items/r_item2.wav");
+	setmodel(self, "progs/misc/diamond.mdl");
+	self.noise = "items/r_item2.wav";
+	self.healamount = 10;
+	self.healtype = 2;
+	
+	StartItem ();
+};
+
+void() item_diamond_touch =
+{	
+	local	string	s;
+	sprint(other, "You receive ");
+	s = ftos(self.healamount);
+	sprint(other, s);
+	sprint(other, " health\n");
+	
+// health touch sound
+	sound(other, CHAN_ITEM, self.noise, 1, ATTN_NORM);
+
+	stuffcmd (other, "bf\n");
+	
+	self.model = string_null;
+	self.solid = SOLID_NOT;
+	activator = other;
+	SUB_UseTargets();	
+};
+
 void() item_health =
 {	
 	self.touch = health_touch;
