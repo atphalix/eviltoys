@@ -231,10 +231,10 @@ void() fire_touch =
 //============================================================================
 
 
-void() barrel_explode =
+void() barrel_de =
 {
 	self.takedamage = DAMAGE_NO;
-	self.classname = "explo_box";
+	self.classname = "_box";
 	// did say self.owner
 	T_RadiusDamage (self, self, 160, world);
 	sound (self, CHAN_VOICE, "weapons/r_exp3.wav", 1, ATTN_NORM);
@@ -246,42 +246,65 @@ void() barrel_explode =
 
 
 
-/*QUAKED misc_explobox (0 .5 .8) (0 0 0) (32 32 64)
+/*QUAKED misc_box (0 .5 .8) (0 0 0) (32 32 64)
 TESTING THING
 */
 
-void() misc_explobox_touch;
-void() misc_explobox =
+void() misc_box_touch;
+
+
+void() misc_box =
 {
 	local float	oldz;
-	local float	r;
 	
 	self.solid = SOLID_BBOX;
 	self.movetype = MOVETYPE_NONE;
-	// load random mine model
-	r = random();
-	if (r < 0.25){
+	// load  mine model according to classname
+	if (self.classname == "misc_mine1")
+	{
 	precache_model ("progs/misc/mine1.mdl");
 	setmodel (self, "progs/misc/mine1.mdl");
 	}
-	else if (r <  0.5){
+	else if (self.classname == "misc_mine2")
+	{
 	precache_model ("progs/misc/mine2.mdl");
 	setmodel (self, "progs/misc/mine2.mdl");
 	}
-	else if (r <  0.75){
+	else if (self.classname == "misc_mine3")
+	{
 	precache_model ("progs/misc/mine3.mdl");
 	setmodel (self, "progs/misc/mine3.mdl");
 	}
-	else{
+	else if (self.classname == "misc_mine4")
+	{
 	precache_model ("progs/misc/mine4.mdl");
 	setmodel (self, "progs/misc/mine4.mdl");
 	}
-
+	else if (self.classname == "misc_mine5")
+	{
+	precache_model ("progs/misc/mine5.mdl");
+	setmodel (self, "progs/misc/mine5.mdl");
+	}
+	else if (self.classname == "misc_mine6")
+	{
+	precache_model ("progs/misc/mine6.mdl");
+	setmodel (self, "progs/misc/mine6.mdl");
+	}
+	else if (self.classname == "misc_mine7")
+	{
+	precache_model ("progs/misc/mine7.mdl");
+	setmodel (self, "progs/misc/mine7.mdl");
+	}
+	else if (self.classname == "misc_mine8")
+	{
+	precache_model ("progs/misc/mine8.mdl");
+	setmodel (self, "progs/misc/mine8.mdl");
+	}
 	precache_sound ("weapons/r_exp3.wav");
 	self.health = 20;
-	self.th_die = barrel_explode;
+	self.th_die = barrel_de;
 	self.takedamage = DAMAGE_AIM;
-	self.touch = misc_explobox_touch;
+	self.touch = misc_box_touch;
 
 	self.origin_z = self.origin_z + 2;
 	oldz = self.origin_z;
@@ -296,9 +319,9 @@ void() misc_explobox =
 };
 
 
-void() misc_explobox_touch =
+void() misc_box_touch =
 {
-	// throws explosion debris
+	// throws sion debris
 	ThrowGib ("progs/gib1.mdl", self.health);
 	ThrowGib ("progs/gib2.mdl", self.health);
 	ThrowGib ("progs/gib3.mdl", self.health);
@@ -314,13 +337,52 @@ void() misc_explobox_touch =
 	BecomeExplosion ();
 
 };
+// whatever the model classname -> call the same method 
+void() misc_mine1 =
+{
+misc_box ();
+};
 
+void() misc_mine2 =
+{
+misc_box ();
+};
 
-/*QUAKED misc_explobox2 (0 .5 .8) (0 0 0) (32 32 64)
-Smaller exploding box, REGISTERED ONLY
+void() misc_mine3 =
+{
+misc_box ();
+};
+
+void() misc_mine4 =
+{
+misc_box ();
+};
+
+void() misc_mine5 =
+{
+misc_box ();
+};
+
+void() misc_mine6 =
+{
+misc_box ();
+};
+
+void() misc_mine7 =
+{
+misc_box ();
+};
+
+void() misc_mine8 =
+{
+misc_box ();
+};
+
+/*QUAKED misc_box2 (0 .5 .8) (0 0 0) (32 32 64)
+Smaller ding box, REGISTERED ONLY
 */
 
-void() misc_explobox2 =
+void() misc_box2 =
 {
 	local float	oldz;
 	
@@ -330,7 +392,7 @@ void() misc_explobox2 =
 	setmodel (self, "maps/b_exbox2.bsp");
 	precache_sound ("weapons/r_exp3.wav");
 	self.health = 20;
-	self.th_die = barrel_explode;
+	self.th_die = barrel_de;
 	self.takedamage = DAMAGE_AIM;
 
 	self.origin_z = self.origin_z + 2;
