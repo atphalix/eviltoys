@@ -9,7 +9,7 @@ QBSP     = ../../tools/tyrutils/qbsp/qbsp
 
 QBSP     = $(QUTILSDIR)/qbsp
 VIS      = $(QUTILSDIR)/vis
-LIGHT    = $(QUTILSDIR)/light
+#LIGHT    = $(QUTILSDIR)/light
 #QBSP     = $(QUTILSDIR)/qbsp
 
 QCC      = $(QUTILSDIR)/qcc
@@ -19,7 +19,9 @@ QLUMPY   = $(QUTILSDIR)/qlumpy
 QFILES   = $(QUTILSDIR)/qfiles
 QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
-TYRLITE  = $(UTILSDIR)/tyrlite
+#TYRLITE  = $(UTILSDIR)/tyrlite
+LIGHT    = $(UTILSDIR)/tyrlite
+
 
 # top-level targets
 ALLPAKS  = pak0.pak pak1.pak pak2.pak pak3.pak pak4.pak
@@ -178,6 +180,7 @@ PAK0_CONTENTS += progs/misc/mine4.mdl
 PAK0_CONTENTS += progs/misc/mine5.mdl
 PAK0_CONTENTS += progs/misc/mine6.mdl
 PAK0_CONTENTS += progs/misc/mine7.mdl
+PAK0_CONTENTS += progs/misc/mine8.mdl
 PAK0_CONTENTS += progs/misc/diamond.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
 PAK0_CONTENTS += progs/b_s_key.mdl
@@ -465,8 +468,8 @@ textures :
 %.lmp : gfx_lmp.ls
 	$(QLUMPY) gfx_lmp.ls
 
-%.mdl : %.qc
-	$(MODELGEN) $<
+#%.mdl : %.qc
+#	$(MODELGEN) $<
 
 %.spr : %.qc %.png
 	$(SPRGEN) $<
@@ -489,29 +492,7 @@ maps/b_%.bsp : maps/b_%.map
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	#$(LIGHT) $@
-
-progs/s_light.mdl : ;
-#
-# Change QUTILSDIR and UTILSDIR to match your setup
-#
-
-QUTILSDIR = ../utils/qutils/bin
-UTILSDIR  = ../utils/bin
-# Static models are models that don't move during the game, so the 
-# can be represented by a .bsp instead of a .mdl (which is easier to render).
-# Unlike regular .map files, $(VIS) cannot be run on them
-# because they are inherently leaky.  Therefore, we have to add
-# a target to that matches them specially.  This MUST come before the
-# normal rules for building maps so that it will match first.
-#
-maps/b_%.bsp : maps/b_%.map
-	$(QBSP) $<
 	$(LIGHT) $@
 
-%.bsp : %.map
-	$(QBSP) $<
-	$(VIS) $@
-	#$(LIGHT) $@
+progs/s_light.mdl : ;
 
-#progs/s_light.mdl : ;
