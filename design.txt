@@ -1,9 +1,8 @@
-EVIL TOYS: a 3D serious game about landmines awareness
+EVIL TOYS: a 3D educational game about landmines awareness
 
 Summary:
-EVIL TOYS: a 3D educational game about landmines awareness.
-
 The idea of the name came from the fact that children in countries like: Suda, Libya, Kurdistan, Western Sahara, Lebanon... mistake landmines, Unexploded Ordnance (UXO) as toys, and the game seek to create a 3D virtual envirement where they can safely recognise landmine and learn how to avoid them.Beign based on Quake 1 engine the game is designed to work on OLPC laptop and for older computers usually available in developping countries.
+
 
 Goals of the game:
 - Know where they might encounter mines .
@@ -12,16 +11,18 @@ Goals of the game:
 - Know how to behave if they suspect they have entered a minefield.
 - I Can distinguish between different types of mines likely to be found.
 - I Never touch a mine or unexploded ordnance.
-  
-
-
+* what should not be done if a mine is found.
+* what can be done if one enters a minefield.
+ 
 
 The game start in a small village and a virtual landmine museum where he can walk and explore several models of mines and unexlploded munitions and recognize several kind of danger signs.
 the game is devided into a learning stage that happend inside the museum and practice stage that happend inside the egyptian maze.
-the virtual museum is used as an alternative to plastic replicas to of real mines, when they are not available or expensive to get which give the child a "feel" of the 3D object size in space and thus will be easier to recognize in real life than 2D real photos alone.
+the virtual museum is used as an alternative to plastic replicas to of real mines, when they are not available or expensive to get which give the child a "feel" of the 3D object size in space and thus will be easier to recognize in real life than 2D real photos alone.Everytime the player "Die" in the game by touching or getting too close to explosif, he start again from the beginning which give him some time to meditate what happened aand think how to avoid it in the future. it is also an opportunity for children with more experience in the game to help him and say "be careful here! this can explode.." which encourage peer learning 
+
 The Egyptian maze is the main game level: it was hard to choose what kind of game world is more effective a more realist real world looking level, or a fantazy maze with .
 - the maze give the player several choice of roads to take to arrive at a specefic destination.
-- it has the advantages of offering several puzzle with buttons on walls that need to be pressed to open doors, which aim to give the child a basic sense of Causality(https://en.wikipedia.org/wiki/Causality_%28physics%29#Basic_concepts_of_cause_and_effect) and understanding relationship between causes and effect, which is first step in learning that a landmine explode be cause of steping into it and if he does not touch it it won't explode/ if he don't push the door button it won't open.
+- it has the advantages of offering several puzzle with buttons on walls that need to be pressed to open doors, which aim to give the child a basic sense of Causality(https://en.wikipedia.org/wiki/Causality_%28physics%29#Basic_concepts_of_cause_and_effect) and understanding relationship between causes and effect, which is first step in learning that a landmine explode be cause of steping into it and if he does not touch it it won't explode/ if he don't push the door button it won't open. this is a crusial skill to make the player know that danger 
+
 - the goal of recognizing mines and UXO is to avoid them and telling other child playing with them about their danger before it would be too late specially when the child has just discovered them in an unknown area.
 but the game teach also the child to recognize the danger sign to prevent them from entering into an already known minefield area, but it is hard to make children understand the concept of danger at a young age.
 - Evil toys use several danger sign used aroud the world so the child can remember not a specific sign that can be different 
@@ -31,3 +32,23 @@ unlike the rest of the game, the mines are exposed on table and the player can g
 peer 2 peer learning and collaboration: for more effective learning children would play the game in group were the children who played the game first/more experienced would help new oneavoid traps and exploding objects 
 
 Playing a video game is not alone the solution but it will be more effective if used in context of traditional mine risk education so when the child hear the teacher saying "when you see this sign, it mean this is a minefield area don't go there" some children will accept it, other with more critical mind or curiosity will ask why and won't have satisfing answer until they experiment, with the video game they can make mistake and learn from it but in reality one mistake will be literally fatal.
+
+Most traditional education relay in fear to teach the child what to do and not to do: "don't do this or you'll be punished!", but this is not always the most effective or with less side effects but we prefer to educate through understanding of the concept  and experimentation instead. 
+
+- a real sound of explosion would not be a good idea be a traumatic experience for a child in war country, but instead to maake the explosion more realistic we choose to emphasise on debris and later they would be used as a clue to warn the player that an explosion has already happened in this area and thus it is possible to be a minefield.
+
+* The goal is convey knowledge in interactions and feedback from the world rather than static information that need to be remembred, indirectly the player learn to remember area in the virtual world where there is a risk/landmines and learn to avoid it, which could translated into a real life behaviour when faced with similar situation in the real  world.
+
+* The player start with 100 health if it decrease to 0 the player die and the game restart from the beginning, every time he face an explosion he loose 50 health points (so he need  just 2 mistakes to loose), but since the goal of the game and of any kind of awareness activity is that explosion can be avoided, we use a purple diamond that reward the player of 10 health points and they are placed away from landmine and in safe locations.
+
+Bad ideas:
+
+* every effort has been made to make the child 
+
+Project Features:
+
+* Evit Toys is a non violent game based on a heavily modified version of Quake 1 First Person shooter https://en.wikipedia.org/wiki/Quake_(video_game)
+* The game has been designed to work on old computers commonly found in third world countries which are the most affected by landmines. So don't expect a lot of fancy graphics effects or other "distractions" as the game is designed to do one thing and do it well.
+* Don't need latest graphic card to play, in fact it can work even without one,  like on the One Laptop per Child XO laptop (tested on model version 1 and 1.5).
+* All images, 3D models, tools and game source code will be released acoording to terms of GPL 2.0 license along with documentation on how to modify/adapt the game to your needs.
+* The game will be free of charge and available for download for Linux, OLPC laptop and windows.

@@ -129,27 +129,23 @@ set "message" to text string
 */
 void() trigger_multiple =
 {
-	if (self.sounds == 0)
+	if (self.sounds == 1)
 	{
-		precache_sound ("gcompris/alphabet/U0030.wav");
-		self.noise = "gcompris/alphabet/U0030.wav";
-	}
-	else if (self.sounds == 1)
-	{
-		precache_sound ("gcompris/alphabet/U0031.wav");
-		self.noise = "gcompris/alphabet/U0031.wav";
+		precache_sound ("misc/secret.wav");
+		self.noise = "misc/secret.wav";
 	}
 	else if (self.sounds == 2)
 	{
-		precache_sound ("gcompris/alphabet/U0032.wav");
-		self.noise = "gcompris/alphabet/U0032.wav";
+		precache_sound ("misc/talk.wav");
+		self.noise = "misc/talk.wav";
 	}
 	else if (self.sounds == 3)
 	{
-		precache_sound ("gcompris/alphabet/U0033.wav");
-		self.noise = "gcompris/alphabet/U0033.wav";
+		precache_sound ("misc/trigger1.wav");
+		self.noise = "misc/trigger1.wav";
 	}
-		if (!self.wait)
+	
+	if (!self.wait)
 		self.wait = 0.2;
 	self.use = multi_use;
 
@@ -190,7 +186,6 @@ set "message" to text string
 */
 void() trigger_once =
 {
-	centerprint(activator, "Sequence completed!");
 	self.wait = -1;
 	trigger_multiple();
 };
@@ -216,6 +211,7 @@ sounds
 3)
 4)
 set "message" to text string
+*/
 void() trigger_secret =
 {
 	total_secrets = total_secrets + 1;
@@ -237,37 +233,6 @@ void() trigger_secret =
 	}
 
 	trigger_multiple ();
-};
-
-*/
-//=============================================================================
-
-//=============================================================================
-
-/*QUAKED trigger_sound (.5 .5 .5) ?
-*/
-void() trigger_secret =
-{
-	self.wait = -1;
-	
-	if (self.sounds == 1)
-	{
-		self.noise = "gcompris/alphabet/U0031.wav";
-sound (self, CHAN_AUTO, "gcompris/alphabet/U0031.wav", 1, ATTN_NORM);
-
-	}
-	else if (self.sounds == 2)
-	{
-		self.noise = "gcompris/alphabet/U0032.wav";
-sound (self, CHAN_AUTO, "gcompris/alphabet/U0032.wav", 1, ATTN_NORM);
-	}
-	InitTrigger ();
-
-		if ( !(self.spawnflags & SPAWNFLAG_NOTOUCH) )
-		{
-			self.touch = multi_touch;
-		}
-
 };
 
 //=============================================================================
@@ -617,9 +582,6 @@ void() trigger_hurt =
 {
 	InitTrigger ();
 	self.touch = hurt_touch;
-	//play wrong answer sound
-	precache_sound ("gcompris/misc/check_answer.wav");
-	self.noise = "gcompris/misc/check_answer.wav";
 	if (!self.dmg)
 		self.dmg = 5;
 };

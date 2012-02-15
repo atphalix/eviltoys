@@ -300,6 +300,16 @@ void() misc_box =
 	precache_model ("progs/misc/mine8.mdl");
 	setmodel (self, "progs/misc/mine8.mdl");
 	}
+	else if (self.classname == "misc_mine9")
+	{
+	precache_model ("progs/misc/mine9.mdl");
+	setmodel (self, "progs/misc/mine9.mdl");
+	}
+	else if (self.classname == "misc_mine10")
+	{
+	precache_model ("progs/misc/mine10.mdl");
+	setmodel (self, "progs/misc/mine10.mdl");
+	}
 	precache_sound ("weapons/r_exp3.wav");
 	self.health = 20;
 	self.th_die = barrel_de;
@@ -378,6 +388,15 @@ void() misc_mine8 =
 misc_box ();
 };
 
+void() misc_mine9 =
+{
+misc_box ();
+};
+
+void() misc_mine10 =
+{
+misc_box ();
+};
 /*QUAKED misc_box2 (0 .5 .8) (0 0 0) (32 32 64)
 Smaller ding box, REGISTERED ONLY
 */

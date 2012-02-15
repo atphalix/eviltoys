@@ -138,6 +138,7 @@ void() item_diamond =
 	self.healamount = 10;
 	self.healtype = 2;
 	
+	setsize (self, '0 0 0', '32 32 56');
 	StartItem ();
 };
 
