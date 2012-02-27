@@ -21,3 +21,5 @@ openquartz/utils/bin
 *.bak
 openquartz/utils/qutils/bin
 *.dat
+*.blend1
+*.autosave.map

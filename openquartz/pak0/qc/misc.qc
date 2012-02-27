@@ -55,7 +55,286 @@ void() light_use =
 Non-displayed light.
 Default light value is 300
 Default style is 0
-mdl", self.health);
+If targeted, it will toggle between on or off.
+*/
+void() light =
+{
+	if (!self.targetname)
+	{	// inert light
+		remove(self);
+		return;
+	}
+	
+	if (self.style >= 32)
+	{
+		self.use = light_use;
+		if (self.spawnflags & START_OFF)
+			lightstyle(self.style, "a");
+		else
+			lightstyle(self.style, "m");
+	}
+};
+
+/*QUAKED light_fluoro (0 1 0) (-8 -8 -8) (8 8 8) START_OFF
+Non-displayed light.
+Default light value is 300
+Default style is 0
+If targeted, it will toggle between on or off.
+Makes steady fluorescent humming sound
+*/
+void() light_fluoro =
+{
+	if (self.style >= 32)
+	{
+		self.use = light_use;
+		if (self.spawnflags & START_OFF)
+			lightstyle(self.style, "a");
+		else
+			lightstyle(self.style, "m");
+	}
+	
+	precache_sound ("ambience/fl_hum1.wav");
+	ambientsound (self.origin, "ambience/fl_hum1.wav", 0.5, ATTN_STATIC);
+};
+
+/*QUAKED light_fluorospark (0 1 0) (-8 -8 -8) (8 8 8)
+Non-displayed light.
+Default light value is 300
+Default style is 10
+Makes sparking, broken fluorescent sound
+*/
+void() light_fluorospark =
+{
+	if (!self.style)
+		self.style = 10;
+
+	precache_sound ("ambience/buzz1.wav");
+	ambientsound (self.origin, "ambience/buzz1.wav", 0.5, ATTN_STATIC);
+};
+
+/*QUAKED light_globe (0 1 0) (-8 -8 -8) (8 8 8)
+Sphere globe light.
+Default light value is 300
+Default style is 0
+*/
+void() light_globe =
+{
+	precache_model ("progs/s_light.spr");
+	setmodel (self, "progs/s_light.spr");
+	makestatic (self);
+};
+
+void() FireAmbient =
+{
+	precache_sound ("ambience/fire1.wav");
+// attenuate fast
+	ambientsound (self.origin, "ambience/fire1.wav", 0.5, ATTN_STATIC);
+};
+
+/*QUAKED light_torch_small_walltorch (0 .5 0) (-10 -10 -20) (10 10 20)
+Short wall torch
+Default light value is 200
+Default style is 0
+*/
+void() light_torch_small_walltorch =
+{
+	precache_model ("progs/flame.mdl");
+	setmodel (self, "progs/flame.mdl");
+	FireAmbient ();
+	makestatic (self);
+};
+
+/*QUAKED light_flame_large_yellow (0 1 0) (-10 -10 -12) (12 12 18)
+Large yellow flame ball
+*/
+void() light_flame_large_yellow =
+{
+	precache_model ("progs/flame2.mdl");
+	setmodel (self, "progs/flame2.mdl");
+	self.frame = 1;
+	FireAmbient ();
+	makestatic (self);
+};
+
+/*QUAKED light_flame_small_yellow (0 1 0) (-8 -8 -8) (8 8 8) START_OFF
+Small yellow flame ball
+*/
+void() light_flame_small_yellow =
+{
+	precache_model ("progs/flame2.mdl");
+	setmodel (self, "progs/flame2.mdl");
+	FireAmbient ();
+	makestatic (self);
+};
+
+/*QUAKED light_flame_small_white (0 1 0) (-10 -10 -40) (10 10 40) START_OFF
+Small white flame ball
+*/
+void() light_flame_small_white =
+{
+	precache_model ("progs/flame2.mdl");
+	setmodel (self, "progs/flame2.mdl");
+	FireAmbient ();
+	makestatic (self);
+};
+
+//============================================================================
+
+
+/*QUAKED misc_fireball (0 .5 .8) (-8 -8 -8) (8 8 8)
+Lava Balls
+*/
+
+void() fire_fly;
+void() fire_touch;
+void() misc_fireball =
+{
+	
+	precache_model ("progs/lavaball.mdl");
+	self.classname = "fireball";
+	self.nextthink = time + (random() * 5);
+	self.think = fire_fly;
+	if (!self.speed)
+		self.speed == 1000;
+};
+
+void() fire_fly =
+{
+local entity	fireball;
+
+	fireball = spawn();
+	fireball.solid = SOLID_TRIGGER;
+	fireball.movetype = MOVETYPE_TOSS;
+	fireball.velocity = '0 0 1000';
+	fireball.velocity_x = (random() * 100) - 50;
+	fireball.velocity_y = (random() * 100) - 50;
+	fireball.velocity_z = self.speed + (random() * 200);
+	fireball.classname = "fireball";
+	setmodel (fireball, "progs/lavaball.mdl");
+	setsize (fireball, '0 0 0', '0 0 0');
+	setorigin (fireball, self.origin);
+	fireball.nextthink = time + 5;
+	fireball.think = SUB_Remove;
+	fireball.touch = fire_touch;
+	
+	self.nextthink = time + (random() * 5) + 3;
+	self.think = fire_fly;
+};
+
+
+void() fire_touch =
+{
+	T_Damage (other, self, self, 20);
+	remove(self);
+};
+
+//============================================================================
+
+
+void() barrel_de =
+{
+	self.takedamage = DAMAGE_NO;
+	self.classname = "_box";
+	// did say self.owner
+	T_RadiusDamage (self, self, 160, world);
+	sound (self, CHAN_VOICE, "weapons/r_exp3.wav", 1, ATTN_NORM);
+	particle (self.origin, '0 0 0', 75, 255);
+
+	self.origin_z = self.origin_z + 32;
+	BecomeExplosion ();
+};
+
+
+
+/*QUAKED misc_box (0 .5 .8) (0 0 0) (32 32 64)
+TESTING THING
+*/
+
+void() misc_box_touch;
+
+
+void() misc_box =
+{
+	local float	oldz;
+	
+	self.solid = SOLID_BBOX;
+	self.movetype = MOVETYPE_NONE;
+	// load  mine model according to classname
+	if (self.classname == "misc_mine1")
+	{
+	precache_model ("progs/misc/mine1.mdl");
+	setmodel (self, "progs/misc/mine1.mdl");
+	}
+	else if (self.classname == "misc_mine2")
+	{
+	precache_model ("progs/misc/mine2.mdl");
+	setmodel (self, "progs/misc/mine2.mdl");
+	}
+	else if (self.classname == "misc_mine3")
+	{
+	precache_model ("progs/misc/mine3.mdl");
+	setmodel (self, "progs/misc/mine3.mdl");
+	}
+	else if (self.classname == "misc_mine4")
+	{
+	precache_model ("progs/misc/mine4.mdl");
+	setmodel (self, "progs/misc/mine4.mdl");
+	}
+	else if (self.classname == "misc_mine5")
+	{
+	precache_model ("progs/misc/mine5.mdl");
+	setmodel (self, "progs/misc/mine5.mdl");
+	}
+	else if (self.classname == "misc_mine6")
+	{
+	precache_model ("progs/misc/mine6.mdl");
+	setmodel (self, "progs/misc/mine6.mdl");
+	}
+	else if (self.classname == "misc_mine7")
+	{
+	precache_model ("progs/misc/mine7.mdl");
+	setmodel (self, "progs/misc/mine7.mdl");
+	}
+	else if (self.classname == "misc_mine8")
+	{
+	precache_model ("progs/misc/mine8.mdl");
+	setmodel (self, "progs/misc/mine8.mdl");
+	}
+	else if (self.classname == "misc_mine9")
+	{
+	precache_model ("progs/misc/mine9.mdl");
+	setmodel (self, "progs/misc/mine9.mdl");
+	}
+	else if (self.classname == "misc_mine10")
+	{
+	precache_model ("progs/misc/mine10.mdl");
+	setmodel (self, "progs/misc/mine10.mdl");
+	}
+	precache_sound ("weapons/r_exp3.wav");
+	self.health = 20;
+	self.th_die = barrel_de;
+	self.takedamage = DAMAGE_AIM;
+	self.touch = misc_box_touch;
+
+	self.origin_z = self.origin_z + 2;
+	oldz = self.origin_z;
+	droptofloor();
+	if (oldz - self.origin_z > 250)
+	{
+		dprint ("item fell out of level at ");
+		dprint (vtos(self.origin));
+		dprint ("\n");
+		remove(self);
+	}
+};
+
+
+void() misc_box_touch =
+{
+	// throws sion debris
+	ThrowGib ("progs/gib1.mdl", self.health);
+	ThrowGib ("progs/gib2.mdl", self.health);
+	ThrowGib ("progs/gib3.mdl", self.health);
 
 	T_Damage (other, self, self, 20);
 	remove(self);
@@ -433,6 +712,14 @@ void() ambient_suck_wind =
 {
 	precache_sound ("ambience/suck1.wav");
 	ambientsound (self.origin, "ambience/suck1.wav", 1, ATTN_STATIC);
+};
+
+/*QUAKED ambient_fire(0.3 0.1 0.6) (-10 -10 -8) (10 10 8)
+*/
+void() ambient_fire =
+{
+	precache_sound ("ambience/fire_ambient.wav");
+	ambientsound (self.origin, "ambience/fire_ambient.wav", 0.5, ATTN_STATIC);
 };
 
 /*QUAKED ambient_drone (0.3 0.1 0.6) (-10 -10 -8) (10 10 8)

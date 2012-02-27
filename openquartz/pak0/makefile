@@ -282,7 +282,8 @@ PAK1_CONTENTS += progs/wizard.mdl
 #
 PAK2_CONTENTS += sound/ambience/comp1.wav
 PAK2_CONTENTS += sound/ambience/drip1.wav
-PAK2_CONTENTS += sound/ambience/drone6.wav
+PAK2_CONTENTS += sound/ambience/fire_ambient.wav
+PAK2_CONTENTS += sound/ambience/fire1.wav
 PAK2_CONTENTS += sound/ambience/water1.wav
 PAK2_CONTENTS += sound/ambience/wind2.wav
 PAK2_CONTENTS += sound/ambience/windfly.wav

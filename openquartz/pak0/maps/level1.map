@@ -7,7 +7,6 @@
 "target" "alibaba"
 "worldtype" "2"
 "sound" "0"
-"sounds" "1"
 // brush 0
 {
 ( 128 832 320 ) ( 128 832 256 ) ( 1088 832 256 ) tsl_1 0 0 0 1 1
@@ -2175,7 +2174,7 @@
 // entity 83
 {
 "classname" "misc_mine2"
-"origin" "556.000000 -132.000000 -44.000000"
+"origin" "556.000000 -132.000000 -52.000000"
 }
 // entity 84
 {
@@ -2202,5 +2201,42 @@
 // entity 88
 {
 "classname" "misc_mine8"
-"origin" "364.000000 588.000000 -48.000000"
+"origin" "372.000000 588.000000 -36.000000"
+}
+// entity 89
+{
+"classname" "misc_mine8"
+"origin" "796.000000 592.000000 -44.000000"
+}
+// entity 90
+{
+"classname" "ambient_thunder"
+"origin" "264.000000 452.000000 4.000000"
+}
+// entity 91
+{
+"classname" "trigger_multiple"
+}
+// entity 92
+{
+"classname" "trigger_multiple"
+}
+// entity 93
+{
+"classname" "trigger_multiple"
+}
+// entity 94
+{
+"classname" "trigger_multiple"
+"sounds" "1"
+"wait" "2"
+// brush 0
+{
+( 604 460 8 ) ( 604 372 8 ) ( 576 460 8 ) trigger 0 0 0 1 1
+( 608 504 8 ) ( 580 504 8 ) ( 608 504 4 ) trigger 0 0 0 1 1
+( 700 460 8 ) ( 700 460 4 ) ( 700 372 8 ) trigger 0 0 0 1 1
+( 564 384 -28 ) ( 592 384 -28 ) ( 564 472 -28 ) trigger 0 0 0 1 1
+( 580 356 4 ) ( 580 356 8 ) ( 608 356 4 ) trigger 0 0 0 1 1
+( 572 388 -28 ) ( 572 476 -28 ) ( 572 388 -24 ) trigger 0 0 0 1 1
+}
 }
