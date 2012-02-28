@@ -129,15 +129,15 @@ set "message" to text string
 */
 void() trigger_multiple =
 {
-	if (self.sounds == 1)
+	if (self.sounds == 1) //alarm siren sound
 	{
 		precache_sound ("misc/secret.wav");
 		self.noise = "misc/secret.wav";
 	}
-	else if (self.sounds == 2)
+	else if (self.sounds == 2)//fire burning sound
 	{
-		precache_sound ("misc/talk.wav");
-		self.noise = "misc/talk.wav";
+		precache_sound ("misc/fire_ambient.wav");
+		self.noise = "misc/fire_ambient.wav";
 	}
 	else if (self.sounds == 3)
 	{

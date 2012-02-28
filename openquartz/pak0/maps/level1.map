@@ -2228,7 +2228,7 @@
 // entity 94
 {
 "classname" "trigger_multiple"
-"sounds" "1"
+"sounds" "2"
 "wait" "2"
 // brush 0
 {
