@@ -13,7 +13,6 @@ openquartz/utils/bin
 *.h2
 *.a
 *.log
-*.png
 *#
 *~
 *.xo

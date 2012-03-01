@@ -630,8 +630,8 @@ void() viewthing =
 {
 	self.movetype = MOVETYPE_NONE;
 	self.solid = SOLID_NOT;
-	precache_model ("progs/armor.mdl");
-	setmodel (self, "progs/armor.mdl");
+	precache_model (self, self.model);
+	setmodel (self, self, self.model);
 };
 
 
