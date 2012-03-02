@@ -1319,5 +1319,6 @@ void Sbar_FinaleOverlay (void)
 	scr_copyeverything = 1;
 
 	pic = Draw_CachePic ("gfx/finale.lmp");
-	Draw_TransPic ( (vid.width-pic->width)/2, 16, pic);
+//	Draw_String (20, 16,"You WIN");
+//	Draw_TransPic ( (vid.width-pic->width)/2, 16, pic);
 }

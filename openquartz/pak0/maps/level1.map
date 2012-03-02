@@ -2210,8 +2210,7 @@
 }
 // entity 90
 {
-"classname" "ambient_thunder"
-"origin" "264.000000 452.000000 4.000000"
+"classname" "trigger_multiple"
 }
 // entity 91
 {
@@ -2222,10 +2221,6 @@
 "classname" "trigger_multiple"
 }
 // entity 93
-{
-"classname" "trigger_multiple"
-}
-// entity 94
 {
 "classname" "trigger_multiple"
 "sounds" "2"

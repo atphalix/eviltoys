@@ -7,7 +7,6 @@ openquartz/utils/bin
 *.o
 *.bsp
 *.pts
-*.lmp
 *.prt
 *.h1
 *.h2
