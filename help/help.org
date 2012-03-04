@@ -1,0 +1,53 @@
+#+TITLE:    How to play EvilToys
+#+AUTHOR:   Ahmed Mansour
+#+EMAIL:    atphalix@inbox.com
+#+Website:  http://olpc-maroc.blogspot.com
+#+LANGUAGE: en
+#+STARTUP:  showall
+#+OPTIONS:  H:3 num:t toc:t \n:nil @:t ::t |:t ^:t *:t TeX:t
+
+
+* What is EvitToys?
+  it's a 3D educational video game for children, to learn about danger of landmines
+  and cluster munitions, by playing inside a virtual world and learning to recognize them and avoid them.
+  the child will also learn signs that indicate dangerous area. Which make the child adopt safe behaviour 
+  when faced with similar situation in real life.
+  I hope through playing and learning with this software, it will contribute to saving children life in countries affected by war.
+
+* How to play
+** Navigation
+  You can navigate through the virtual world by using keyboard arrow keys and mouse:
+
+  | key       | Description                        |
+  |-----------+------------------------------------|
+  | UP KEY    | Move forward                       |
+  | DOWN KEY  | Move backward                      |
+  | LEFT KEY  | Slide left                         |
+  | RIGHT KEY | Slide right                        |
+  | SPACE KEY | Jump up                            |
+  | MOUSE     | Use mouse to choose a direction    |
+  |           | and keyboard to move forward       |
+  |-----------+------------------------------------|
+
+** Buttons and doors
+   Some doors are closed, to open them and access new areas, you need to press red button near the door.
+** Unexploded ordnance and mines
+   To progress in the game and discover new secret areas, you need to avoid getting near mines because they explode
+   and will hurt you. you can avoid them by watching them closely in the museum, and by staying away when you see danger sign.
+   
+** The museum
+   is found in beginning of the game, it is the only safe place where the child can get close to mines and see them and remember their shape
+   as he need to avoid getting near them later in the game.
+** Purple diamond
+   You need to collect all purple diamond that you can find, every one give you more health and help you to survive and continue playing.
+   the diamond is only thing you need to collect in the game and being choosed as color purple is rarely used in military on in nature and
+   shape cannot be confused with explosives. so the child will not look for them or confuse them with dangerous object in real life .
+   
+* Acknowledgments
+
+  I would like to thank all NGOs workers that risk their life for saving other's, through demining and other humanitarian actions.
+
+* Legal information
+
+This game is Free software (free as in freedom), you can freely copy it, modify it and distribute modified versions,
+See COPYING file for details.
