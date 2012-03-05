@@ -2,25 +2,22 @@
 # Change QUTILSDIR and UTILSDIR to match your setup
 #
 
-QUTILSDIR = ../utils/qutils/bin
+QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
-GAMEDIR   = ../openquartz/id1
-QBSP     = ../../tools/tyrutils/qbsp/qbsp
+GAMEDIR   = /home/hmd/.quakeforge/id1
 
-QBSP     = $(QUTILSDIR)/qbsp
-VIS      = $(QUTILSDIR)/vis
-#LIGHT    = $(QUTILSDIR)/light
-#QBSP     = $(QUTILSDIR)/qbsp
+QBSP     = $(QUTILSDIR)/qfbsp
+VIS      = $(QUTILSDIR)/qfvis
 
-QCC      = $(QUTILSDIR)/qcc
-MODELGEN = $(QUTILSDIR)/modelgen
-SPRGEN   = $(QUTILSDIR)/sprgen
-QLUMPY   = $(QUTILSDIR)/qlumpy
-QFILES   = $(QUTILSDIR)/qfiles
+QCC      = $(UTILSDIR)/qcc
+MODELGEN = $(UTILSDIR)/modelgen
+SPRGEN   = $(UTILSDIR)/sprgen
+QLUMPY   = $(UTILSDIR)/qlumpy
+QFILES   = $(UTILSDIR)/qfiles
 QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
-#TYRLITE  = $(UTILSDIR)/tyrlite
-LIGHT    = $(UTILSDIR)/tyrlite
+
+LIGHT    = $(OUTILSDIR)/qflight
 
 
 # top-level targets
@@ -30,7 +27,7 @@ all: $(ALLPAKS)
 
 # installs the compiled files into the game directory
 install : all
-	mkdir --parents $(GAMEDIR)
+	cp $(ALLPAKS) ../openquartz/id1
 	cp $(ALLPAKS) $(GAMEDIR)
 	cp default.cfg $(GAMEDIR)
 
@@ -490,12 +487,12 @@ textures :
 #
 maps/b_%.bsp : maps/b_%.map
 	$(QBSP) $<
-	$(LIGHT) $@
+#	$(LIGHT) $@
 
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-	$(LIGHT) $@
+#	$(LIGHT) $@
 
 progs/s_light.mdl : ;
 
