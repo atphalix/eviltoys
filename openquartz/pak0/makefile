@@ -17,7 +17,7 @@ QFILES   = $(UTILSDIR)/qfiles
 QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
 
-LIGHT    = $(OUTILSDIR)/qflight
+LIGHT    = ../utils/qutils/bin/light
 
 
 # top-level targets
@@ -487,12 +487,12 @@ textures :
 #
 maps/b_%.bsp : maps/b_%.map
 	$(QBSP) $<
-#	$(LIGHT) $@
+	$(LIGHT) $@
 
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
-#	$(LIGHT) $@
+	$(LIGHT) $@
 
 progs/s_light.mdl : ;
 
