@@ -44,10 +44,21 @@
    shape cannot be confused with explosives. so the child will not look for them or confuse them with dangerous object in real life .
    
 * Acknowledgments
-
+  This software is based on the work of the following projects:
+  - Quakeforge: for making the game engine that EvilToys is based on http://www.quakeforge.net/ 
+  - OpenQuartz: for images, and tools used in the building of game levels http://sourceforge.net/projects/openquartz/
+  - Netradiant: the level editor used at designing the game http://dev.alientrap.org/wiki/netradiant
+  
   I would like to thank all NGOs workers that risk their life for saving other's, through demining and other humanitarian actions.
 
 * Legal information
 
-This game is Free software (free as in freedom), you can freely copy it, modify it and distribute modified versions,
-See COPYING file for details.
+When we speak of Free Software, we refer to the software movement in
+which your freedoms to use, copy, modify, and study it are ensured.  For
+example, you may freely use EvilToys for any purpose you see fit, you
+may redistribute it to anyone without needing to ask for permission, you
+may modify it (provided you keep the license intact, 
+see `COPYING` file for details)
+
+You may read more about Free Software at the http://www.gnu.org/
+and http://www.fsf.org/ Free Software Foundation websites.

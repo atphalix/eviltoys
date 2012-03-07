@@ -428,8 +428,8 @@ PAK2_CONTENTS += sound/zombie/z_shot1.wav
 #
 #
 #PAK3_CONTENTS += maps/office.bsp
-PAK3_CONTENTS += maps/level1.bsp
-PAK3_CONTENTS += maps/level2.bsp
+#PAK3_CONTENTS += maps/level1.bsp
+#PAK3_CONTENTS += maps/level2.bsp
 PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/vtest.bsp
 #
