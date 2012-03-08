@@ -16,6 +16,7 @@ openquartz/utils/bin
 *~
 *.xo
 *.tar.gz
+*.zip
 *.bak
 openquartz/utils/qutils/bin
 *.dat

@@ -24,6 +24,6 @@ CONFIG="$CONFDIR/prboom.cfg"
 [ ! -r "$CONFIG" ] && cp default.cfg "$CONFIG"
 
 #exec bin/prboom -config "$CONFIG"
-exec /home/olpc/Activities/Quake.activity/bin/xrandr.sh
+exec $SUGAR_ACTIVITY_ROOT/bin/xrandr.sh
 
 

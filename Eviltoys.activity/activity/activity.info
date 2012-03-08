@@ -1,6 +1,7 @@
 [Activity]
-name = Quake
+name = Eviltoys
 activity_version = 1
 service_name = org.laptop.quake
 icon = quake
 exec = quake-activity
+license = GPLv2+
