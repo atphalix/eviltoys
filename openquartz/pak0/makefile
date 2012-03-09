@@ -6,8 +6,8 @@ QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = /home/hmd/.quakeforge/id1
 
-QBSP     = $(QUTILSDIR)/qfbsp
-VIS      = $(QUTILSDIR)/qfvis
+QBSP     = ../utils/qutils/bin/qbsp
+VIS      = ../utils/qutils/bin/vis -fast
 
 QCC      = $(UTILSDIR)/qcc
 MODELGEN = $(UTILSDIR)/modelgen
