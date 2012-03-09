@@ -1,0 +1,89 @@
+                         How to play EvilToys
+                         ====================
+
+Author: Ahmed Mansour
+Date: 2012-03-09 13:03:32 WET
+
+
+
+Table of Contents
+=================
+1 What is EvitToys?
+2 How to play
+    2.1 Navigation
+    2.2 Buttons and doors
+    2.3 Unexploded ordnance and mines
+    2.4 The museum
+    2.5 Purple diamond
+3 Acknowledgments
+4 Legal information
+
+
+1 What is EvitToys? 
+--------------------
+  it's a 3D educational video game for children, to learn about danger of landmines
+  and cluster munitions, by playing inside a virtual world and learning to recognize them and avoid them.
+  the child will also learn signs that indicate dangerous area. Which make the child adopt safe behaviour 
+  when faced with similar situation in real life.
+  I hope through playing and learning with this software, it will contribute to saving children life in countries affected by war.
+
+2 How to play 
+--------------
+
+2.1 Navigation 
+===============
+  You can navigate through the virtual world by using keyboard arrow keys and mouse:
+
+    key         Description                      
+   -----------+---------------------------------
+    UP KEY      Move forward                     
+    DOWN KEY    Move backward                    
+    LEFT KEY    Slide left                       
+    RIGHT KEY   Slide right                      
+    SPACE KEY   Jump up                          
+    MOUSE       Use mouse to choose a direction  
+                and keyboard to move forward     
+
+2.2 Buttons and doors 
+======================
+   Some doors are closed, to open them and access new areas, you need to press red button near the door.
+
+2.3 Unexploded ordnance and mines 
+==================================
+   To progress in the game and discover new secret areas, you need to avoid getting near mines because they explode
+   and will hurt you. you can avoid them by watching them closely in the museum, and by staying away when you see danger sign.
+   
+
+2.4 The museum 
+===============
+   is found in beginning of the game, it is the only safe place where the child can get close to mines and see them and remember their shape
+   as he need to avoid getting near them later in the game.
+
+2.5 Purple diamond 
+===================
+   You need to collect all purple diamond that you can find, every one give you more health and help you to survive and continue playing.
+   the diamond is only thing you need to collect in the game and being choosed as color purple is rarely used in military on in nature and
+   shape cannot be confused with explosives. so the child will not look for them or confuse them with dangerous object in real life .
+   
+
+3 Acknowledgments 
+------------------
+  This software is based on the work of the following projects:
+  - Quakeforge: for making the game engine that EvilToys is based on [http://www.quakeforge.net/] 
+  - OpenQuartz: for images, and tools used in the building of game levels [http://sourceforge.net/projects/openquartz/]
+  - Netradiant: the level editor used at designing the game [http://dev.alientrap.org/wiki/netradiant]
+  
+  I would like to thank all NGOs workers that risk their life for saving other's, through demining and other humanitarian actions.
+
+4 Legal information 
+--------------------
+
+When we speak of Free Software, we refer to the software movement in
+which your freedoms to use, copy, modify, and study it are ensured.  For
+example, you may freely use EvilToys for any purpose you see fit, you
+may redistribute it to anyone without needing to ask for permission, you
+may modify it (provided you keep the license intact, 
+see `COPYING` file for details)
+
+You may read more about Free Software at the [http://www.gnu.org/]
+and [http://www.fsf.org/] Free Software Foundation websites.
