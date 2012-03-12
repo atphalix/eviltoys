@@ -27,9 +27,9 @@ all: $(ALLPAKS)
 
 # installs the compiled files into the game directory
 install : all
-	cp $(ALLPAKS) ../openquartz/id1
+#	cp $(ALLPAKS) ../openquartz/id1
 	cp $(ALLPAKS) $(GAMEDIR)
-	cp default.cfg $(GAMEDIR)
+
 
 #bundle	: all
 #	cp ../openquartz/openquartz/
