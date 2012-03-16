@@ -4,7 +4,7 @@
 
 QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
-GAMEDIR   = /home/hmd/.quakeforge/id1
+GAMEDIR   = ../../eviltoys-1.1/id1
 
 QBSP     = ../utils/qutils/bin/qbsp
 VIS      = ../utils/qutils/bin/vis -fast
