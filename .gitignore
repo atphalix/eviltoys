@@ -19,6 +19,7 @@ openquartz/utils/bin
 *.zip
 *.bak
 openquartz/utils/qutils/bin
+*.svn/*
 *.dat
 *.blend1
 *.autosave.map
