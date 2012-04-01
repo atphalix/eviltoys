@@ -6,8 +6,8 @@ QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../../eviltoys-1.1/id1
 
-QBSP     = ../utils/qutils/bin/hqbsp
-VIS      = ../utils/qutils/bin/hvis -fast
+QBSP     = ../../tools/hmap/bin/hqbsp
+VIS      = ../../tools/hmap/bin/hvis -fast
 
 QCC      = $(UTILSDIR)/qcc
 MODELGEN = $(UTILSDIR)/modelgen
@@ -17,7 +17,7 @@ QFILES   = $(UTILSDIR)/qfiles
 QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
 
-LIGHT    = ../utils/qutils/bin/hlight
+LIGHT    = ../../tools/hmap/bin/hlight
 
 
 # top-level targets
@@ -169,6 +169,7 @@ PAK0_CONTENTS += maps/b_shell0.bsp
 PAK0_CONTENTS += maps/b_shell1.bsp
 PAK0_CONTENTS += maps/b_shell2.bsp
 PAK0_CONTENTS += progs.dat
+PAK3_CONTENTS += maps/start.lights
 PAK0_CONTENTS += progs/armor.mdl
 PAK0_CONTENTS += progs/misc/mine1.mdl
 PAK0_CONTENTS += progs/misc/mine2.mdl
@@ -430,8 +431,6 @@ PAK2_CONTENTS += sound/zombie/z_shot1.wav
 #PAK3_CONTENTS += maps/office.bsp
 #PAK3_CONTENTS += maps/level1.bsp
 #PAK3_CONTENTS += maps/level2.bsp
-PAK3_CONTENTS += maps/start.bsp
-#PAK3_CONTENTS += maps/vtest.bsp
 #
 # make targets
 #
@@ -474,6 +473,7 @@ textures :
 %.spr : %.qc %.png
 	$(SPRGEN) $<
 
+map/start.lights  : ;
 #
 # Static models are models that don't move during the game, so the 
 # can be represented by a .bsp instead of a .mdl (which is easier to render).

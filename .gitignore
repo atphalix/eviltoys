@@ -21,5 +21,6 @@ openquartz/utils/bin
 openquartz/utils/qutils/bin
 *.svn/*
 *.dat
+*.lit
 *.blend1
 *.autosave.map
