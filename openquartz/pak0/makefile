@@ -6,8 +6,8 @@ QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
 GAMEDIR   = ../../eviltoys-1.1/id1
 
-QBSP     = ../utils/qutils/bin/qbsp
-VIS      = ../utils/qutils/bin/vis -fast
+QBSP     = ../utils/qutils/bin/hqbsp
+VIS      = ../utils/qutils/bin/hvis -fast
 
 QCC      = $(UTILSDIR)/qcc
 MODELGEN = $(UTILSDIR)/modelgen
@@ -17,7 +17,7 @@ QFILES   = $(UTILSDIR)/qfiles
 QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
 
-LIGHT    = ../utils/qutils/bin/light
+LIGHT    = ../utils/qutils/bin/hlight
 
 
 # top-level targets
