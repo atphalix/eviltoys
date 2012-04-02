@@ -428,7 +428,7 @@ PAK2_CONTENTS += sound/zombie/z_shot1.wav
 #
 #
 #
-#PAK3_CONTENTS += maps/office.bsp
+PAK3_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/level1.bsp
 #PAK3_CONTENTS += maps/level2.bsp
 #
@@ -473,7 +473,7 @@ textures :
 %.spr : %.qc %.png
 	$(SPRGEN) $<
 
-map/start.lights  : ;
+maps/start.lights  : ;
 #
 # Static models are models that don't move during the game, so the 
 # can be represented by a .bsp instead of a .mdl (which is easier to render).
