@@ -1,7 +1,6 @@
 *CVS*
 ezquake_19_stable_sources/release-x86/
-tyrquake/build
-tyrquake/tyr-quake
+darkplaces
 openquartz/pak0/*.pak
 openquartz/utils/bin
 *.o
