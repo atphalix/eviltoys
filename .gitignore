@@ -3,7 +3,6 @@ ezquake_19_stable_sources/release-x86/
 tyrquake/build
 tyrquake/tyr-quake
 openquartz/pak0/*.pak
-openquartz/utils/bin
 *.o
 *.bsp
 *.pts
@@ -18,7 +17,6 @@ openquartz/utils/bin
 *.tar.gz
 *.zip
 *.bak
-openquartz/utils/qutils/bin
 *.dat
 *.blend1
 *.autosave.map
