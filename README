@@ -1,0 +1,12 @@
+== Note to developers ==
+
+This project was made originally to experiment with 3D educational game for One Laptop per Child laptop originnaly called Abcube. the source code is organized as follow:
+
+* master
+this branch contain the old code just for reference.
+* eviltoys
+is where the current project code is.after cloning the project using git, type:
+git checkout eviltoys
+to switch and work on the landmines project code.
+
+
