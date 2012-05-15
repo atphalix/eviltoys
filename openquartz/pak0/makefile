@@ -9,7 +9,7 @@ GAMEDIR   = ../../eviltoys-1.1/id1
 QBSP     = ../utils/qutils/bin/qbsp
 VIS      = ../utils/qutils/bin/vis -fast
 
-QCC      = $(UTILSDIR)/qcc
+QCC      = ../utils/qutils/bin/qcc
 MODELGEN = $(UTILSDIR)/modelgen
 SPRGEN   = $(UTILSDIR)/sprgen
 QLUMPY   = $(UTILSDIR)/qlumpy
