@@ -4,11 +4,6 @@ tyrquake/build
 tyrquake/tyr-quake
 openquartz/pak0/*.pak
 *.o
-*.bsp
-*.pts
-*.prt
-*.h1
-*.h2
 *.a
 *.log
 *#
