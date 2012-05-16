@@ -1,12 +1,30 @@
 == Note to developers ==
 
-This project was made originally to experiment with 3D educational game for One Laptop per Child laptop originnaly called Abcube. the source code is organized as follow:
+This project was made originally to experiment with 3D educational game for One Laptop per Child laptop originnaly called Abcube which is based on Quake1.
+The source code is organized as follow:
 
 * master
 this branch contain the old code just for reference.
 * eviltoys
 is where the current project code is.after cloning the project using git, type:
-git checkout eviltoys
+git checkout --track eviltoys
 to switch and work on the landmines project code.
 
+= Credits
+- This project use Quake1 game data from the OpenQuartz project GPL game data:
+For more information, see http://sourceforge.net/projects/openquartz/
 
+== What ``Free Software'' means
+
+When we speak of Free Software, we refer to the software movement in
+which your freedoms to use, copy, modify, and study it are ensured.  For
+example, you may freely use Freedoom for any purpose you see fit, you
+may redistribute it to anyone without needing to ask for permission, you
+may modify it (provided you keep the license intact, see `COPYING`), and
+you may study it -- for example, to see how a Quake pak file is built.  To
+facilitate this, you can get the full source code.
+
+You may read more about Free Software at the http://www.gnu.org/[GNU]
+and http://www.fsf.org/[Free Software Foundation] websites.
+
+ 
