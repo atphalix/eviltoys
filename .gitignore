@@ -2,10 +2,13 @@
 ezquake_19_stable_sources/release-x86/
 tyrquake/build
 tyrquake/tyr-quake
-openquartz/pak0/*.pak
+*.pak
 *.o
 *.a
 *.log
+*.wad
+*.eng
+*.so
 *#
 *~
 *.xo

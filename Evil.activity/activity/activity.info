@@ -1,0 +1,6 @@
+[Activity]
+name = Evil
+activity_version = 4
+service_name = org.laptop.doom
+icon = icon
+exec = runevil

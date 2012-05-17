@@ -1,2 +1,1 @@
-cp -Rf ~/.quakeforge/id1/ Eviltoys.activity/bin
-zip -r eviltoys-1.xo Eviltoys.activity
+zip -r eviltoys-1.xo Evil.activity
