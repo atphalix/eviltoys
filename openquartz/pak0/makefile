@@ -462,7 +462,7 @@ gfx :
 
 textures :
 	$(QPAKMAN) maps/textures/*.png -g quake1 -o maps/textures/free_wad.wad
-	cp maps/textures/free_wad.wad ../openquartz/id1/free_wad.wad
+	cp maps/textures/free_wad.wad $(GAMEDIR)/free_wad.wad
 
 
 %.lmp : gfx_lmp.ls
