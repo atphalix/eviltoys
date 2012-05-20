@@ -2,21 +2,23 @@
 # Change QUTILSDIR and UTILSDIR to match your setup
 #
 
-QUTILSDIR = ../utils/qutils/bin
+QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
-GAMEDIR   = ../openquartz/id1
+GAMEDIR   = ../../eviltoys-1.1/id1
 
-QBSP     = $(QUTILSDIR)/qbsp
-VIS      = $(QUTILSDIR)/vis
-LIGHT    = $(QUTILSDIR)/light
-QCC      = $(QUTILSDIR)/qcc
-MODELGEN = $(QUTILSDIR)/modelgen
-SPRGEN   = $(QUTILSDIR)/sprgen
-QLUMPY   = $(QUTILSDIR)/qlumpy
-QFILES   = $(QUTILSDIR)/qfiles
+QBSP     = ../utils/qutils/bin/qbsp
+VIS      = ../utils/qutils/bin/vis -fast
 
+QCC      = ../utils/qutils/bin/qcc
+MODELGEN = $(UTILSDIR)/modelgen
+SPRGEN   = $(UTILSDIR)/sprgen
+QLUMPY   = $(UTILSDIR)/qlumpy
+QFILES   = $(UTILSDIR)/qfiles
+QPAKMAN	 = ../../tools/qpakman/qpakman
 PAR      = $(UTILSDIR)/par
-TYRLITE  = $(UTILSDIR)/tyrlite
+
+LIGHT    = ../utils/qutils/bin/light
+
 
 # top-level targets
 ALLPAKS  = pak0.pak pak1.pak pak2.pak pak3.pak pak4.pak
@@ -25,16 +27,12 @@ all: $(ALLPAKS)
 
 # installs the compiled files into the game directory
 install : all
-	mkdir --parents $(GAMEDIR)
+#	cp $(ALLPAKS) ../openquartz/id1
 	cp $(ALLPAKS) $(GAMEDIR)
-	cp default.cfg $(GAMEDIR)
-	mkdir --parents $(GAMEDIR)/gfx
-	cp gfx/*.tga $(GAMEDIR)/gfx
-	mkdir --parents $(GAMEDIR)/gfx/env
-	cp gfx/env/*.tga $(GAMEDIR)/gfx/env
-	mkdir --parents $(GAMEDIR)/maps
-	cp maps/*.rtlights $(GAMEDIR)/maps
 
+
+#bundle	: all
+#	cp ../openquartz/openquartz/
 
 extra-maps : \
     maps/dm2ish.bsp maps/dm3ish.bsp maps/dm4ish.bsp     \
@@ -43,7 +41,7 @@ extra-maps : \
 
 
 # be careful, don't erase anything we can't generate
-clean:
+#clean:
 	$(RM) $(ALLPAKS)
 	$(RM) progs.dat qwprogs.dat qwdefs.h progdefs.h
 	$(RM) tyrlite.log
@@ -169,8 +167,20 @@ PAK0_CONTENTS += maps/b_rock0.bsp
 PAK0_CONTENTS += maps/b_rock1.bsp
 PAK0_CONTENTS += maps/b_shell0.bsp
 PAK0_CONTENTS += maps/b_shell1.bsp
+PAK0_CONTENTS += maps/b_shell2.bsp
 PAK0_CONTENTS += progs.dat
 PAK0_CONTENTS += progs/armor.mdl
+PAK0_CONTENTS += progs/misc/mine1.mdl
+PAK0_CONTENTS += progs/misc/mine2.mdl
+PAK0_CONTENTS += progs/misc/mine3.mdl
+PAK0_CONTENTS += progs/misc/mine4.mdl
+PAK0_CONTENTS += progs/misc/mine5.mdl
+PAK0_CONTENTS += progs/misc/mine6.mdl
+PAK0_CONTENTS += progs/misc/mine7.mdl
+PAK0_CONTENTS += progs/misc/mine8.mdl
+PAK0_CONTENTS += progs/misc/mine9.mdl
+PAK0_CONTENTS += progs/misc/mine10.mdl
+PAK0_CONTENTS += progs/misc/diamond.mdl
 PAK0_CONTENTS += progs/b_g_key.mdl
 PAK0_CONTENTS += progs/b_s_key.mdl
 PAK0_CONTENTS += progs/backpack.mdl
@@ -226,7 +236,7 @@ PAK0_CONTENTS += progs/w_s_key.mdl
 PAK0_CONTENTS += progs/zom_gib.mdl
 PAK0_CONTENTS += progs/zombie.mdl
 PAK0_CONTENTS += quake.rc
-PAK0_CONTENTS += qwprogs.dat
+#PAK0_CONTENTS += qwprogs.dat
 
 
 #
@@ -269,7 +279,8 @@ PAK1_CONTENTS += progs/wizard.mdl
 #
 PAK2_CONTENTS += sound/ambience/comp1.wav
 PAK2_CONTENTS += sound/ambience/drip1.wav
-PAK2_CONTENTS += sound/ambience/drone6.wav
+PAK2_CONTENTS += sound/misc/fire_ambient.wav
+PAK2_CONTENTS += sound/ambience/fire1.wav
 PAK2_CONTENTS += sound/ambience/water1.wav
 PAK2_CONTENTS += sound/ambience/wind2.wav
 PAK2_CONTENTS += sound/ambience/windfly.wav
@@ -409,85 +420,18 @@ PAK2_CONTENTS += sound/zombie/z_miss.wav
 PAK2_CONTENTS += sound/zombie/z_pain.wav
 PAK2_CONTENTS += sound/zombie/z_pain1.wav
 PAK2_CONTENTS += sound/zombie/z_shot1.wav
-
-
 #
 # PAK3_CONTENTS is what goes into pak3.pak
 #
 # It contains multiplayer maps.
 #
-PAK3_CONTENTS += maps/elbow.bsp
-PAK3_CONTENTS += maps/rpgdm1.bsp
-PAK3_CONTENTS += maps/am1.bsp
-PAK3_CONTENTS += maps/box.bsp
-PAK3_CONTENTS += maps/bunkers.bsp
-PAK3_CONTENTS += maps/house.bsp
-PAK3_CONTENTS += maps/nsa.bsp
-PAK3_CONTENTS += maps/office.bsp
+#
+#
+#PAK3_CONTENTS += maps/office.bsp
+#PAK3_CONTENTS += maps/level1.bsp
+#PAK3_CONTENTS += maps/level2.bsp
 PAK3_CONTENTS += maps/start.bsp
-PAK3_CONTENTS += maps/void1.bsp
-PAK3_CONTENTS += maps/void1.way
-PAK3_CONTENTS += maps/void2.bsp
-PAK3_CONTENTS += maps/void3.bsp
-PAK3_CONTENTS += maps/void3.way
-PAK3_CONTENTS += maps/void4.bsp
-PAK3_CONTENTS += maps/void4.way
-PAK3_CONTENTS += maps/void5.bsp
-PAK3_CONTENTS += maps/void6.bsp
-PAK3_CONTENTS += maps/vtest.bsp
-PAK3_CONTENTS += maps/q3dm6ish.bsp
-PAK3_CONTENTS += maps/devourer.bsp
-PAK3_CONTENTS += maps/dm1.bsp
-PAK3_CONTENTS += maps/dm2.bsp
-PAK3_CONTENTS += maps/dm3.bsp
-PAK3_CONTENTS += maps/dm4.bsp
-PAK3_CONTENTS += maps/dm5.bsp
-PAK3_CONTENTS += maps/dm6.bsp
-PAK3_CONTENTS += maps/dm7.bsp
-PAK3_CONTENTS += maps/dm8.bsp
-
-
-#
-# PAK4_CONTENTS is what goes into pak4.pak
-#
-# It contains single-player maps, most of which are
-# the original Quake maps written by John Romero.
-#
-PAK4_CONTENTS += maps/q1start.bsp
-PAK4_CONTENTS += maps/e1m1.bsp
-PAK4_CONTENTS += maps/e1m2.bsp
-PAK4_CONTENTS += maps/e1m3.bsp
-PAK4_CONTENTS += maps/e1m4.bsp
-PAK4_CONTENTS += maps/e1m5.bsp
-PAK4_CONTENTS += maps/e1m6.bsp
-PAK4_CONTENTS += maps/e1m7.bsp
-PAK4_CONTENTS += maps/e1m8.bsp
-PAK4_CONTENTS += maps/e2m1.bsp
-PAK4_CONTENTS += maps/e2m2.bsp
-PAK4_CONTENTS += maps/e2m3.bsp
-PAK4_CONTENTS += maps/e2m4.bsp
-PAK4_CONTENTS += maps/e2m5.bsp
-PAK4_CONTENTS += maps/e2m6.bsp
-PAK4_CONTENTS += maps/e2m7.bsp
-PAK4_CONTENTS += maps/e3m1.bsp
-PAK4_CONTENTS += maps/e3m2.bsp
-PAK4_CONTENTS += maps/e3m3.bsp
-PAK4_CONTENTS += maps/e3m4.bsp
-PAK4_CONTENTS += maps/e3m5.bsp
-PAK4_CONTENTS += maps/e3m6.bsp
-PAK4_CONTENTS += maps/e3m7.bsp
-PAK4_CONTENTS += maps/e4m1.bsp
-PAK4_CONTENTS += maps/e4m2.bsp
-PAK4_CONTENTS += maps/e4m3.bsp
-PAK4_CONTENTS += maps/e4m4.bsp
-PAK4_CONTENTS += maps/e4m5.bsp
-PAK4_CONTENTS += maps/e4m6.bsp
-PAK4_CONTENTS += maps/e4m7.bsp
-PAK4_CONTENTS += maps/e4m8.bsp
-PAK4_CONTENTS += maps/end.bsp
-PAK4_CONTENTS += maps/e2m10.bsp
-
-
+#PAK3_CONTENTS += maps/vtest.bsp
 #
 # make targets
 #
@@ -507,26 +451,33 @@ pak3.pak: $(PAK3_CONTENTS) makefile
 pak4.pak: $(PAK4_CONTENTS) makefile
 	$(PAR) -c $@ $(PAK4_CONTENTS)
 
-qwprogs.dat:
-	$(QCC) -o qwprogs.dat -p qwdefs.h qc_merge/qw.qc
-
 progs.dat:
-	$(QCC) -o progs.dat -p progdefs.h qc_merge/quake.qc
+	$(QCC) -o progs.dat -p progdefs.h qc/progs.c
 
 gfx.wad :
 	$(QLUMPY) gfx_wad.ls
 
+gfx :
+	$(QPAKMAN) gfx/*.png -g quake1 -o gfx.wad
+
+textures :
+	$(QPAKMAN) maps/textures/*.png -g quake1 -o maps/textures/free_wad.wad
+	cp maps/textures/free_wad.wad $(GAMEDIR)/free_wad.wad
+
+
 %.lmp : gfx_lmp.ls
 	$(QLUMPY) gfx_lmp.ls
 
-%.mdl : %.qc
-	$(MODELGEN) $<
+#%.mdl : %.qc
+#	$(MODELGEN) $<
 
 %.spr : %.qc %.png
 	$(SPRGEN) $<
 
 #
-# The next target builds static models (not maps).  
+# Static models are models that don't move during the game, so the 
+# can be represented by a .bsp instead of a .mdl (which is easier to render).
+# Unlike regular .map files, $(VIS) cannot be run on them
 # Static models are models that don't move during the game, so the 
 # can be represented by a .bsp instead of a .mdl (which is easier to render).
 # Unlike regular .map files, $(VIS) cannot be run on them
@@ -538,28 +489,10 @@ maps/b_%.bsp : maps/b_%.map
 	$(QBSP) $<
 	$(LIGHT) $@
 
-# some maps need special programs and switches - these maps need to be
-# built before the others...
-maps/elbow.bsp : maps/elbow.map
-	$(QBSP) $<
-	$(VIS) $@
-	$(TYRLITE) -extra $@
-
-maps/rpgdm1.bsp : maps/rpgdm1.map
-	$(QBSP) $<
-	$(VIS) $@
-	$(TYRLITE) -extra $@
-
-
 %.bsp : %.map
 	$(QBSP) $<
 	$(VIS) $@
 	$(LIGHT) $@
 
-# 
-# Not all .mdl files can be built from source by our tools.
-# For each file that we cannot generate, we add a special case that 
-# tells make to skip the file.
-#
-
 progs/s_light.mdl : ;
+

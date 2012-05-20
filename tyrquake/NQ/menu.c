@@ -1393,45 +1393,10 @@ static int m_quit_prevstate;
 static qboolean wasInMenus;
 
 static const char *const quitMessage[] = {
-    "  Are you gonna quit    ",
-    "  this game just like   ",
-    "   everything else?     ",
+    "  Do you really",
+    "  want to quit    ",
+    "   this game?     ",
     "                        ",
-
-    " Milord, methinks that  ",
-    "   thou art a lowly     ",
-    " quitter. Is this true? ",
-    "                        ",
-
-    " Do I need to bust your ",
-    "  face open for trying  ",
-    "        to quit?        ",
-    "                        ",
-
-    " Man, I oughta smack you",
-    "   for trying to quit!  ",
-    "     Press Y to get     ",
-    "      smacked out.      ",
-
-    " Press Y to quit like a ",
-    "   big loser in life.   ",
-    "  Press N to stay proud ",
-    "    and successful!     ",
-
-    "   If you press Y to    ",
-    "  quit, I will summon   ",
-    "  Satan all over your   ",
-    "      hard drive!       ",
-
-    "  Um, Asmodeus dislikes ",
-    " his children trying to ",
-    " quit. Press Y to return",
-    "   to your Tinkertoys.  ",
-
-    "  If you quit now, I'll ",
-    "  throw a blanket-party ",
-    "   for you next time!   ",
-    "                        "
 };
 
 
@@ -1445,13 +1410,15 @@ M_Menu_Quit_f(void)
     m_quit_prevstate = m_state;
     m_state = m_quit;
     m_entersound = true;
-    msgNumber = rand() & 7;
+   // msgNumber = rand() & 7;
+    msgNumber = 0;
 }
 
 
 static void
 M_Quit_Key(int key)
 {
+
     switch (key) {
     case K_ESCAPE:
     case 'n':
@@ -1474,7 +1441,6 @@ M_Quit_Key(int key)
     default:
 	break;
     }
-
 }
 
 
@@ -1487,7 +1453,6 @@ M_Quit_Draw(void)
 	M_Draw();
 	m_state = m_quit;
     }
-
     M_DrawTextBox(56, 76, 24, 4);
     M_Print(64, 84, quitMessage[msgNumber * 4 + 0]);
     M_Print(64, 92, quitMessage[msgNumber * 4 + 1]);

@@ -1,6 +1,0 @@
-[Activity]
-name = Quake
-activity_version = 1
-service_name = org.laptop.quake
-icon = quake
-exec = quake-activity

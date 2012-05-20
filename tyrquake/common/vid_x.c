@@ -566,14 +566,14 @@ VID_Init(unsigned char *palette)
 	    Sys_Error("VID: -width <width>");
 	vid.width = Q_atoi(com_argv[pnum + 1]);
 	if (!vid.width)
-	    Sys_Error("VID: Bad window width");
+	    vid.width=1200;
     }
     if ((pnum = COM_CheckParm("-height"))) {
 	if (pnum >= com_argc - 1)
 	    Sys_Error("VID: -height <height>");
 	vid.height = Q_atoi(com_argv[pnum + 1]);
 	if (!vid.height)
-	    Sys_Error("VID: Bad window height");
+	    vid.height=900;
     }
 
     template_mask = 0;

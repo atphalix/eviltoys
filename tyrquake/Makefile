@@ -959,3 +959,10 @@ clean:
 	@rm -f $(shell find . \( \
 		-name '*~' -o -name '#*#' -o -name '*.o' -o -name '*.res' \
 	\) -print)
+# Install into openquartz directory
+install:
+	cp tyr-quake ../openquartz/openquartz/
+xo:
+	cp tyr-quake ../Quake.activity/bin
+	cp -Rf ../openquartz/openquartz/id1 ../Quake.activity/bin/
+	zip -r ../abcube.xo ../Quake.activity 	
