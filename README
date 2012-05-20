@@ -1,18 +1,18 @@
 == Note to developers ==
 
 This project was made originally to experiment with 3D educational game for One Laptop per Child laptop originnaly called Abcube which is based on Quake1.
-The source code is organized as follow:
 
-* master
-this branch contain the old code just for reference.
-* eviltoys
-is where the current project code is.after cloning the project using git, type:
-git checkout --track eviltoys
-to switch and work on the landmines project code.
+Take a look at the wiki for informations on how to "hack" the game data:
+You can view it online https://github.com/atphalix/eviltoys/wiki
+
+or for offline use (in mediawiki format)
+git clone git://github.com/atphalix/eviltoys.wiki.git
 
 = Credits
+
 - This project use Quake1 game data from the OpenQuartz project GPL game data:
 For more information, see http://sourceforge.net/projects/openquartz/
+- This game is designed by Ahmed Mansour (aka atphalix) from Morocco.
 
 == What ``Free Software'' means
 
@@ -24,8 +24,8 @@ may modify it (provided you keep the license intact, see `COPYING`), and
 you may study it -- for example, to see how a Quake pak file is built.  To
 facilitate this, you can get the full source code.
 
-You may read more about Free Software at the http://www.gnu.org/[GNU]
-and http://www.fsf.org/[Free Software Foundation] websites.
+You may read more about Free Software at the http://www.gnu.org/ (GNU)
+and http://www.fsf.org/ (Free Software Foundation) websites.
 
  
 
