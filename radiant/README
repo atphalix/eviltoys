@@ -1,0 +1,6 @@
+This folder contain files needed to create game levels (maps) for Quake1.
+Just copy the content of this folder to where you installed your copy of GTKradiant/Netradiant and you're ready.
+
+edit file radiant/games/q1.game and replace the line
+ enginepath_linux="/home/hmd/abcube/openquartz/openquartz/"
+to where your binary (directory that contain "id1" folder) file 
