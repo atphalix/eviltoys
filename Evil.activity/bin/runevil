@@ -22,5 +22,6 @@ umask 0002
 [ ! -d "$CONFDIR" ] && mkdir -p "$CONFDIR"
 CONFIG="$CONFDIR/prboom.cfg"
 [ ! -r "$CONFIG" ] && cp default.cfg "$CONFIG"
-
+sudo MAKEDEV /dev/dsp
+sudo chmod 777 /dev/dsp
 exec ./evil.eng -mem 64 -width 1200 -height 900 +map start
