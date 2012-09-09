@@ -1,1 +1,7 @@
+#!/bin/sh
+#make .xo package for OLPC laptop
+
+cd openquartz/pak0/
+make && make install
+cd ../../
 zip -r eviltoys-1.xo Evil.activity

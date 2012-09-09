@@ -4,7 +4,7 @@
 
 QUTILSDIR = ../openquartz/bin
 UTILSDIR  = ../utils/bin
-GAMEDIR   = ../../eviltoys-1.1/id1
+GAMEDIR   = ../../Evil.activity/id1
 
 QBSP     = ../../tools/hmap/bin/hqbsp
 VIS      = ../../tools/hmap/bin/hvis -fast
