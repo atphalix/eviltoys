@@ -5,3 +5,4 @@ cd openquartz/pak0/
 make && make install
 cd ../../
 zip -r eviltoys-1.xo Evil.activity
+md5sum eviltoys-1.xo > eviltoys-1.xo.md5sum

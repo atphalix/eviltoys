@@ -8,6 +8,12 @@ You can view it online https://github.com/atphalix/eviltoys/wiki
 or for offline use (in mediawiki format)
 git clone git://github.com/atphalix/eviltoys.wiki.git
 
+= How to build .xo bundle for installation on OLPC laptop?
+
+- First you need to have make, zip and md5sum (optional) installed in your GNU/Linux distribution.
+- run ./makebundle in the root folder of the project source
+- You should get eviltoys-1.xo and eviltoys-1.xo.md5sum
+
 = Credits
 
 - This project use Quake1 game data from the OpenQuartz project GPL game data:
