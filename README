@@ -14,6 +14,17 @@ git clone git://github.com/atphalix/eviltoys.wiki.git
 - run ./makebundle in the root folder of the project source
 - You should get eviltoys-1.xo and eviltoys-1.xo.md5sum
 
+= How to Contribute
+
+-  Get a github (free) account.
+-  Make a fork of this project.  That will create a repository in your
+   account for you to have read/write access to.  Very nice, complete
+   instructions for making a Fork are here:  ``https://help.github.com/articles/fork-a-repo``
+-  Clone the repository under your account to your local machine.
+-  test
+-  Make a Pull Request.  This will notify me that I should look at your changes and merge them into the main repository.
+-  Repeat!
+
 = Credits
 
 - This project use Quake1 game data from the OpenQuartz project GPL game data:
