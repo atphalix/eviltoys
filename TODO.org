@@ -1,0 +1,11 @@
+Critique and suggestions by Mathias Hagstrøm:
+* TODO Remove shotgun and item/munition from GUI
+* TODO add possibility to marks area with red&white stone
+* TODO being able to get points for marking out ERW (gamification)
+* TODO Add painted stones, the white side pointing towards a safe area where is the red points towards a contaminated
+* TODO perma-death and no power-up
+* Red and White stripes are confusing
+* start area with top red bar and a white bar underneath
+* a level where you mark contaminated areas.
+* more ruin in game levels
+
