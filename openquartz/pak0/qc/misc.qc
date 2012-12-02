@@ -335,8 +335,8 @@ void() misc_box_touch =
 	ThrowGib ("progs/gib1.mdl", self.health);
 	ThrowGib ("progs/gib2.mdl", self.health);
 	ThrowGib ("progs/gib3.mdl", self.health);
-
-	T_Damage (other, self, self, 20);
+//One touch and you're dead!
+	T_Damage (other, self, self, 2000);
 	remove(self);
 	dprint ("BOOM!!");
 	sound (self, CHAN_VOICE, "weapons/r_exp3.wav", 1, ATTN_NORM);
