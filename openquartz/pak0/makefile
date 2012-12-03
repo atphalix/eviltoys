@@ -21,7 +21,7 @@ LIGHT    = ../../tools/hmap/bin/hlight
 
 
 # top-level targets
-ALLPAKS  = pak0.pak pak1.pak pak2.pak pak3.pak pak4.pak
+ALLPAKS  = pak0.pak
 
 all: $(ALLPAKS)
 
@@ -241,36 +241,15 @@ PAK0_CONTENTS += quake.rc
 
 
 #
-# PAK1_CONTENTS is what goes into pak1.pak
+# PAK0_CONTENTS is what goes into pak1.pak
 #
 # It contains models for the multiplayer game.
 #
-PAK1_CONTENTS += progs/demon.mdl
-PAK1_CONTENTS += progs/dog.mdl
-PAK1_CONTENTS += progs/enforcer.mdl
-PAK1_CONTENTS += progs/fish.mdl
-PAK1_CONTENTS += progs/h_demon.mdl
-PAK1_CONTENTS += progs/h_dog.mdl
-PAK1_CONTENTS += progs/h_guard.mdl
-PAK1_CONTENTS += progs/h_hellkn.mdl
-PAK1_CONTENTS += progs/h_knight.mdl
-PAK1_CONTENTS += progs/h_mega.mdl
-PAK1_CONTENTS += progs/h_player.mdl
-PAK1_CONTENTS += progs/h_shal.mdl
-PAK1_CONTENTS += progs/h_shams.mdl
-PAK1_CONTENTS += progs/h_wizard.mdl
-PAK1_CONTENTS += progs/hknight.mdl
-PAK1_CONTENTS += progs/k_spike.mdl
-PAK1_CONTENTS += progs/knight.mdl
-PAK1_CONTENTS += progs/s_light.mdl
-PAK1_CONTENTS += progs/s_spike.mdl
-PAK1_CONTENTS += progs/shalrath.mdl
-PAK1_CONTENTS += progs/shambler.mdl
-PAK1_CONTENTS += progs/soldier.mdl
-PAK1_CONTENTS += progs/tarbaby.mdl
-PAK1_CONTENTS += progs/v_spike.mdl
-PAK1_CONTENTS += progs/w_spike.mdl
-PAK1_CONTENTS += progs/wizard.mdl
+
+PAK0_CONTENTS += progs/h_player.mdl
+
+PAK0_CONTENTS += progs/s_light.mdl
+PAK0_CONTENTS += progs/s_spike.mdl
 
 
 #
@@ -278,149 +257,39 @@ PAK1_CONTENTS += progs/wizard.mdl
 #
 # It contains sounds.
 #
-PAK2_CONTENTS += sound/ambience/comp1.wav
-PAK2_CONTENTS += sound/ambience/drip1.wav
-PAK2_CONTENTS += sound/misc/fire_ambient.wav
-PAK2_CONTENTS += sound/ambience/fire1.wav
-PAK2_CONTENTS += sound/ambience/water1.wav
-PAK2_CONTENTS += sound/ambience/wind2.wav
-PAK2_CONTENTS += sound/ambience/windfly.wav
-PAK2_CONTENTS += sound/buttons/airbut1.wav
-PAK2_CONTENTS += sound/buttons/switch02.wav
-PAK2_CONTENTS += sound/buttons/switch04.wav
-PAK2_CONTENTS += sound/buttons/switch21.wav
-PAK2_CONTENTS += sound/demon/ddeath.wav
-PAK2_CONTENTS += sound/demon/dhit2.wav
-PAK2_CONTENTS += sound/demon/djump.wav
-PAK2_CONTENTS += sound/demon/dland2.wav
-PAK2_CONTENTS += sound/demon/dpain1.wav
-PAK2_CONTENTS += sound/demon/idle1.wav
-PAK2_CONTENTS += sound/demon/sight2.wav
-PAK2_CONTENTS += sound/doors/basetry.wav
-PAK2_CONTENTS += sound/doors/baseuse.wav
-PAK2_CONTENTS += sound/doors/ddoor2.wav
-PAK2_CONTENTS += sound/doors/doormv1.wav
-PAK2_CONTENTS += sound/doors/drclos4.wav
-PAK2_CONTENTS += sound/doors/hydro1.wav
-PAK2_CONTENTS += sound/doors/hydro2.wav
-PAK2_CONTENTS += sound/doors/medtry.wav
-PAK2_CONTENTS += sound/doors/meduse.wav
-PAK2_CONTENTS += sound/doors/runetry.wav
-PAK2_CONTENTS += sound/doors/runeuse.wav
-PAK2_CONTENTS += sound/doors/stndr1.wav
-PAK2_CONTENTS += sound/doors/stndr2.wav
-PAK2_CONTENTS += sound/enforcer/death1.wav
-PAK2_CONTENTS += sound/enforcer/enfire.wav
-PAK2_CONTENTS += sound/enforcer/enfstop.wav
-PAK2_CONTENTS += sound/enforcer/idle1.wav
-PAK2_CONTENTS += sound/enforcer/idle3.wav
-PAK2_CONTENTS += sound/enforcer/pain1.wav
-PAK2_CONTENTS += sound/enforcer/pain2.wav
-PAK2_CONTENTS += sound/enforcer/sight1.wav
-PAK2_CONTENTS += sound/enforcer/sight2.wav
-PAK2_CONTENTS += sound/enforcer/sight3.wav
-PAK2_CONTENTS += sound/enforcer/sight4.wav
-PAK2_CONTENTS += sound/hknight/hit.wav
-PAK2_CONTENTS += sound/items/armor1.wav
-PAK2_CONTENTS += sound/items/damage.wav
-PAK2_CONTENTS += sound/items/damage2.wav
-PAK2_CONTENTS += sound/items/damage3.wav
-PAK2_CONTENTS += sound/items/health1.wav
-PAK2_CONTENTS += sound/items/inv1.wav
-PAK2_CONTENTS += sound/items/inv2.wav
-PAK2_CONTENTS += sound/items/inv3.wav
-PAK2_CONTENTS += sound/items/itembk2.wav
-PAK2_CONTENTS += sound/items/protect.wav
-PAK2_CONTENTS += sound/items/protect2.wav
-PAK2_CONTENTS += sound/items/protect3.wav
-PAK2_CONTENTS += sound/items/r_item1.wav
-PAK2_CONTENTS += sound/items/r_item2.wav
-PAK2_CONTENTS += sound/items/suit.wav
-PAK2_CONTENTS += sound/items/suit2.wav
-PAK2_CONTENTS += sound/misc/basekey.wav
-PAK2_CONTENTS += sound/misc/h2ohit1.wav
-PAK2_CONTENTS += sound/misc/medkey.wav
-PAK2_CONTENTS += sound/misc/menu1.wav
-PAK2_CONTENTS += sound/misc/menu2.wav
-PAK2_CONTENTS += sound/misc/menu3.wav
-PAK2_CONTENTS += sound/misc/null.wav
-PAK2_CONTENTS += sound/misc/outwater.wav
-PAK2_CONTENTS += sound/misc/power.wav
-PAK2_CONTENTS += sound/misc/r_tele1.wav
-PAK2_CONTENTS += sound/misc/r_tele2.wav
-PAK2_CONTENTS += sound/misc/r_tele3.wav
-PAK2_CONTENTS += sound/misc/r_tele4.wav
-PAK2_CONTENTS += sound/misc/r_tele5.wav
-PAK2_CONTENTS += sound/misc/runekey.wav
-PAK2_CONTENTS += sound/misc/secret.wav
-PAK2_CONTENTS += sound/misc/talk.wav
-PAK2_CONTENTS += sound/misc/trigger1.wav
-PAK2_CONTENTS += sound/misc/water1.wav
-PAK2_CONTENTS += sound/misc/water2.wav
-PAK2_CONTENTS += sound/plats/medplat1.wav
-PAK2_CONTENTS += sound/plats/medplat2.wav
-PAK2_CONTENTS += sound/plats/plat1.wav
-PAK2_CONTENTS += sound/plats/plat2.wav
-PAK2_CONTENTS += sound/player/axhit1.wav
-PAK2_CONTENTS += sound/player/axhit2.wav
-PAK2_CONTENTS += sound/player/death1.wav
-PAK2_CONTENTS += sound/player/death2.wav
-PAK2_CONTENTS += sound/player/death3.wav
-PAK2_CONTENTS += sound/player/death4.wav
-PAK2_CONTENTS += sound/player/death5.wav
-PAK2_CONTENTS += sound/player/drown1.wav
-PAK2_CONTENTS += sound/player/drown2.wav
-PAK2_CONTENTS += sound/player/gasp1.wav
-PAK2_CONTENTS += sound/player/gasp2.wav
-PAK2_CONTENTS += sound/player/gib.wav
-PAK2_CONTENTS += sound/player/h2odeath.wav
-PAK2_CONTENTS += sound/player/h2ojump.wav
-PAK2_CONTENTS += sound/player/inh2o.wav
-PAK2_CONTENTS += sound/player/inlava.wav
-PAK2_CONTENTS += sound/player/land.wav
-PAK2_CONTENTS += sound/player/land2.wav
-PAK2_CONTENTS += sound/player/lburn1.wav
-PAK2_CONTENTS += sound/player/lburn2.wav
-PAK2_CONTENTS += sound/player/pain1.wav
-PAK2_CONTENTS += sound/player/pain2.wav
-PAK2_CONTENTS += sound/player/pain3.wav
-PAK2_CONTENTS += sound/player/pain4.wav
-PAK2_CONTENTS += sound/player/pain5.wav
-PAK2_CONTENTS += sound/player/pain6.wav
-PAK2_CONTENTS += sound/player/plyrjmp8.wav
-PAK2_CONTENTS += sound/player/slimbrn2.wav
-PAK2_CONTENTS += sound/player/teledth1.wav
-PAK2_CONTENTS += sound/player/tornoff2.wav
-PAK2_CONTENTS += sound/player/udeath.wav
-PAK2_CONTENTS += sound/soldier/sattck1.wav
-PAK2_CONTENTS += sound/weapons/ax1.wav
-PAK2_CONTENTS += sound/weapons/bounce.wav
-PAK2_CONTENTS += sound/weapons/grenade.wav
-PAK2_CONTENTS += sound/weapons/guncock.wav
-PAK2_CONTENTS += sound/weapons/lhit.wav
-PAK2_CONTENTS += sound/weapons/lock4.wav
-PAK2_CONTENTS += sound/weapons/lstart.wav
-PAK2_CONTENTS += sound/weapons/pkup.wav
-PAK2_CONTENTS += sound/weapons/r_exp3.wav
-PAK2_CONTENTS += sound/weapons/ric1.wav
-PAK2_CONTENTS += sound/weapons/ric2.wav
-PAK2_CONTENTS += sound/weapons/ric3.wav
-PAK2_CONTENTS += sound/weapons/rocket1i.wav
-PAK2_CONTENTS += sound/weapons/sgun1.wav
-PAK2_CONTENTS += sound/weapons/shotgn2.wav
-PAK2_CONTENTS += sound/weapons/spike2.wav
-PAK2_CONTENTS += sound/weapons/tink1.wav
-PAK2_CONTENTS += sound/wizard/hit.wav
-PAK2_CONTENTS += sound/zombie/idle_w2.wav
-PAK2_CONTENTS += sound/zombie/z_fall.wav
-PAK2_CONTENTS += sound/zombie/z_gib.wav
-PAK2_CONTENTS += sound/zombie/z_hit.wav
-PAK2_CONTENTS += sound/zombie/z_idle.wav
-PAK2_CONTENTS += sound/zombie/z_idle1.wav
-PAK2_CONTENTS += sound/zombie/z_miss.wav
-PAK2_CONTENTS += sound/zombie/z_pain.wav
-PAK2_CONTENTS += sound/zombie/z_pain1.wav
-PAK2_CONTENTS += sound/zombie/z_shot1.wav
+PAK0_CONTENTS += sound/misc/fire_ambient.wav
+PAK0_CONTENTS += sound/ambience/fire1.wav
+PAK0_CONTENTS += sound/ambience/water1.wav
+PAK0_CONTENTS += sound/ambience/wind2.wav
+PAK0_CONTENTS += sound/ambience/windfly.wav
+PAK0_CONTENTS += sound/buttons/airbut1.wav
+PAK0_CONTENTS += sound/buttons/switch02.wav
+PAK0_CONTENTS += sound/buttons/switch04.wav
+PAK0_CONTENTS += sound/buttons/switch21.wav
+PAK0_CONTENTS += sound/doors/basetry.wav
+PAK0_CONTENTS += sound/doors/baseuse.wav
+PAK0_CONTENTS += sound/doors/ddoor2.wav
+PAK0_CONTENTS += sound/doors/doormv1.wav
+PAK0_CONTENTS += sound/doors/drclos4.wav
+PAK0_CONTENTS += sound/doors/stndr1.wav
+PAK0_CONTENTS += sound/doors/stndr2.wav
+PAK0_CONTENTS += sound/items/damage.wav
+PAK0_CONTENTS += sound/items/damage2.wav
+PAK0_CONTENTS += sound/items/damage3.wav
+PAK0_CONTENTS += sound/misc/null.wav
+PAK0_CONTENTS += sound/player/death1.wav
+PAK0_CONTENTS += sound/player/death2.wav
+PAK0_CONTENTS += sound/player/death3.wav
+PAK0_CONTENTS += sound/player/death4.wav
+PAK0_CONTENTS += sound/player/death5.wav
+PAK0_CONTENTS += sound/player/drown1.wav
+PAK0_CONTENTS += sound/player/drown2.wav
+PAK0_CONTENTS += sound/player/gasp1.wav
+PAK0_CONTENTS += sound/player/gasp2.wav
+PAK0_CONTENTS += sound/player/gib.wav
+
+
+
 #
 # PAK3_CONTENTS is what goes into pak3.pak
 #
@@ -428,7 +297,7 @@ PAK2_CONTENTS += sound/zombie/z_shot1.wav
 #
 #
 #
-PAK3_CONTENTS += maps/start.bsp
+PAK0_CONTENTS += maps/start.bsp
 #PAK3_CONTENTS += maps/level1.bsp
 #PAK3_CONTENTS += maps/level2.bsp
 #
@@ -437,18 +306,6 @@ PAK3_CONTENTS += maps/start.bsp
 
 pak0.pak: $(PAK0_CONTENTS) makefile
 	$(PAR) -c $@ $(PAK0_CONTENTS)
-
-pak1.pak: $(PAK1_CONTENTS) makefile
-	$(PAR) -c $@ $(PAK1_CONTENTS)
-
-pak2.pak: $(PAK2_CONTENTS) makefile
-	$(PAR) -c $@ $(PAK2_CONTENTS)
-
-pak3.pak: $(PAK3_CONTENTS) makefile
-	$(PAR) -c $@ $(PAK3_CONTENTS)
-
-pak4.pak: $(PAK4_CONTENTS) makefile
-	$(PAR) -c $@ $(PAK4_CONTENTS)
 
 progs.dat:
 	$(QCC) -o progs.dat -p progdefs.h qc/progs.c
