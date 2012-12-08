@@ -318,7 +318,7 @@ gfx :
 
 textures :
 	$(QPAKMAN) maps/textures/*.png -g quake1 -o maps/textures/free_wad.wad
-	cp maps/textures/free_wad.wad $(GAMEDIR)/free_wad.wad
+	cp maps/textures/free_wad.wad ../../radiant/q1.game/id1/free_wad.wad
 
 
 %.lmp : gfx_lmp.ls
