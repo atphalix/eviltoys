@@ -304,7 +304,7 @@ void() worldspawn =
 	precache_model ("progs/backpack.mdl");
 
 	precache_model ("progs/zom_gib.mdl");
-
+	precache_model ("maps/b_bh10.bsp");
 	precache_model ("progs/v_light.mdl");
 	
 

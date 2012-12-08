@@ -1240,6 +1240,26 @@ void() QuadCheat =
 	dprint ("quad cheat\n");
 };
 
+void () holo =
+{
+local entity      hologram;  //Declares an entity called hologram
+
+   hologram = spawn (); //Spawns the entity with the following settings
+   hologram.origin = self.origin + '0 0 16'; //Spawns it at the player's current position
+   hologram.velocity = aim (self, 1000); //Gives the object a velocity
+   hologram.velocity = (hologram.velocity * 550); //Makes velocity slow so it moves slightly
+
+   hologram.movetype = MOVETYPE_TOSS; //Tosses the hologram
+   hologram.solid = SOLID_BBOX; //Makes the hologram solid to object other than yourself
+   setmodel (hologram, "maps/b_bh10.bsp"); //Red/White stone
+   self.angles = '0 0 0';
+// setsize (hologram,VEC_HULL_MIN,'16 16 40'); //Sets size of hologram
+   setsize (self,VEC_HULL_MIN , '32 32 56');
+
+   hologram.classname = "hologram"; //Give the object the classname "hologram"
+
+
+};
 /*
 ============
 ImpulseCommands
@@ -1248,6 +1268,10 @@ ImpulseCommands
 */
 void() ImpulseCommands =
 {
+        if (self.impulse == 40)//If IMPULSE 40 throw stone
+	  {
+	    holo (); //Call the function to throw a stone
+	  }
 	if (self.impulse >= 1 && self.impulse <= 8)
 		W_ChangeWeapon ();
 
